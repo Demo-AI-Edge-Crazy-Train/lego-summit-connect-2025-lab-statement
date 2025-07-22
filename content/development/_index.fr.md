@@ -1,7 +1,9 @@
 +++
 title = "Développement (30min)"
-weight = 3
-chapter = true
+weight = 999
+chapter = false
+draft = true
+hidden = true
 pre = "<b>3. </b>"
 +++
 

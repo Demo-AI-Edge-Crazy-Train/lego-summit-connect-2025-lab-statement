@@ -1,11 +1,11 @@
 +++
 title = "DevOps (30min)"
-weight = 4
+weight = 3
 chapter = true
-pre = "<b>4. </b>"
+pre = "<b>3. </b>"
 +++
 
-### Part 4
+### Part 3
 
 # DevOps
 

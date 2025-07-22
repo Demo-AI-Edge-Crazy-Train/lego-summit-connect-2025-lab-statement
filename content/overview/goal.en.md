@@ -3,7 +3,9 @@ title: "Mission Objective"
 weight: 1
 ---
 
-# 🚂 Mission: Impossible - Crazy Train
+### 🚂 Mission: Impossible - Crazy Train
+
+**Ready, Agent? Your mission starts now! 🚀** 
 
 > **🎬 CLASSIFIED TRANSMISSION**
 > 
@@ -13,29 +15,29 @@ weight: 1
 > 
 > *🎵 tam tam tada tum tum tada tum tum tada tum tum tada tiduduuuuummmm tiduduuuuuuuuummm 🎵*
 
-## 🎯 Your Mission
+### 🎯 Your Mission
 
 As an elite Red Hat agent, you must leverage cutting-edge **Edge AI** technologies to save the day! This isn't just any ordinary lab - it's a high-stakes mission where you'll combine:
 
-### 🤖 Artificial Intelligence
+#### 🤖 Artificial Intelligence
 - **Computer Vision**: Detect traffic signs using advanced neural networks
 - **Transfer Learning**: Adapt pre-trained models for LEGO traffic sign recognition
 - **MLOps**: Automate model training and deployment pipelines
 - **GPU Acceleration**: Harness the power of NVIDIA hardware for faster training
 
-### 🌐 Edge Computing
+#### 🌐 Edge Computing
 - **Nvidia Jetson Orin**: Deploy AI models directly on edge devices
 - **Red Hat Device Edge**: Run enterprise-grade Edge OS
 - **MicroShift**: Kubernetes for resource-constrained environments
 - **Real-time Processing**: Make split-second decisions to stop the train
 
-### ☁️ Cloud Integration
+#### ☁️ Cloud Integration
 - **OpenShift AI**: Centralized AI/ML platform for model development
 - **Multi-architecture Builds**: Create containers for both x86_64 and ARM64
 - **GitOps**: Deploy applications using modern DevOps practices
 - **5G Connectivity**: Maintain cloud-edge communication
 
-## 🏆 Success Criteria
+### 🏆 Success Criteria
 
 By the end of this mission, you will have:
 
@@ -45,15 +47,11 @@ By the end of this mission, you will have:
 4. ✅ **Implemented GitOps** for automated application deployment
 5. ✅ **Saved the train** before it crashes! 🎉
 
-## ⚡ The Stakes
+### ⚡ The Stakes
 
 - **Time limit**: The train is approaching the cliff!
 - **Technology**: State-of-the-art Red Hat Edge AI stack
 - **Challenge**: Real-world edge computing constraints
 - **Reward**: Master modern AI/ML and Edge Computing technologies
 
-**Ready, Agent? Your mission starts now! 🚀**tle: "Objectif"
-weight: 1
----
-
-Message to Ethan Hunt : “ The train is running mad at full speed and has no driver ! Your mission, should you choose to accept it, is to train and deploy an AI model at the edge to stop the train before it crashes. This message will self-destruct in five seconds. Four. three. Two. one.  tam tam tada tum tum tada tum tum tada tum tum tada tiduduuuuummmm tiduduuuuuuuuummm ”
+**Ready, Agent? Your mission starts now! 🚀**

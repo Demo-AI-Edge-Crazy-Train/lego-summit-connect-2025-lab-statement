@@ -3,7 +3,7 @@ title: "Architecture Système"
 weight: 2
 ---
 
-# 🏗️ Architecture Système
+## 🏗️ Architecture Technique Détaillée
 
 ![global architecture](/images/architecture-global.png)
 

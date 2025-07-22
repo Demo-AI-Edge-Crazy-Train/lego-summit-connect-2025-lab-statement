@@ -3,7 +3,7 @@ title: "System Architecture"
 weight: 2
 ---
 
-# 🏗️ System Architecture
+## 🏗️ Detailed Technical Architecture
 
 ![global architecture](/images/architecture-global.png)
 
