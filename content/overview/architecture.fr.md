@@ -96,17 +96,26 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 
 ## 🔄 Architecture de Flux de Données
 
-```mermaid
+{{< mermaid >}}
 graph TD
-    A[📹 Caméra Train] -->|Flux Vidéo| B[🧠 Jetson Orin]
-    B -->|Inférence IA| C[🚦 Détection Panneaux]
-    C -->|Commandes Contrôle| D[🔧 Hub LEGO]
-    B -->|5G| E[☁️ Cluster OpenShift]
-    E -->|Données Entraînement| F[🤖 OpenShift AI]
-    F -->|Modèles Mis à Jour| B
-    E -->|Surveillance| G[📊 Dashboard]
-    E -->|GitOps| H[🚀 Déploiement]
-```
+    A[Camera Train] -->|Flux Video| B[Jetson Orin]
+    B -->|Inference IA| C[Detection Panneaux]
+    C -->|Commandes Controle| D[Hub LEGO]
+    B -->|Connexion 5G| E[Cluster OpenShift]
+    E -->|Donnees Entrainement| F[OpenShift AI]
+    F -->|Modeles Mis a Jour| B
+    E -->|Surveillance| G[Dashboard]
+    E -->|GitOps| H[Deploiement]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#e3f2fd
+    style F fill:#f1f8e9
+    style G fill:#fce4ec
+    style H fill:#fff8e1
+{{< /mermaid >}}
 
 ### Pipeline de Traitement Temps Réel
 1. **📸 Capture d'Image** : La caméra capture les images de panneaux

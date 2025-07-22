@@ -13,6 +13,7 @@ showVisitedLinks = true
 disableBreadcrumb = false
 disableNextPrev = false
 themeVariant = "red"
+disableMermaid = false
 openshift_domain = "crazy-train.sandbox1935.opentlc.com"
 minioPass = "minio123"
 minioEndpoint = "https://minio-s3-minio.apps.crazy-train.sandbox1935.opentlc.com"

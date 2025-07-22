@@ -96,17 +96,26 @@ Located in **AWS Cloud** with **5G connectivity** to the edge:
 
 ## 🔄 Data Flow Architecture
 
-```mermaid
+{{< mermaid >}}
 graph TD
-    A[📹 Train Camera] -->|Video Stream| B[🧠 Jetson Orin]
-    B -->|AI Inference| C[🚦 Traffic Sign Detection]
-    C -->|Control Commands| D[🔧 LEGO Hub]
-    B -->|5G| E[☁️ OpenShift Cluster]
-    E -->|Training Data| F[🤖 OpenShift AI]
+    A[Train Camera] -->|Video Stream| B[Jetson Orin]
+    B -->|AI Inference| C[Traffic Sign Detection]
+    C -->|Control Commands| D[LEGO Hub]
+    B -->|5G Connection| E[OpenShift Cluster]
+    E -->|Training Data| F[OpenShift AI]
     F -->|Updated Models| B
-    E -->|Monitoring| G[📊 Dashboard]
-    E -->|GitOps| H[🚀 Deployment]
-```
+    E -->|Monitoring| G[Dashboard]
+    E -->|GitOps| H[Deployment]
+    
+    style A fill:#e1f5fe
+    style B fill:#f3e5f5
+    style C fill:#e8f5e8
+    style D fill:#fff3e0
+    style E fill:#e3f2fd
+    style F fill:#f1f8e9
+    style G fill:#fce4ec
+    style H fill:#fff8e1
+{{< /mermaid >}}
 
 ### Real-time Processing Pipeline
 1. **📸 Image Capture**: Camera captures traffic sign images
