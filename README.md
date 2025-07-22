@@ -1,6 +1,5 @@
-# Enoncé du Lab pour le Red Hat Open Tour 2024
+# Enoncé du Lab pour le Red Hat Summit Connect 2025
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2a715fca-07c9-4b01-aeaf-096e83bbaf76/deploy-status)](https://app.netlify.com/projects/open-tour-2025/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bf353b9e-7ba7-40e6-9127-308c80c35b74/deploy-status)](https://app.netlify.com/projects/lego-workshop-summit-connect-2025/deploys)
 
-
--> [Open Tour 2025 - Lab "Crazy Train"](https://open-tour-2025.netlify.app/)
+-> [Red Hat Summit Connect 2025 - Workshop Lego](https://lego-workshop-summit-connect-2025.netlify.app/)
