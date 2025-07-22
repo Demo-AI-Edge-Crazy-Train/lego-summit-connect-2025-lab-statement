@@ -1,5 +1,5 @@
 +++
-title = "Préparation de l'environement"
+title = "Préparation de l'environnement"
 draft= false
 weight= 2
 [[ressources]]

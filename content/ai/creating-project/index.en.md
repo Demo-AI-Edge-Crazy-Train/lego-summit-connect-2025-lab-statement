@@ -1,5 +1,5 @@
 +++
-title = "Connecting to your project and pipeline server"
+title = "Setting up your project and pipeline server"
 draft= false
 weight= 2
 [[resources]]

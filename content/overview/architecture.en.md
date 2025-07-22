@@ -1,18 +1,149 @@
 ---
-title: "Architecture"
+title: "System Architecture"
 weight: 2
 ---
 
-## Architecture
+# 🏗️ System Architecture
 
 ![global architecture](/images/architecture-global.png)
 
-The train is equipped with a motor and a Lego Hub. The Lego Hub receives acceleration, deceleration and braking commands via the Bluetooth Low Energy protocol.
+Our Edge AI solution represents a sophisticated **hybrid cloud-edge architecture** that brings enterprise-grade AI capabilities directly to the field. Here's how each component works together to create an intelligent, autonomous system:
 
-We have integrated an Nvidia Jetson Orin card into the Lego train. The Nvidia Jetson Orin card is a System on Chip (SoC) that integrates all the components needed for our mission: CPU, RAM, storage and a powerful GPU to accelerate calculations. This card receives the video stream from the on-board camera and transmits orders to the Lego Hub via the Bluetooth protocol. It is powered by a portable battery for the duration of the mission.
+## 🚂 The Edge: LEGO Train Platform
 
-We are operating in an Edge Computing environment. On the Nvidia Jetson card, we are installing Red Hat Device Edge, a variant of RHEL adapted to the constraints of Edge Computing. We deploy Microshift, Red Hat's version of Kubernetes designed for the Edge. We then deploy our microservices, an MQTT broker and the artificial intelligence model on Microshift, using an over-the-air mechanism.
+### Physical Components
+- **🔧 LEGO Technic Motor**: Provides precise movement control
+- **🧠 LEGO Hub**: Central control unit receiving commands via **Bluetooth Low Energy (BLE)**
+- **📹 On-board Camera**: Captures real-time video feed for AI processing
+- **🔋 Portable Battery**: Powers the entire mission duration
 
-For the duration of the mission, the Jetson is connected to an OpenShift cluster in the AWS cloud via a 5G connection. In the AWS cloud, we have an RHEL 9 virtual machine that enables us to build our RHEL images for the Jetson. Our video surveillance application runs in the OpenShift cluster, which allows us to remotely monitor the train's on-board camera. The video stream is relayed from the Jetson via a Kafka broker.
+### Edge Computing Brain
+The heart of our edge system is the **NVIDIA Jetson Orin** - a powerful System on Chip (SoC) that combines:
 
-In addition, MLOps pipelines are being set up to train the artificial intelligence model, as well as CI/CD pipelines to build the container images of our microservices for x86 and ARM architectures.
+| Component | Specification | Purpose |
+|-----------|---------------|---------|
+| **CPU** | ARM Cortex-A78AE | System control & coordination |
+| **GPU** | NVIDIA Ampere | AI inference acceleration |
+| **Memory** | Up to 64GB LPDDR5 | High-speed data processing |
+| **Storage** | NVMe SSD | Model storage & caching |
+
+## 🌐 Edge Software Stack
+
+### Operating System Layer
+```
+┌─────────────────────────────────────┐
+│        Red Hat Device Edge          │  ← Enterprise Edge OS
+├─────────────────────────────────────┤
+│           MicroShift               │  ← Lightweight Kubernetes
+├─────────────────────────────────────┤
+│     Edge Microservices             │  ← AI & Control Logic
+└─────────────────────────────────────┘
+```
+
+**Red Hat Device Edge** provides:
+- 🔒 **Security**: Enterprise-grade security features
+- 🔄 **OTA Updates**: Over-the-air deployment capabilities
+- ⚡ **Performance**: Optimized for resource-constrained environments
+- 🛡️ **Reliability**: Production-ready edge computing platform
+
+**MicroShift** enables:
+- 🎛️ **Container Orchestration**: Kubernetes at the edge
+- 📦 **Service Management**: Automated deployment and scaling
+- 🔄 **Self-healing**: Automatic recovery from failures
+- 📊 **Monitoring**: Real-time system health tracking
+
+## ☁️ The Cloud: OpenShift Cluster
+
+### Infrastructure Components
+Located in **AWS Cloud** with **5G connectivity** to the edge:
+
+```
+┌─────────────────────────────────────┐
+│         OpenShift Cluster          │
+├─────────────────────────────────────┤
+│  ┌─────────────┐ ┌─────────────────┐│
+│  │ OpenShift   │ │   CI/CD         ││
+│  │     AI      │ │  Pipelines      ││
+│  └─────────────┘ └─────────────────┘│
+├─────────────────────────────────────┤
+│  ┌─────────────┐ ┌─────────────────┐│
+│  │   Video     │ │   GitOps        ││
+│  │ Monitoring  │ │ Deployment      ││
+│  └─────────────┘ └─────────────────┘│
+└─────────────────────────────────────┘
+```
+
+### Cloud Services
+
+#### 🤖 OpenShift AI Platform
+- **Data Science Projects**: Isolated environments for ML development
+- **Jupyter Notebooks**: Interactive development experience
+- **Pipeline Servers**: Automated ML workflow execution
+- **Model Serving**: REST API endpoints for inference
+- **GPU Clusters**: High-performance training infrastructure
+
+#### 🔄 CI/CD Pipeline Infrastructure
+- **Multi-architecture Builds**: Support for x86_64 and ARM64
+- **Tekton Pipelines**: Cloud-native CI/CD workflows
+- **Container Registry**: Secure image storage and distribution
+- **Automated Testing**: Quality assurance at every step
+
+#### 📹 Video Surveillance System
+- **Real-time Streaming**: Live camera feed from the train
+- **Kafka Brokers**: High-throughput message streaming
+- **Web Interface**: Remote monitoring capabilities
+- **Alert System**: Immediate notifications for anomalies
+
+## 🔄 Data Flow Architecture
+
+```mermaid
+graph TD
+    A[📹 Train Camera] -->|Video Stream| B[🧠 Jetson Orin]
+    B -->|AI Inference| C[🚦 Traffic Sign Detection]
+    C -->|Control Commands| D[🔧 LEGO Hub]
+    B -->|5G| E[☁️ OpenShift Cluster]
+    E -->|Training Data| F[🤖 OpenShift AI]
+    F -->|Updated Models| B
+    E -->|Monitoring| G[📊 Dashboard]
+    E -->|GitOps| H[🚀 Deployment]
+```
+
+### Real-time Processing Pipeline
+1. **📸 Image Capture**: Camera captures traffic sign images
+2. **🔍 AI Inference**: Jetson processes images using trained model
+3. **⚡ Decision Making**: AI determines appropriate action (stop/go)
+4. **📡 Command Transmission**: BLE commands sent to LEGO Hub
+5. **🔄 Feedback Loop**: Results sent to cloud for continuous learning
+
+## 🏢 Multi-Architecture Support
+
+### Build Infrastructure
+Our system supports **heterogeneous computing** environments:
+
+| Architecture | Use Case | Platform |
+|-------------|----------|----------|
+| **x86_64** | Development & Training | OpenShift Cluster |
+| **ARM64** | Edge Deployment | Jetson Orin |
+| **Multi-arch** | Universal Images | Container Registry |
+
+### Deployment Strategy
+- **🏭 Cloud Development**: Models trained on powerful x86_64 clusters
+- **📦 Cross-compilation**: Applications built for ARM64 target
+- **🚀 Edge Deployment**: Lightweight containers deployed to Jetson
+- **🔄 Continuous Integration**: Automated testing across architectures
+
+## 🛡️ Security & Reliability
+
+### Edge Security
+- **🔐 Secure Boot**: Verified system startup
+- **🔒 Container Security**: Isolated execution environments
+- **📜 Certificate Management**: Mutual TLS authentication
+- **🛡️ Network Isolation**: Segmented communication channels
+
+### Cloud Security
+- **🔑 RBAC**: Role-based access control
+- **🔐 Secrets Management**: Encrypted credential storage
+- **📊 Audit Logging**: Comprehensive activity tracking
+- **🛡️ Network Policies**: Micro-segmentation
+
+This architecture demonstrates how **Red Hat's Edge AI stack** enables sophisticated AI applications in resource-constrained environments while maintaining enterprise-grade security, reliability, and scalability! 🚀

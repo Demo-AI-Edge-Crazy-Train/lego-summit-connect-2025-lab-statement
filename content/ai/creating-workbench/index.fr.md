@@ -1,12 +1,12 @@
 +++
-title = "Création du Wokrbench"
+title = "Création du Workbench"
 draft= false
 weight= 3
 [[ressources]]
   src = '**.png'
 +++
 
-## Lancer un Wokrbench
+## Lancer un Workbench
 
 * Une fois que la Data Connection et le Pipeline Server ont été entièrement créés, vous pouvez passer à la création du workbench.
 ![02-03-create-wb.png](02-03-create-wb.png)

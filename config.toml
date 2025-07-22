@@ -1,6 +1,6 @@
-baseURL = 'https://open-tour-2025.netlify.app/'
+baseURL = 'https://lego-workshop-summit-connect-2025.netlify.app/'
 languageCode = 'en-us'
-title = 'Red Hat Open Tour 2024 - Lab "Crazy Train"'
+title = 'Summit Connect 2025 - Lab "Crazy Train"'
 
 theme = 'hugo-theme-learn'
 
