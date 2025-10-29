@@ -6,26 +6,23 @@ weight= 2
   src = '**.png'
 +++
 
-As a preliminary step, each of you is going to
+## Introduction
 
-1. Connect to a Data Science project
-    - this will help keep your things together
+It is important to understand the key concepts we will be working with in this OpenShift AI workshop.
 
-2. Create a Data Connection
-    - we need that for the pipeline server to store its artifacts
+OpenShift AI is an integrated platform that simplifies the development, deployment, and management of Data Science and AI projects in a cloud-native environment based on OpenShift.
 
-3. Deploy a Data Science Pipeline Server
-    - we will need one, and it's better to create it from the start
+Each participant will work within a **Data Science project**, which serves as an isolated space to organize resources such as models, data, notebooks, and pipelines.
+A **Data Connection** allows the platform to connect to a storage source (for example, S3 or Ceph) to save and share artifacts produced by pipelines.
+The **pipeline server** is the orchestration engine that executes and tracks the various stages of data processing and model training workflows.
+The **Workbench** provides an interactive Jupyter-based environment where data scientists can write, run, and test their code.
+Finally, the **Git repository** contains the project’s source code, ensuring reproducibility and collaboration around the same set of scripts and notebooks.
 
-4. Launch a Workbench
-    - we will use it to review content and notebooks
-
-5. Clone the git repo into your Workbench
-    - this contains all the code from the prototype
+These components interact to provide a complete workflow, from experimental development to production deployment of models.
 
 The instructions below will guide you through these steps. Follow them carefully.
 
-## Connect a project
+## Connecting to a Project
 
 * First, in the OpenShift AI Dashboard application, navigate to the Data Science Projects menu on the left:
 
