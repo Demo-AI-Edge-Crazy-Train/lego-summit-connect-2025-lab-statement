@@ -10,7 +10,7 @@ For the purposes of this training session, we have provisioned a single OpenShif
 
 Each person attending this lab will have a unique user account in which to do their work.
 
-## Environment information
+## Environment Information
 
 In a new window or tab, open the following URL and log in:
 
