@@ -41,10 +41,10 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 ```
 
 **Red Hat Device Edge** fournit :
-- **Sécurité** : Fonctionnalités de sécurité de niveau entreprise
-- **Mises à jour OTA** : Capacités de déploiement over-the-air
+- **Sécurité** : Fonctionnalités de sécurité de qualité professionnelle
+- **Mises à jour OTA** : Capacités de déploiement over-the-air (OTA)
 - **Performance** : Optimisé pour les environnements à ressources limitées
-- **Fiabilité** : Plateforme edge computing prête pour la production
+- **Fiabilité** : Plateforme d'edge computing prête pour la production
 
 **MicroShift** permet :
 - **Orchestration de conteneurs** : Kubernetes à la périphérie
