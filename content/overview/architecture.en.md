@@ -63,7 +63,6 @@ Located in **AWS Cloud** with **5G connectivity** to the edge:
 │ │   OpenShift   │ │     CI/CD     │ │
 │ │       AI      │ │   Pipelines   │ │
 │ └───────────────┘ └───────────────┘ │
-├─────────────────────────────────────┤
 │ ┌───────────────┐ ┌───────────────┐ │
 │ │     Video     │ │     GitOps    │ │
 │ │   Monitoring  │ │   Deployment  │ │
