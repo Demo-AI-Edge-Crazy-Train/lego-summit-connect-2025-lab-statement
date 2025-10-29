@@ -36,7 +36,7 @@ weight= 3
 
 ![02-02-accept.png](02-02-accept.png)
 
-* CLiquez sur `Allow selected permissions`.
+* Cliquez sur `Allow selected permissions`.
 
 * Vous devriez maintenant voir ceci :
 
