@@ -1,5 +1,5 @@
 ---
-title: "Architecture Système"
+title: "Vue d'ensemble de l'architecture"
 weight: 2
 ---
 
