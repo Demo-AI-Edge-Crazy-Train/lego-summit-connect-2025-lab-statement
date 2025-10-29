@@ -5,6 +5,8 @@ weight: 1
 
 ### 🚂 Mission AIpossible
 
+**Prêt, Agent ? Votre mission commence maintenant ! 🚀**
+
 > **🎬 TRANSMISSION CLASSIFIÉE**
 > 
 > *Message à l'Agent Red Hat :*
