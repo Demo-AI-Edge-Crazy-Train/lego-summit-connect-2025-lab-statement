@@ -1,5 +1,5 @@
 ---
-title: "Organization"
+title: "Lab Organization"
 weight: 3
 draft: true
 ---
