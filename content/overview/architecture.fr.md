@@ -41,16 +41,16 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 ```
 
 **Red Hat Device Edge** fournit :
-- 🔒 **Sécurité** : Fonctionnalités de sécurité de niveau entreprise
-- 🔄 **Mises à jour OTA** : Capacités de déploiement over-the-air
-- ⚡ **Performance** : Optimisé pour les environnements à ressources limitées
-- 🛡️ **Fiabilité** : Plateforme edge computing prête pour la production
+- **Sécurité** : Fonctionnalités de sécurité de niveau entreprise
+- **Mises à jour OTA** : Capacités de déploiement over-the-air
+- **Performance** : Optimisé pour les environnements à ressources limitées
+- **Fiabilité** : Plateforme edge computing prête pour la production
 
 **MicroShift** permet :
-- 🎛️ **Orchestration de conteneurs** : Kubernetes à la périphérie
-- 📦 **Gestion de services** : Déploiement et mise à l'échelle automatisés
-- 🔄 **Auto-guérison** : Récupération automatique des pannes
-- 📊 **Surveillance** : Suivi de l'état du système en temps réel
+- **Orchestration de conteneurs** : Kubernetes à la périphérie
+- **Gestion de services** : Déploiement et mise à l'échelle automatisés
+- **Auto-guérison** : Récupération automatique des pannes
+- **Surveillance** : Suivi de l'état du système en temps réel
 
 ## ☁️ Le Cloud : Cluster OpenShift
 
@@ -59,7 +59,7 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 
 ```
 ┌─────────────────────────────────────┐
-│         Cluster OpenShift          │
+│          Cluster OpenShift          │
 ├─────────────────────────────────────┤
 │  ┌─────────────┐ ┌─────────────────┐│
 │  │ OpenShift   │ │   Pipelines     ││
