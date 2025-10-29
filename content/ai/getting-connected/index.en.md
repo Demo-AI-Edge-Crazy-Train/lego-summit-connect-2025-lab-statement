@@ -15,7 +15,7 @@ Each person attending this lab will have a unique user account in which to do th
 In a new window or tab, open the following URL and log in:
 
 * The OpenShift AI Dashboard URL for our shared environment: [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
-* Enter your credentials (distributed on a paper during the lab)
+* Enter your credentials
 * The result should look like:
 
 ![02-01-login1](02-01-login1.png)
