@@ -9,7 +9,7 @@ weight: 4
 
 * **OCP Cluster API URL :** `{{< param ocpApi >}}`
 
-There is a dedicated OpenShift user for each utilisateur.
+There is a dedicated OpenShift user for each of you.
 On your table you will find a poster with the relevant information.  
 To connect to your Openshift cluster, [click on this link]({{< param ocpConsole >}}) and fill in your username and password. You will have acces to the *Web Terminal* by clicking on the **>_** icon on the top right. The Web Terminal provides the *oc* client.
 
