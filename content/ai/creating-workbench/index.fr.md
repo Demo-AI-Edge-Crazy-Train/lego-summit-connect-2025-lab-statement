@@ -15,14 +15,14 @@ weight= 3
     * Sélectionnez l'image : `CUSTOM Crazy train lab`
     * Taille du conteneur : `Small`
     * Conservez les paramètres de stockage par défaut
-    * En bas, cochez "**Use a data connection**".
-    * Faites défiler vers le bas jusqu'à "**Use existing data connection**"
-    * Sélectionnez dans la liste la Data Connection "**pipelines**" que vous avez précédemment créée.
+    * En bas, cochez `Use a data connection`.
+    * Faites défiler vers le bas jusqu'à `Use existing data connection`
+    * Sélectionnez dans la liste la Data Connection `pipelines` que vous avez précédemment créée.
     * Cela devrait ressembler à ce qui suit :
 ![02-02-launch-workbench-01.png](02-02-launch-workbench-01.png)
 ![02-02-launch-workbench-02.png](02-02-launch-workbench-02.png)
-* Créez le workbench et attendez que son statut passe en "Running".
-* Une fois que c'est le cas, cliquez sur le lien **Open** pour vous y connecter.
+* Cliquez sur `Create workbench` pour valider et attendez que son statut bleu `Starting` passe en vert `Running`.
+* Une fois que le Workbench est créé, cliquez sur le lien `Open` pour vous y connecter.
 ![02-03-open-link.png](02-03-open-link.png)
 
 * Authentifiez-vous avec les mêmes informations que précédemment.
