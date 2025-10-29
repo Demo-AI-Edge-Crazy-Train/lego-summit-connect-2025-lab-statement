@@ -91,7 +91,7 @@ Located in **AWS Cloud** with **5G connectivity** to the edge:
 - **Web Interface**: Remote monitoring capabilities
 - **Alert System**: Immediate notifications for anomalies
 
-## 🔄 Data Flow Architecture
+## 📊 Data Flow
 
 {{< mermaid >}}
 graph TD
