@@ -3,7 +3,7 @@ title: "Mission Objective"
 weight: 1
 ---
 
-### 🚂 Mission: Impossible - Crazy Train
+### 🚂 Mission AIpossible
 
 **Ready, Agent? Your mission starts now! 🚀** 
 
