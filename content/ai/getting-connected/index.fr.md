@@ -1,12 +1,12 @@
 +++
-title = "Connection"
+title = "Connexion"
 draft= false
 weight= 1
 [[resources]]
   src = '**.png'
 +++
 
-Pour les besoins de ce lab, nous avons provisionné un seul cluster OpenShift, avec OpenShift AI déployé dessus.
+Pour les besoins de cet atelier, nous avons provisionné un seul cluster OpenShift, avec OpenShift AI déployé dessus.
 
 Chaque participant dispose d'un compte utilisateur unique pour effectuer son travail.
 
@@ -30,4 +30,4 @@ Ouvrez l'URL suivante et connectez-vous :
 
 Si vous êtes arrivé jusqu'ici et que vous avez vu tout cela, félicitations, vous vous êtes correctement connecté à l'application OpenShift AI Dashboard !
 
-Nous sommes maintenant prêts à commencer le lab.
+C'est le moment de passer à la pratique !
