@@ -9,7 +9,7 @@ weight: 2
 
 Notre solution Edge AI représente une **architecture hybride cloud-edge** sophistiquée qui apporte les capacités IA de niveau entreprise directement sur le terrain. Voici comment chaque composant fonctionne ensemble pour créer un système intelligent et autonome :
 
-## 🚂 L'Edge : Plateforme Train LEGO
+## 🚂 À l'edge : le train LEGO
 
 ### Composants Physiques
 - **Moteur LEGO Technic** : Fournit un contrôle de mouvement précis
