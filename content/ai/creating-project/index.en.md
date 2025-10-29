@@ -28,15 +28,15 @@ The instructions below will guide you through these steps. Follow them carefully
 
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-* A project with the **same name** as your user id has been created for you. You have been assigned a unique user ID at the begining of the lab. Remember this user ID for the instances creation. 
+* A unique ID was assigned to you at the start of the workshop. Remember this ID when creating instances. A project with the **same name** as your ID has been created for you.
 
-Click on the available project project. You should land on a similar page:
+Click on the available project. You should arrive at a page similar to this:
 ![project-empty-state](project-empty-state.png)
 
-## Create a Data Connection for the pipeline server
+## Create a Data Connection for the Pipeline Server
 
-* We have deployed a Minio instance in the cluster to act as a simple Object Storage.
-* You will need to **add a data connection** that points to it. Scroll down to the bottom of data science project page and click on "Data Connections":
+* We have deployed a Minio instance to manage object storage in the cluster.
+* You will need to **add a Data Connection** that points to it. Scroll to the bottom of the Data Science Project page and click on "Data Connections":
 ![02-02-add-dc.png](02-02-add-dc.png)
 
 * You will land on a page that is empty for now. Click on "Add data connection". Here are the information you need to enter:
