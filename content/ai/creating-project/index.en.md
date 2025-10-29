@@ -24,12 +24,10 @@ The instructions below will guide you through these steps. Follow them carefully
 
 ## Connecting to a Project
 
-* First, in the OpenShift AI dashboard, navigate to the *Data Science Projects* menu on the left:
-
+* First, in the OpenShift AI dashboard, navigate to the `Data Science Projects` menu on the left:
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
 * A unique ID was assigned to you at the start of the workshop. A project with the **same name** as your ID has been created for you. Click on this project. You should arrive at a page similar to this:
-
 ![project-empty-state](project-empty-state.png)
 
 ## Create a Data Connection for the Pipeline Server
@@ -41,20 +39,18 @@ The instructions below will guide you through these steps. Follow them carefully
 * You will arrive at an empty page for now. Click on `Add data connection`. Here is the information you need to enter:
 - Name:  
 ```pipelines```
-- Access Key: **REPLACE WITH YOUR USER ID**  
-```userX```
+- Access Key:  
+```userX```  **⏪ REPLACE WITH YOUR ID**
 - Secret Key:  
 ```{{< param minioPass >}}```
 - Endpoint:  
 ```{{< param minioEndpoint >}}```
 - Region:  
 ```none```
-- Bucket: **REPLACE WITH YOUR USER ID**  
-```userX```
+- Bucket:  
+```userX```  **⏪ REPLACE WITH YOUR ID**
 
-**IMPORTANT**: Once again, the bucket you will use has to match with the user ID you were provided
-
-* The result should look like:
+* The result should look like this:
 ![data-connection.png](data-connection.png)
 
 ## Create a Pipeline Server
