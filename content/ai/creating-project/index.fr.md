@@ -40,7 +40,7 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 - Name:  
 ```pipelines```
 - Access Key:  
-```userX```  **← REMPLACEZ PAR VOTRE IDENTIFIANT**
+```userX```  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
 - Secret Key:  
 ```{{< param minioPass >}}```
 - Endpoint:  
@@ -48,7 +48,7 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 - Region:  
 ```none```
 - Bucket:  
-```userX```  **← REMPLACEZ PAR VOTRE IDENTIFIANT**
+```userX```  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
 
 **IMPORTANT**: Une fois de plus, le bucket que vous utiliserez doit correspondre à l'ID utilisateur qui vous a été fourni.
 
