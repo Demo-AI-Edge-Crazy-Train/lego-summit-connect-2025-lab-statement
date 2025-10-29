@@ -3,7 +3,7 @@ title: "Objectif de la mission"
 weight: 1
 ---
 
-### 🚂 Mission: Impossible - Train Fou
+### 🚂 Mission AIpossible
 
 > **🎬 TRANSMISSION CLASSIFIÉE**
 > 
