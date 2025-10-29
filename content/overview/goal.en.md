@@ -39,11 +39,11 @@ As an elite Red Hat agent, you must leverage cutting-edge **Edge AI** technologi
 
 By the end of this mission, you will have:
 
-1. ✅ **Trained an AI model** capable of detecting LEGO traffic signs
-2. ✅ **Deployed the model** to an edge computing platform
-3. ✅ **Built CI/CD pipelines** for multi-architecture deployments
-4. ✅ **Implemented GitOps** for automated application deployment
-5. ✅ **Saved the train** before it crashes! 🎉
+1. **Trained an AI model** capable of detecting LEGO traffic signs
+2. **Deployed the model** to an edge computing platform
+3. **Built CI/CD pipelines** for multi-architecture deployments
+4. **Implemented GitOps** for automated application deployment
+5. **Saved the train** before it crashes! 🎉
 
 ### ⚡ The Stakes
 
