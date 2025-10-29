@@ -18,4 +18,5 @@ Cette section comprend :
 - **Réentraîner le modèle** : Construire et exécuter des pipelines de data science avec accélération GPU
 - **Déployement du modèle** : Déployer votre modèle entraîné comme endpoint API REST pour l'inférence
 
-Vous travaillerez avec la détection de panneaux de signalisation utilisant la vision par ordinateur, l'apprentissage par transfert, et déploierez tout en utilisant les meilleures pratiques MLOps. À la fin, vous aurez un pipeline IA complet fonctionnant de la préparation des données au service de modèle.
+Vous travaillerez sur la détection de panneaux de signalisation en utilisant la vision par ordinateur et l'apprentissage par transfert, tout en appliquant les meilleures pratiques MLOps pour le déploiement.  
+Au terme de cette section, vous aurez développé un pipeline IA complet, de la préparation des données à la mise en service du modèle.
