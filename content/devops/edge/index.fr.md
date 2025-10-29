@@ -110,7 +110,7 @@ Il y a normalement deux occurrences à remplacer.
 Créez l'objet PipelineRun dans votre projet OpenShift de test.
 
 ```sh
-helm template pipelines /projects/opentour2024-app/tekton-pipelines --set namespace="$TEST_NS" --values /projects/opentour2024-app/tekton-pipelines/values.cd.yaml | oc create -f -
+helm template pipelines /projects/summitconnect2025-app/tekton-pipelines --set namespace="$TEST_NS" --values /projects/summitconnect2025-app/tekton-pipelines/values.cd.yaml | oc create -f -
 ```
 
 {{% notice note %}}
