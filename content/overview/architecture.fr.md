@@ -96,7 +96,7 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 {{< mermaid >}}
 graph TD
     A[Caméra du train] -->|Flux vidéo| B[Jetson Orin]
-    B -->|Inference IA| C[Détection de panneaux]
+    B -->|Inférence IA| C[Détection de panneaux]
     C -->|Commandes de contrôle| D[Hub LEGO]
     B -->|Connexion 5G| E[Cluster OpenShift]
     E -->|Données d'entraînement| F[OpenShift AI]
@@ -115,41 +115,41 @@ graph TD
 {{< /mermaid >}}
 
 ### Pipeline de traitement temps réel
-1. **📸 Capture d'image** : La caméra capture les images de panneaux
-2. **🔍 Inférence IA** : Le Jetson traite les images avec le modèle entraîné
-3. **⚡ Prise de décision** : L'IA détermine l'action appropriée (arrêt/marche)
-4. **📡 Transmission commande** : Commandes BLE envoyées au Hub LEGO
-5. **🔄 Boucle de rétroaction** : Résultats envoyés au cloud pour apprentissage continu
+1. **Capture d'image** : La caméra capture les images de panneaux
+2. **Inférence IA** : Le Jetson traite les images avec le modèle entraîné
+3. **Prise de décision** : L'IA détermine l'action appropriée (arrêt/marche)
+4. **Transmission commande** : Commandes BLE envoyées au Hub LEGO
+5. **Boucle de rétroaction** : Résultats envoyés au cloud pour l'apprentissage en continu
 
 ## 🏢 Support Multi-Architecture
 
-### Infrastructure de build
-Notre système supporte les environnements de **calcul hétérogènes** :
+### Infrastructure du build
+Notre système supporte les environnements de calcul **hétérogènes** :
 
-| Architecture | Cas d'Usage | Plateforme |
+| Architecture | Cas d'usage | Plateforme |
 |-------------|-------------|------------|
-| **x86_64** | Développement & Entraînement | Cluster OpenShift |
-| **ARM64** | Déploiement Edge | Jetson Orin |
-| **Multi-arch** | Images Universelles | Registry de Conteneurs |
+| **x86_64** | Développement & entraînement | Cluster OpenShift |
+| **ARM64** | Déploiement edge | Jetson Orin |
+| **Multi-arch** | Images universelles | Registry de conteneurs |
 
 ### Stratégie de déploiement
-- **🏭 Développement cloud** : Modèles entraînés sur clusters x86_64 puissants
-- **📦 Compilation croisée** : Applications construites pour cible ARM64
-- **🚀 Déploiement edge** : Conteneurs légers déployés sur Jetson
-- **🔄 Intégration continue** : Tests automatisés à travers les architectures
+- **Développement cloud** : Modèles entraînés sur des clusters x86_64 puissants
+- **Compilation croisée** : Applications construites pour ARM64
+- **Déploiement edge** : Conteneurs légers déployés sur Jetson
+- **Intégration continue** : Tests automatisés sur toutes les architectures
 
 ## 🛡️ Sécurité & fiabilité
 
-### Sécurité Edge
-- **🔐 Démarrage sécurisé** : Démarrage système vérifié
-- **🔒 Sécurité conteneurs** : Environnements d'exécution isolés
-- **📜 Gestion certificats** : Authentification TLS mutuelle
-- **🛡️ Isolation réseau** : Canaux de communication segmentés
+### Sécurité edge
+- **Démarrage sécurisé** : Démarrage système vérifié
+- **Sécurité conteneurs** : Environnements d'exécution isolés
+- **Gestion certificats** : Authentification TLS mutuelle
+- **Isolation réseau** : Canaux de communication segmentés
 
 ### Sécurité cloud
-- **🔑 RBAC** : Contrôle d'accès basé sur les rôles
-- **🔐 Gestion des secrets** : Stockage d'identifiants chiffrés
-- **📊 Journalisation et audit** : Suivi d'activité complet
-- **🛡️ Politiques réseau** : Micro-segmentation
+- **RBAC** : Contrôle d'accès basé sur les rôles
+- **Gestion des secrets** : Stockage d'identifiants chiffrés
+- **Journalisation et audit** : Suivi d'activité complet
+- **Politiques réseau** : Micro-segmentation
 
-Cette architecture démontre comment **la stack Edge AI de Red Hat** permet des applications IA sophistiquées dans des environnements à ressources limitées tout en maintenant la sécurité, la fiabilité et la scalabilité de niveau entreprise ! 🚀
+Cette architecture démontre comment **la stack Edge AI de Red Hat** permet des applications IA sophistiquées dans des environnements à ressources limitées tout en maintenant une sécurité, une fiabilité et une scalabilité de qualité professionnelle !
