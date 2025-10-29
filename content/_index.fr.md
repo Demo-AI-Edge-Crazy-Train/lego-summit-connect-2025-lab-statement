@@ -35,4 +35,4 @@ Dans cet atelier, vous devrez :
 
 La mission : Arrêter un train LEGO fou grâce à la vision par ordinateur alimentée par l'IA à la périphérie !
 
-Du plaisir est attendu à venir !
+Nous vous souhaitons de passer un excellent moment !
