@@ -13,7 +13,7 @@ Dans cette section, vous allez explorer les différentes étapes du cycle de vie
 
 Cette section comprend :
 - **Se connecter** : Accéder au tableau de bord OpenShift AI et configurer votre environnement
-- **Créer votre projet** : Configurer les projets Data Science, connexions de données et serveurs de pipeline
+- **Créer votre projet** : Configurer les projets, connexions aux données et serveurs de pipeline
 - **Créer un Workbench** : Lancer l'environnement Jupyter notebooks avec des images personnalisées
 - **Réentraîner le modèle** : Construire et exécuter des pipelines de data science avec accélération GPU
 - **Déployement du modèle** : Déployer votre modèle entraîné comme endpoint API REST pour l'inférence
