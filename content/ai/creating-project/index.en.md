@@ -57,18 +57,17 @@ The instructions below will guide you through these steps. Follow them carefully
 
 ## Create a Pipeline Server
 
-It is highly recommended to create your pipeline server before creating a workbench. So let's do that now!
+It is highly recommended to create your Pipeline Server before creating the Workbench. This is what we will do now:
 
-* On the top menu click on "Pipelines". Then click on "Configure pipeline server"
-
+* In the top menu, click on `Pipelines`. Then click on `Configure pipeline server`.
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
 
-* Select the Data Connection created earlier (**pipelines**) and click the **Configure pipeline server** button:
+* In the dropdown menu with the key icon, select the Data Connection you created earlier (named `pipelines`) and click the `Configure pipeline server` button.
 ![02-02-pipelineserver02.png](02-02-pipelineserver02.png)
 
-* Wait for the pipeline server to finish its creation. When your pipeline server is ready, your screen will look like the following:
+* Wait for the Pipeline Server to finish creating. When your Pipeline Server is ready, your screen will look like this:
 ![02-02-pipelineserver03.png](02-02-pipelineserver03.png)
 
-At this point, your pipeline server is ready and deployed.
+At this stage, your Pipeline Server is ready and deployed.
 
-IMPORTANT: You need to **wait** until that screen is ready. If it's still spinning, wait for it to complete. If you continue and create your workbench **before** the pipeline server is ready, your workbench will not be able to submit pipelines to it.
+**IMPORTANT**: You must wait for the Pipeline Server creation to complete. If it is still in progress, please wait until it finishes.
