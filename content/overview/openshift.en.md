@@ -14,7 +14,7 @@ On your table you will find a poster with the relevant information.
 To connect to your OpenShift cluster, [click on this link]({{< param ocpConsole >}}) and fill in your username and password. You will have acces to the Web Terminal by clicking on the **>_** icon on the top right. The Web Terminal provides the *oc* client.
 
 Throughout the lab, please do not use **userX** but the user you have been assigned. 
-The object storage user (**Minio**) is the same as described above, the password is : **minio123**.
+The username for the MinIO object storage is the same (**userX**), and the password is: **minio123**.
 
 ## Red Hat Edge Manager
 
