@@ -30,6 +30,6 @@ In a new window or tab, open the following URL and log in:
 
 ![02-01-rhoai-front-page](02-01-rhoai-front-page.png)
 
-If you got this far and saw all that, congratulations, you properly connected to the OpenShift AI Dashboard Application!
+If you got this far and saw all that, congratulations, you properly connected to the OpenShift AI dashboard!
 
 We are now ready to start the lab.
