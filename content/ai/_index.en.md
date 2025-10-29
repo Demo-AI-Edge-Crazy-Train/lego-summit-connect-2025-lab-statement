@@ -12,7 +12,7 @@ pre = "<b>2. </b>"
 In this section, you will explore the different stages of a model’s lifecycle with **Red Hat OpenShift AI** (**RHOAI**).
 
 This section includes:
-- **Getting Connected** : Access OpenShift AI Dashboard and set up your environment
+- **Getting Connected** : Access the OpenShift AI dashboard and set up your environment
 - **Creating Your Project** : Set up Data Science projects, data connections, and pipeline servers
 - **Creating a Workbench** : Launch Jupyter notebooks environment with custom images
 - **Retraining the Model** : Build and execute data science pipelines with GPU acceleration
