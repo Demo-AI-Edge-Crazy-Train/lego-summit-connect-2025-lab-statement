@@ -19,19 +19,19 @@ weight: 1
 
 En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge AI** de pointe pour sauver la situation ! Ce n'est pas un laboratoire ordinaire - c'est une mission à enjeux élevés où vous combinerez :
 
-#### 🤖 Intelligence Artificielle
+#### Intelligence Artificielle 🤖
 - **Vision par ordinateur** : Détecter les panneaux de signalisation avec des réseaux de neurones avancés
 - **Transfer Learning** : Adapter des modèles pré-entraînés pour la reconnaissance de panneaux LEGO
 - **MLOps** : Automatiser les pipelines d'entraînement et de déploiement de modèles
 - **Accélération GPU** : Exploiter la puissance du matériel NVIDIA pour un entraînement plus rapide
 
-#### 🌐 Edge Computing
+#### Edge Computing 🌐
 - **Nvidia Jetson Orin** : Déployer des modèles IA directement sur des dispositifs edge
 - **Red Hat Device Edge** : Exécuter un OS Edge de niveau entreprise
 - **MicroShift** : Kubernetes pour des environnements à ressources limitées
 - **Traitement temps réel** : Prendre des décisions en une fraction de seconde pour arrêter le train
 
-#### ☁️ Intégration Cloud
+#### Intégration Cloud ☁️
 - **OpenShift AI** : Plateforme IA/ML centralisée pour le développement de modèles
 - **Builds multi-architecture** : Créer des conteneurs pour x86_64 et ARM64
 - **GitOps** : Déployer des applications avec des pratiques DevOps modernes
