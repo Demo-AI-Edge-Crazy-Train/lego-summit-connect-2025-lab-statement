@@ -10,12 +10,12 @@ weight= 2
 
 Il est important de comprendre les principaux concepts que nous allons manipuler dans cet atelier autour d’OpenShift AI.
 
-**OpenShift AI** est une plateforme intégrée qui facilite le développement, le déploiement et la gestion de projets de Data Science et d’IA dans un environnement cloud-natif basé sur OpenShift.
+**OpenShift AI** est une plateforme intégrée qui facilite la gestion de projets d’IA dans un environnement cloud-natif basé sur OpenShift.
 
-Chaque participant travaillera dans un **projet Data Science**, qui sert d’espace isolé pour organiser ses ressources (modèles, données, notebooks, pipelines…).  
+Chaque participant travaillera dans un **Projet Data Science**, qui sert d’espace isolé pour organiser ses ressources (données, notebooks, modèles, pipelines…).  
 Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits par les pipelines.  
-Le **serveur de pipeline** est le moteur d’orchestration qui exécute et trace les différentes étapes du flux de traitement des données et d’entraînement des modèles.  
-Le **Workbench**, quant à lui, fournit un environnement interactif basé sur Jupyter, dans lequel les data scientists peuvent écrire, exécuter et tester leur code.  
+Le **Pipeline Server** est le moteur d’orchestration qui exécute et trace les différentes étapes du traitement des données et de l’entraînement des modèles.  
+Le **Workbench** fournit un environnement de développement interactif basé sur Jupyter, dans lequel les data scientists peuvent écrire, exécuter et tester leur code.  
 Enfin, le **repo Git** contient le code source du projet, garantissant la reproductibilité et la collaboration autour du même ensemble de scripts et de notebooks.
 
 Ces composants interagissent pour offrir une chaîne complète, du développement expérimental jusqu’à la mise en production des modèles.
@@ -24,18 +24,16 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 
 ## Connexion à un projet
 
-* Tout d'abord, dans le tableau de bord OpenShift AI, naviguez vers le menu Data Science Projects sur la gauche :
+* Tout d'abord, dans le tableau de bord OpenShift AI, naviguez vers le menu *Data Science Projects* sur la gauche :
 
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-* Un identifiant unique vous a été attribué au début de l'atelier. Souvenez-vous de cet identifiant pour la création des instances. Un projet portant le **même nom** que votre identifiant a été créé pour vous.
-
-Cliquez sur le projet disponible. Vous devriez arriver sur une page similaire :
+* Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** que votre identifiant a été créé pour vous. Cliquez sur le projet disponible. Vous devriez arriver sur une page similaire :
 ![project-empty-state](project-empty-state.png)
 
 ## Créer une Data Connection pour le serveur de pipeline
 
-* Nous avons déployé une instance Minio pour gérer le stockage object dans le cluster.
+* Nous avons déployé une instance Minio pour gérer le stockage objet dans le cluster.
 * Vous devrez **ajouter une Data Connection** qui pointe vers lui. Faites défiler jusqu'au bas de la page du Data Science Project et cliquez sur "Data Connections" :
 ![02-02-add-dc.png](02-02-add-dc.png)
 
