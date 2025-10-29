@@ -91,7 +91,7 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 - **Interface web** : Capacités de surveillance à distance
 - **Système d'alerte** : Notifications immédiates pour les anomalies
 
-## 🔄 Architecture de flux de données
+## 📊 Flux de données
 
 {{< mermaid >}}
 graph TD
