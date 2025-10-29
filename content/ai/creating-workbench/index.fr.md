@@ -14,7 +14,7 @@ weight= 3
     * Choisissez un nom, comme par exemple : `My Workbench`  
     * Sélectionnez l'image : `CUSTOM Crazy train lab`
     * Taille du conteneur : `Small`
-    * Conservez les paramètres de stockage par défaut
+    * Conservez les paramètres de stockage par défaut.
     * En bas, cochez `Use a data connection`.
     * Faites défiler vers le bas jusqu'à `Use existing data connection`
     * Sélectionnez dans la liste la Data Connection `pipelines` que vous avez précédemment créée.
@@ -29,18 +29,18 @@ weight= 3
 * Il vous sera demandé d'accepter les paramètres suivants :
 ![02-02-accept.png](02-02-accept.png)
 
-* Faites-le
+* CLiquez sur `Allow selected permissions`.
 * Vous devriez maintenant voir ceci :
 ![02-02-jupyter.png](02-02-jupyter.png)
 
-## Git-Clone le repo du labo
+## Cloner le repo Git de l'atelier
 
 Nous allons cloner le contenu de notre repo Git afin que vous puissiez accéder à tout le matériel nécessaire à l'entrainement du modèle d'IA.
 
-* Utilisation de l'interface Git :
-  * Ouvrez l'interface utilisateur Git dans Jupyter :
+* Ouvrez l'onglet avec l'icône Git dans le menu de gauche :
 ![git-clone-1.png](git-clone-1.png)
-* Entrez l'URL du dépôt Git : ``{{< param gitAIRepoUrl >}}``. Sélectionnez également "Download the repository".
+* Cliquez sur `Clone a Repository`.
+* Entrez l'URL du repo Git : ``{{< param gitAIRepoUrl >}}``. Sélectionnez également `Download the repository` puis validez avec `Clone`.
 ![git-clone-2.png](git-clone-2.png)
 
-A ce stade, votre projet est prêt pour le travail que nous voulons y faire.
+À ce stade, votre environnement Jupyter est prêt pour le travail que nous voulons y faire.
