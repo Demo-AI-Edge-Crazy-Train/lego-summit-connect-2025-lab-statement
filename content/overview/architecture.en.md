@@ -115,16 +115,16 @@ graph TD
 {{< /mermaid >}}
 
 ### Real-time Processing Pipeline
-1. **📸 Image Capture**: Camera captures traffic sign images
-2. **🔍 AI Inference**: Jetson processes images using trained model
-3. **⚡ Decision Making**: AI determines appropriate action (stop/go)
-4. **📡 Command Transmission**: BLE commands sent to LEGO Hub
-5. **🔄 Feedback Loop**: Results sent to cloud for continuous learning
+1. **Image Capture**: Camera captures traffic sign images
+2. **AI Inference**: Jetson processes images using trained model
+3. **Decision Making**: AI determines appropriate action (stop/go)
+4. **Command Transmission**: BLE commands sent to LEGO Hub
+5. **Feedback Loop**: Results sent to cloud for continuous learning
 
 ## 🏢 Multi-Architecture Support
 
 ### Build Infrastructure
-Our system supports **heterogeneous computing** environments:
+Our system supports **heterogeneous** computing environments:
 
 | Architecture | Use Case | Platform |
 |-------------|----------|----------|
@@ -133,23 +133,23 @@ Our system supports **heterogeneous computing** environments:
 | **Multi-arch** | Universal Images | Container Registry |
 
 ### Deployment Strategy
-- **🏭 Cloud Development**: Models trained on powerful x86_64 clusters
-- **📦 Cross-compilation**: Applications built for ARM64 target
-- **🚀 Edge Deployment**: Lightweight containers deployed to Jetson
-- **🔄 Continuous Integration**: Automated testing across architectures
+- **Cloud Development**: Models trained on powerful x86_64 clusters
+- **Cross-compilation**: Applications built for ARM64
+- **Edge Deployment**: Lightweight containers deployed to Jetson
+- **Continuous Integration**: Automated testing across all architectures
 
 ## 🛡️ Security & Reliability
 
 ### Edge Security
-- **🔐 Secure Boot**: Verified system startup
-- **🔒 Container Security**: Isolated execution environments
-- **📜 Certificate Management**: Mutual TLS authentication
-- **🛡️ Network Isolation**: Segmented communication channels
+- **Secure Boot**: Verified system startup
+- **Container Security**: Isolated execution environments
+- **Certificate Management**: Mutual TLS authentication
+- **Network Isolation**: Segmented communication channels
 
 ### Cloud Security
-- **🔑 RBAC**: Role-based access control
-- **🔐 Secrets Management**: Encrypted credential storage
-- **📊 Audit Logging**: Comprehensive activity tracking
-- **🛡️ Network Policies**: Micro-segmentation
+- **RBAC**: Role-based access control
+- **Secrets Management**: Encrypted credential storage
+- **Audit Logging**: Comprehensive activity tracking
+- **Network Policies**: Micro-segmentation
 
-This architecture demonstrates how **Red Hat's Edge AI stack** enables sophisticated AI applications in resource-constrained environments while maintaining enterprise-grade security, reliability, and scalability! 🚀
+This architecture demonstrates how **Red Hat's Edge AI stack** enables sophisticated AI applications in resource-constrained environments while maintaining enterprise-grade security, reliability, and scalability!
