@@ -11,7 +11,7 @@ weight: 1
 > 
 > *Message to Agent Red Hat:*
 > 
-> *"The train is running mad at full speed and has no driver! Your mission, should you choose to accept it, is to train and deploy an AI model at the edge to stop the train before it crashes. This message will self-destruct in five seconds. Four... Three... Two... One..."*
+> *"The LEGO train is running without a driver! Your mission: develop and deploy an AI on board the train to stop it before it derails. This message will self-destruct in five seconds. Four... Three... Two... One..."*
 > 
 > *🎵 tam tam tada tum tum tada tum tum tada tum tum tada tiduduuuuummmm tiduduuuuuuuuummm 🎵*
 
