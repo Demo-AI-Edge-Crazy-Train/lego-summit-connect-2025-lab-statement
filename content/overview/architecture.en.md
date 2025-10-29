@@ -15,7 +15,7 @@ Our Edge AI solution represents a sophisticated **hybrid cloud-edge architecture
 - **LEGO Technic Motor**: Provides precise movement control
 - **LEGO Hub**: Central control unit receiving commands via **Bluetooth Low Energy (BLE)**
 - **On-board Camera**: Captures real-time video feed for AI processing
-- **Portable Battery**: Powers the entire mission duration
+- **Portable Battery**: Powers the entire mission
 
 ### Edge Computing Brain
 The heart of our edge system is the **NVIDIA Jetson Orin** - a powerful System on Chip (SoC) that combines:
