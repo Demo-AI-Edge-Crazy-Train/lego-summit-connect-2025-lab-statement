@@ -50,25 +50,22 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 - Bucket:  
 ```userX```  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
 
-**IMPORTANT**: Une fois de plus, le bucket que vous utiliserez doit correspondre à l'ID utilisateur qui vous a été fourni.
-
 * Le résultat devrait ressembler à ceci :
 ![data-connection.png](data-connection.png)
 
-## Créer un serveur de pipeline
+## Créer un Pipeline Server
 
-Il est fortement recommandé de créer votre serveur de pipeline avant de créer le Workbench. C'est ce que nous allons faire maintenant !
+Il est fortement recommandé de créer votre Pipeline Server avant de créer le Workbench. C'est ce que nous allons faire maintenant :
 
-* Dans le menu en haut, cliquez sur **Pipelines**. Cliquez ensuite sur **Configure pipeline server**
-
+* Dans le menu en haut, cliquez sur `Pipelines`. Cliquez ensuite sur `Configure pipeline server`.
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
 
-* Sélectionnez la "Data Connection" créée précédemment (nommée **pipelines**) et cliquez sur le bouton **Configure pipeline server**:
+* Dans le menu déroulant avec l'icône de clé, sélectionnez la Data Connection créée précédemment (nommée `pipelines`) et cliquez sur le bouton `Configure pipeline server`.
 ![02-02-pipelineserver02.png](02-02-pipelineserver02.png)
 
-* Attendez que le serveur de pipeline termine sa création. Lorsque votre serveur de pipeline est prêt, votre écran ressemblera à ce qui suit :
+* Attendez que le Pipeline Server termine sa création. Lorsque votre Pipeline Server est prêt, votre écran ressemblera à ce qui suit :
 ![02-02-pipelineserver03.png](02-02-pipelineserver03.png)
 
-A ce stade, votre serveur de pipeline est prêt et déployé.
+A ce stade, votre Pipeline Server est prêt et déployé.
 
-**IMPORTANT** : Vous devez impérativement attendre la fin de l'exécution du serveur de pipeline. Si celui-ci est encore en cours, patientez jusqu'à son achèvement.
+**IMPORTANT** : Vous devez impérativement attendre la fin de la création du Pipeline Server. Si celui-ci est encore en cours, patientez jusqu'à son achèvement.
