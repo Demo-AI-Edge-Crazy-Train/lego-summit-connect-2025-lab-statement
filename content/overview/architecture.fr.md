@@ -52,7 +52,7 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 - **Auto-guérison** : Récupération automatique des pannes
 - **Surveillance** : Suivi de l'état du système en temps réel
 
-## ☁️ Le Cloud : Cluster OpenShift
+## ☁️ Dans le Cloud : le cluster OpenShift
 
 ### Composants d'infrastructure
 Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
