@@ -24,25 +24,24 @@ The instructions below will guide you through these steps. Follow them carefully
 
 ## Connecting to a Project
 
-* First, in the OpenShift AI Dashboard, navigate to the Data Science Projects menu on the left:
+* First, in the OpenShift AI dashboard, navigate to the *Data Science Projects* menu on the left:
 
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-* A unique ID was assigned to you at the start of the workshop. Remember this ID when creating instances. A project with the **same name** as your ID has been created for you.
+* A unique ID was assigned to you at the start of the workshop. A project with the **same name** as your ID has been created for you. Click on this project. You should arrive at a page similar to this:
 
-Click on the available project. You should arrive at a page similar to this:
 ![project-empty-state](project-empty-state.png)
 
 ## Create a Data Connection for the Pipeline Server
 
 * We have deployed a Minio instance to manage object storage in the cluster.
-* You will need to **add a Data Connection** that points to it. Scroll to the bottom of the Data Science Project page and click on "Data Connections":
+* You will need to **add a Data Connection** that points to this storage. Scroll to the bottom of the project page and click on `Data Connections`:
 ![02-02-add-dc.png](02-02-add-dc.png)
 
-* You will land on a page that is empty for now. Click on "Add data connection". Here are the information you need to enter:
+* You will arrive at an empty page for now. Click on `Add data connection`. Here is the information you need to enter:
 - Name:  
 ```pipelines```
-- Access Key - **REPLACE WITH YOUR USER ID**:  
+- Access Key: **REPLACE WITH YOUR USER ID**  
 ```userX```
 - Secret Key:  
 ```{{< param minioPass >}}```
@@ -50,7 +49,7 @@ Click on the available project. You should arrive at a page similar to this:
 ```{{< param minioEndpoint >}}```
 - Region:  
 ```none```
-- Bucket - **REPLACE WITH YOUR USER ID**:  
+- Bucket: **REPLACE WITH YOUR USER ID**  
 ```userX```
 
 **IMPORTANT**: Once again, the bucket you will use has to match with the user ID you were provided
