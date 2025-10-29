@@ -5,10 +5,8 @@ weight: 1
 
 ### 🚂 Mission AIpossible
 
-**Prêt, Agent ? Votre mission commence maintenant ! 🚀**
+**🎬 TRANSMISSION CLASSIFIÉE**
 
-> **🎬 TRANSMISSION CLASSIFIÉE**
-> 
 > *Message à l'Agent Red Hat :*
 > 
 > *"Le train LEGO roule sans conducteur ! Votre mission : développer et déployer une IA à bord du train pour l'arrêter avant qu'il ne déraille. Ce message s'autodétruira dans cinq secondes. Quatre... Trois... Deux... Un..."*
