@@ -15,3 +15,13 @@ To connect to your Openshift cluster, [click on this link]({{< param ocpConsole 
 
 Throughout the lab, please do not use **userX** but the user you have been assigned. 
 The object storage user (**Minio**) is the same as described above, the password is : **minio123**.
+
+## Red Hat Edge Manager
+
+You also have access to the Red Hat Edge Manager console, which enables you to manage your fleet of Edge devices.
+
+* **Red Hat Edge Manager console URL:** `{{< param flightctlUi >}}`
+
+* **Red Hat Edge Manager API URL:** `{{< param flightctlApi >}}`
+
+To connect to Red Hat Edge Manager, [click on this link]({{< param flightctlUi >}}) and enter your username and password.

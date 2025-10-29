@@ -1,5 +1,5 @@
 +++
-title = "Pipelines CI/CD"
+title = "Pipelines CI"
 draft = false
 weight = 1
 [[resources]]
@@ -8,7 +8,7 @@ weight = 1
   src = '**.svg'
 +++
 
-Dans cette étape, vous devrez déployer les pipelines CI/CD qui construiront les images de conteneur des cinq composants clés du train :
+Dans cette étape, vous devrez déployer les pipelines CI qui construiront les images de conteneur des cinq composants clés du train :
 
 - **capture-app**
 - **intelligent-train**
@@ -30,16 +30,6 @@ Pour construire ces images de conteneur multi-architecture, nous avons besoin de
 [![](pipelines.svg)](https://www.itix.fr/fr/blog/build-multi-architecture-container-images-with-kubernetes-buildah-tekton-aws/)
 
 Vous déploierez les pipelines tekton depuis votre environnement OpenShift DevSpaces (ce sera plus simple).
-
-## Télécharger la dernière version du dépot Git
-
-Nous avons corrigé le code des pipelines Tekton.
-Pensez à télécharger la dernière version.
-
-```sh
-cd /projects/opentour2024-app
-git pull
-```
 
 ## Déployer les pipelines Tekton
 
@@ -92,7 +82,7 @@ En parallèle ou en série ?
 Créez les objets dans votre projet OpenShift de test.
 
 ```sh
-helm template pipelines /projects/opentour2024-app/tekton-pipelines --set namespace="$TEST_NS" --set runPipelines=true | oc create -f -
+helm template pipelines /projects/opentour2024-app/tekton-pipelines --set namespace="$TEST_NS" --values /projects/opentour2024-app/tekton-pipelines/values.ci.yaml | oc create -f -
 ```
 
 {{% notice note %}}
