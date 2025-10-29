@@ -48,8 +48,8 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 ### ⚡ Les Enjeux
 
 - **Limite de temps** : Le train approche de la falaise !
-- **Technologie** : Stack Red Hat Edge AI de pointe
+- **Technologie** : Stack de pointe Red Hat Edge AI
 - **Défi** : Contraintes réelles de l'edge computing
-- **Récompense** : Maîtriser les technologies modernes IA/ML et Edge Computing
+- **Récompense** : Maîtriser les technologies modernes d'IA/ML et d'Edge Computing
 
 **Prêt, Agent ? Votre mission commence maintenant ! 🚀**
