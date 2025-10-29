@@ -27,9 +27,7 @@ The heart of our edge system is the **NVIDIA Jetson Orin** - a powerful System o
 | **Memory** | Up to 64GB LPDDR5 | High-speed data processing |
 | **Storage** | NVMe SSD | Model storage & caching |
 
-## 🌐 Edge Software Stack
-
-### Operating System Layer
+### Edge Software Stack
 ```
 ┌─────────────────────────────────────┐
 │         Red Hat Device Edge         │  ← Enterprise Edge OS
