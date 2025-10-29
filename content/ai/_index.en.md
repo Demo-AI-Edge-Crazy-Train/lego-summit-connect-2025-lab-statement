@@ -13,7 +13,7 @@ In this section, you will explore the different stages of a model’s lifecycle 
 
 This section includes:
 - **Getting Connected** : Access the OpenShift AI dashboard and set up your environment
-- **Creating Your Project** : Set up Data Science projects, data connections, and pipeline servers
+- **Creating your Project** : Set up projects, data connections, and pipeline servers
 - **Creating a Workbench** : Launch Jupyter notebooks environment with custom images
 - **Retraining the Model** : Build and execute data science pipelines with GPU acceleration
 - **Model Serving** : Deploy your trained model as a REST API endpoint for inference
