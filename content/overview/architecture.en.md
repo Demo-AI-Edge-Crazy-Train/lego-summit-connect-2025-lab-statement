@@ -83,7 +83,7 @@ Located in **AWS Cloud** with **5G connectivity** to the edge:
 - **Multi-architecture Builds**: Support for x86_64 and ARM64
 - **Tekton Pipelines**: Cloud-native CI/CD workflows
 - **Container Registry**: Secure image storage and distribution
-- **Automated Testing**: Quality assurance at every step
+- **Automated Testing**: Quality assessment at every step
 
 #### Video Surveillance System 📹
 - **Real-time Streaming**: Live camera feed from the train
