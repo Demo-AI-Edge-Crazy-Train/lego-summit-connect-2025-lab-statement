@@ -78,23 +78,23 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 #### Plateforme OpenShift AI 🤖
 - **Projets Data Science** : Environnements isolés pour le développement ML
 - **Jupyter Notebooks** : Expérience de développement interactive
-- **Serveurs de Pipeline** : Exécution automatisée de workflows ML
-- **Service de Modèles** : Points d'accès API REST pour l'inférence
+- **Serveurs de pipeline** : Exécution automatisée de workflows ML
+- **Service de modèles** : Points d'accès API REST pour l'inférence
 - **Clusters GPU** : Infrastructure d'entraînement haute performance
 
 #### Infrastructure pipeline CI/CD 🔄
-- **Builds Multi-architecture** : Support pour x86_64 et ARM64
+- **Builds multi-architecture** : Support pour x86_64 et ARM64
 - **Pipelines Tekton** : Workflows CI/CD cloud-native
-- **Registry de Conteneurs** : Stockage et distribution d'images sécurisés
-- **Tests Automatisés** : Assurance qualité à chaque étape
+- **Registry de conteneurs** : Stockage et distribution d'images sécurisés
+- **Tests automatisés** : Assurance qualité à chaque étape
 
 #### Système de vidéosurveillance 📹
-- **Streaming Temps Réel** : Flux caméra en direct depuis le train
+- **Streaming temps réel** : Flux caméra en direct depuis le train
 - **Brokers Kafka** : Streaming de messages haute débit
-- **Interface Web** : Capacités de surveillance à distance
-- **Système d'Alerte** : Notifications immédiates pour les anomalies
+- **Interface web** : Capacités de surveillance à distance
+- **Système d'alerte** : Notifications immédiates pour les anomalies
 
-## 🔄 Architecture de Flux de Données
+## 🔄 Architecture de flux de données
 
 {{< mermaid >}}
 graph TD
@@ -117,16 +117,16 @@ graph TD
     style H fill:#fff8e1
 {{< /mermaid >}}
 
-### Pipeline de Traitement Temps Réel
-1. **📸 Capture d'Image** : La caméra capture les images de panneaux
+### Pipeline de traitement temps réel
+1. **📸 Capture d'image** : La caméra capture les images de panneaux
 2. **🔍 Inférence IA** : Le Jetson traite les images avec le modèle entraîné
-3. **⚡ Prise de Décision** : L'IA détermine l'action appropriée (arrêt/marche)
-4. **📡 Transmission Commande** : Commandes BLE envoyées au Hub LEGO
-5. **🔄 Boucle de Rétroaction** : Résultats envoyés au cloud pour apprentissage continu
+3. **⚡ Prise de décision** : L'IA détermine l'action appropriée (arrêt/marche)
+4. **📡 Transmission commande** : Commandes BLE envoyées au Hub LEGO
+5. **🔄 Boucle de rétroaction** : Résultats envoyés au cloud pour apprentissage continu
 
 ## 🏢 Support Multi-Architecture
 
-### Infrastructure de Build
+### Infrastructure de build
 Notre système supporte les environnements de **calcul hétérogènes** :
 
 | Architecture | Cas d'Usage | Plateforme |
@@ -135,24 +135,24 @@ Notre système supporte les environnements de **calcul hétérogènes** :
 | **ARM64** | Déploiement Edge | Jetson Orin |
 | **Multi-arch** | Images Universelles | Registry de Conteneurs |
 
-### Stratégie de Déploiement
-- **🏭 Développement Cloud** : Modèles entraînés sur clusters x86_64 puissants
-- **📦 Compilation Croisée** : Applications construites pour cible ARM64
-- **🚀 Déploiement Edge** : Conteneurs légers déployés sur Jetson
-- **🔄 Intégration Continue** : Tests automatisés à travers les architectures
+### Stratégie de déploiement
+- **🏭 Développement cloud** : Modèles entraînés sur clusters x86_64 puissants
+- **📦 Compilation croisée** : Applications construites pour cible ARM64
+- **🚀 Déploiement edge** : Conteneurs légers déployés sur Jetson
+- **🔄 Intégration continue** : Tests automatisés à travers les architectures
 
-## 🛡️ Sécurité & Fiabilité
+## 🛡️ Sécurité & fiabilité
 
 ### Sécurité Edge
-- **🔐 Démarrage Sécurisé** : Démarrage système vérifié
-- **🔒 Sécurité Conteneurs** : Environnements d'exécution isolés
-- **📜 Gestion Certificats** : Authentification TLS mutuelle
-- **🛡️ Isolation Réseau** : Canaux de communication segmentés
+- **🔐 Démarrage sécurisé** : Démarrage système vérifié
+- **🔒 Sécurité conteneurs** : Environnements d'exécution isolés
+- **📜 Gestion certificats** : Authentification TLS mutuelle
+- **🛡️ Isolation réseau** : Canaux de communication segmentés
 
-### Sécurité Cloud
+### Sécurité cloud
 - **🔑 RBAC** : Contrôle d'accès basé sur les rôles
-- **🔐 Gestion Secrets** : Stockage d'identifiants chiffrés
-- **📊 Journalisation Audit** : Suivi d'activité complet
-- **🛡️ Politiques Réseau** : Micro-segmentation
+- **🔐 Gestion des secrets** : Stockage d'identifiants chiffrés
+- **📊 Journalisation et audit** : Suivi d'activité complet
+- **🛡️ Politiques réseau** : Micro-segmentation
 
 Cette architecture démontre comment **la stack Edge AI de Red Hat** permet des applications IA sophistiquées dans des environnements à ressources limitées tout en maintenant la sécurité, la fiabilité et la scalabilité de niveau entreprise ! 🚀
