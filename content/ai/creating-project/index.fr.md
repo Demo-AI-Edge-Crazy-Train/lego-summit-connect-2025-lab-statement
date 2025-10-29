@@ -35,7 +35,7 @@ Cliquez sur le projet disponible. Vous devriez arriver sur une page similaire :
 
 ## Créer une "Data Connection" pour le serveur de pipeline
 
-* Nous avons déployé une instance pour gérer le sockage object (Minio) dans le cluster.
+* Nous avons déployé une instance Minio pour gérer le sockage object dans le cluster.
 * Vous devrez **ajouter une Data Connection** qui pointe vers elle. Faites défiler jusqu'au bas de la page du Data Science Project et cliquez sur "Data Connections" :
 ![02-02-add-dc.png](02-02-add-dc.png)
 
@@ -74,4 +74,4 @@ Il est fortement recommandé de créer votre serveur de pipeline avant de créer
 
 A ce stade, votre serveur de pipeline est prêt et déployé.
 
-IMPORTANT : Vous devez **attendre** que le serveur de pipeline soit prêt. S'il tourne encore, attendez qu'il se termine.
+**IMPORTANT** : Vous devez impérativement attendre la fin de l'exécution du serveur de pipeline. Si celui-ci est encore en cours, patientez jusqu'à son achèvement.
