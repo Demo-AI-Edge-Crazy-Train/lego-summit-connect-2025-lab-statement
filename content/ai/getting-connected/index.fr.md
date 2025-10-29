@@ -14,7 +14,7 @@ Chaque participant dispose d'un compte utilisateur unique pour effectuer son tra
 
 Dans une nouvelle fenêtre ou un nouvel onglet, ouvrez l’URL suivante et connectez-vous :
 
-* L'URL Red Hat OpenShift AI Dashboard pour notre environnement partagé : [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
+* L'URL du tableau de bord OpenShift AI pour notre environnement partagé : [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
 * Entrez vos informations d'identification (distribuées sur un papier pendant le lab).
 * Le résultat devrait ressembler à :
 
