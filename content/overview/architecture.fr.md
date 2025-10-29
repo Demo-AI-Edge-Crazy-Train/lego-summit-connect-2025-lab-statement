@@ -54,7 +54,7 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 
 ## ☁️ Le Cloud : Cluster OpenShift
 
-### Composants d'Infrastructure
+### Composants d'infrastructure
 Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 
 ```
@@ -73,22 +73,22 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 └─────────────────────────────────────┘
 ```
 
-### Services Cloud
+### Services cloud
 
-#### 🤖 Plateforme OpenShift AI
+#### Plateforme OpenShift AI 🤖
 - **Projets Data Science** : Environnements isolés pour le développement ML
 - **Jupyter Notebooks** : Expérience de développement interactive
 - **Serveurs de Pipeline** : Exécution automatisée de workflows ML
 - **Service de Modèles** : Points d'accès API REST pour l'inférence
 - **Clusters GPU** : Infrastructure d'entraînement haute performance
 
-#### 🔄 Infrastructure Pipeline CI/CD
+#### Infrastructure pipeline CI/CD 🔄
 - **Builds Multi-architecture** : Support pour x86_64 et ARM64
 - **Pipelines Tekton** : Workflows CI/CD cloud-native
 - **Registry de Conteneurs** : Stockage et distribution d'images sécurisés
 - **Tests Automatisés** : Assurance qualité à chaque étape
 
-#### 📹 Système de Vidéosurveillance
+#### Système de vidéosurveillance 📹
 - **Streaming Temps Réel** : Flux caméra en direct depuis le train
 - **Brokers Kafka** : Streaming de messages haute débit
 - **Interface Web** : Capacités de surveillance à distance
