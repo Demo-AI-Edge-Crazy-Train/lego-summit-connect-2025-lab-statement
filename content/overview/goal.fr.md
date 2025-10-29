@@ -17,7 +17,7 @@ weight: 1
 
 ### 🎯 Votre Mission
 
-En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge AI** de pointe pour sauver la situation ! Ce n'est pas un laboratoire ordinaire - c'est une mission à enjeux élevés où vous combinerez :
+En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge AI** de pointe pour sauver la situation ! Ce n'est pas un atelier ordinaire - c'est une mission à haut risque où vous combinerez :
 
 #### Intelligence Artificielle 🤖
 - **Vision par ordinateur** : Détecter les panneaux de signalisation avec des réseaux de neurones avancés
