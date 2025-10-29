@@ -12,10 +12,10 @@ Notre solution Edge AI représente une **architecture hybride cloud-edge** sophi
 ## 🚂 L'Edge : Plateforme Train LEGO
 
 ### Composants Physiques
-- **🔧 Moteur LEGO Technic** : Fournit un contrôle de mouvement précis
-- **🧠 Hub LEGO** : Unité de contrôle centrale recevant les commandes via **Bluetooth Low Energy (BLE)**
-- **📹 Caméra embarquée** : Capture le flux vidéo en temps réel pour le traitement IA
-- **🔋 Batterie portable** : Alimente toute la durée de la mission
+- **Moteur LEGO Technic** : Fournit un contrôle de mouvement précis
+- **Hub LEGO** : Unité de contrôle centrale recevant les commandes via **Bluetooth Low Energy (BLE)**
+- **Caméra embarquée** : Capture le flux vidéo en temps réel pour le traitement IA
+- **Batterie portable** : Alimente toute la durée de la mission
 
 ### Cerveau Edge Computing
 Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant System on Chip (SoC) qui combine :
