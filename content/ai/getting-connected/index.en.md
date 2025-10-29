@@ -20,13 +20,14 @@ In a new window or tab, open the following URL and log in:
 
 ![02-01-login1](02-01-login1.png)
 
-
-
 * Because the password is simple, your browser may display a message such as:
+
 ![02-01-login-scary](02-01-login-scary.png)
+
 * You can ignore this message when it appears.
 
 * After you authenticate, the result should look like:
+
 ![02-01-rhoai-front-page](02-01-rhoai-front-page.png)
 
 If you got this far and saw all that, congratulations, you properly connected to the OpenShift AI Dashboard Application!
