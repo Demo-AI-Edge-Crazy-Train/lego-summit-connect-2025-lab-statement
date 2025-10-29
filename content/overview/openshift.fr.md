@@ -11,9 +11,9 @@ weight: 4
 
 Un utilisateur OpenShift dédié est créé pour chacun d'entre vous.  
 Vous trouverez sur votre table une affiche reprenant toutes les informations de connexion (identifiant et mot de passe).  
-Pour vous connecter à votre cluster OpenShift, [cliquez sur ce lien]({{< param ocpConsole >}}) et renseignez votre nom d'utilisateur et votre mot de passe. Vous aurez accès au *Terminal Web* en cliquant sur l'icône **>_** en haut à droite. Le Terminal Web fournit le client *oc*.
+Pour vous connecter à votre cluster OpenShift, [cliquez sur ce lien]({{< param ocpConsole >}}) et renseignez votre nom d'utilisateur et votre mot de passe. Vous aurez accès au Terminal Web en cliquant sur l'icône **>_** en haut à droite. Le Terminal Web fournit le client *oc*.
 
-Tout au long du lab, merci de ne pas utiliser **userX** mais l'utilisateur qu'on vous a attribué.  
+Tout au long de l'atelier, merci de ne pas utiliser **userX** mais l'utilisateur qu'on vous a attribué.  
 L'utilisateur du stockage objet (**Minio**) est le même que celui décrit ci-dessus, le mot de passe est : **minio123**.
 
 ## Red Hat Edge Manager
