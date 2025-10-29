@@ -106,7 +106,7 @@ Après quelques instants, vous verrez s'afficher une fenêtre popup de succès. 
 
 **Si vous avez manqué le raccourci** de la fenêtre popup d'elyra, suivez ces étapes pour récupérer votre pipeline. Sinon, passez au paragraphe suivant.
 Vous pouvez maintenant retourner au tableau de bord d'Openshift AI : [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
-Sur le côté gauche **cliquez sur "Experiments", puis sur "Exepriments and runs"**. Choisissez l'expérimentation associée au nom de votre pipeline. 
+Sur le côté gauche **cliquez sur "Experiments", puis sur "Experiments and runs"**. Choisissez l'expérimentation associée au nom de votre pipeline. 
 ![experiments-and-runs](experiments-and-runs.png)
 **Cliquer sur le run en cours**. Vous pouvez voir ici l'exécution du pipeline. Un run devrait être visible puisque vous en avez créé un dans la section précédente. Cliquez dessus.
 
