@@ -29,14 +29,14 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 
 ## 🌐 Pile logicielle Edge
 
-### Couche Système d'Exploitation
+### Couche système d'exploitation
 ```
 ┌─────────────────────────────────────┐
-│        Red Hat Device Edge          │  ← OS Edge Entreprise
+│         Red Hat Device Edge         │  ← Système d'exploitation Edge d'entreprise
 ├─────────────────────────────────────┤
-│           MicroShift               │  ← Kubernetes Léger
+│             MicroShift              │  ← Kubernetes léger
 ├─────────────────────────────────────┤
-│     Microservices Edge             │  ← Logique IA & Contrôle
+│          Microservices Edge         │  ← Logique IA & contrôle
 └─────────────────────────────────────┘
 ```
 
