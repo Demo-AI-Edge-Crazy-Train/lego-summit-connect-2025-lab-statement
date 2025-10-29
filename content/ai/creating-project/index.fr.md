@@ -39,16 +39,16 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 * Vous arriverez sur une page vide pour l'instant. Cliquez sur `Add data connection`. Voici les informations que vous devez saisir :
 - Name:  
 ```pipelines```
-- Access Key: **REMPLACEZ PAR VOTRE IDENTIFIANT**  
-```userX```
+- Access Key:  
+```userX```  **← REMPLACEZ PAR VOTRE IDENTIFIANT**
 - Secret Key:  
 ```{{< param minioPass >}}```
 - Endpoint:  
 ```{{< param minioEndpoint >}}```
 - Region:  
 ```none```
-- Bucket: **REMPLACEZ PAR VOTRE IDENTIFIANT**  
-```userX```
+- Bucket:  
+```userX```  **← REMPLACEZ PAR VOTRE IDENTIFIANT**
 
 **IMPORTANT**: Une fois de plus, le bucket que vous utiliserez doit correspondre à l'ID utilisateur qui vous a été fourni.
 
