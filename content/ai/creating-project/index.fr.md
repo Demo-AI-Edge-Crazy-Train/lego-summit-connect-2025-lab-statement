@@ -28,7 +28,7 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-* Un projet portant le **même nom** que votre identifiant a été créé pour vous. Un identifiant unique vous a été attribué au début de l'atelier. Souvenez-vous de cet identifiant pour la création des instances. 
+* Un identifiant unique vous a été attribué au début de l'atelier. Souvenez-vous de cet identifiant pour la création des instances. Un projet portant le **même nom** que votre identifiant a été créé pour vous.
 
 Cliquez sur le projet disponible. Vous devriez arriver sur une page similaire :
 ![project-empty-state](project-empty-state.png)
