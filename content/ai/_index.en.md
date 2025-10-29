@@ -9,7 +9,7 @@ pre = "<b>2. </b>"
 
 # Artificial Intelligence
 
-In this section, you'll dive deep into the machine learning workflow using Red Hat OpenShift AI (RHOAI).
+In this section, you will explore the different stages of a model’s lifecycle with **Red Hat OpenShift AI** (**RHOAI**).
 
 This section includes:
 - **Getting Connected** : Access OpenShift AI Dashboard and set up your environment
