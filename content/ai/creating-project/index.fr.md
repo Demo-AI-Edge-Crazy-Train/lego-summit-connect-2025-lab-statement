@@ -6,26 +6,23 @@ weight= 2
   src = '**.png'
 +++
 
-Chacun d'entre vous va
+## Introduction
 
-1. Se connecter à un projet Data Science
-    - cela vous aidera à garder les choses en ordre
+il est important de comprendre les principaux concepts que nous allons manipuler dans cet atelier autour d’OpenShift AI.
 
-2. Créer une "Data Connection"
-    - nous en avons besoin pour que le serveur de pipeline stocke ses artefacts
+OpenShift AI est une plateforme intégrée qui facilite le développement, le déploiement et la gestion de projets de Data Science et d’IA dans un environnement cloud-native basé sur OpenShift.
 
-3. Déployer un serveur de pipeline
-    - nous en aurons besoin, et il est préférable de le créer dès le départ
+Chaque participant travaillera dans un **projet Data Science**, qui sert d’espace isolé pour organiser ses ressources (modèles, données, notebooks, pipelines…).  
+Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits par les pipelines.  
+Le **serveur de pipeline** est le moteur d’orchestration qui exécute et trace les différentes étapes du flux de traitement des données et d’entraînement des modèles.  
+Le **Workbench**, quant à lui, fournit un environnement interactif basé sur Jupyter, dans lequel les data scientists peuvent écrire, exécuter et tester leur code.  
+Enfin, le **référentiel Git** contient le code source du projet, garantissant la reproductibilité et la collaboration autour du même jeu de scripts et de notebooks.
 
-4. Lancer un Workbench
-    - nous l'utiliserons pour exécuter nos notebooks et construire la pipeline de data science
-
-5. Clonez le repo git dans votre Workbench
-    - il contient tout le code pour l'entrainement du modèle d'IA
+Ces composants interagissent pour offrir une chaîne complète, du développement expérimental jusqu’à la mise en production des modèles.
 
 Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-les attentivement.
 
-## Connection à un projet
+## Connexion à un projet
 
 * Tout d'abord, dans l'application OpenShift AI Dashboard, naviguez vers le menu Data Science Projects sur la gauche :
 
