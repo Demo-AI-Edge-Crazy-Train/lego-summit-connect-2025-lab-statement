@@ -5,7 +5,7 @@ weight: 1
 
 ### 🚂 Mission AIpossible
 
-**TRANSMISSION CLASSIFIÉE 🎬**
+**TRANSMISSION CLASSIFIÉE**
 
 > *Message à l'Agent Red Hat :*
 > 
