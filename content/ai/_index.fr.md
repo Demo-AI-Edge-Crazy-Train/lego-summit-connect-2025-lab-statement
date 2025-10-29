@@ -9,7 +9,7 @@ pre = "<b>2. </b>"
 
 # Intelligence Artificielle
 
-Dans cette section, vous allez explorer les différentes étapes du cycle de vie d'un modèle avec Red Hat OpenShift AI (RHOAI).
+Dans cette section, vous allez explorer les différentes étapes du cycle de vie d'un modèle avec **Red Hat OpenShift AI** (**RHOAI**).
 
 Cette section comprend :
 - **Se connecter** : Accéder au tableau de bord OpenShift AI et configurer votre environnement
