@@ -10,12 +10,12 @@ weight= 2
 
 It is important to understand the key concepts we will be working with in this OpenShift AI workshop.
 
-**OpenShift AI** is an integrated platform that simplifies the development, deployment, and management of Data Science and AI projects in a cloud-native environment based on OpenShift.
+**OpenShift AI** is an integrated platform that simplifies the management of AI projects in a cloud-native environment based on OpenShift.
 
-Each participant will work within a **Data Science project**, which serves as an isolated space to organize resources such as models, data, notebooks, and pipelines.  
+Each participant will work within a **Data Science Project**, which serves as an isolated space to organize resources such as data, notebooks, models, and pipelines.  
 A **Data Connection** allows the platform to connect to a storage source (for example, S3 or Ceph) to save and share artifacts produced by pipelines.  
-The **Pipeline Server** is the orchestration engine that executes and tracks the various stages of data processing and model training workflows.  
-The **Workbench** provides an interactive Jupyter-based environment where data scientists can write, run, and test their code.  
+The **Pipeline Server** is the orchestration engine that executes and tracks the various stages of data processing and model training.  
+The **Workbench** provides an interactive Jupyter-based development environment where data scientists can write, run, and test their code.  
 Finally, the **Git repository** contains the project’s source code, ensuring reproducibility and collaboration around the same set of scripts and notebooks.
 
 These components interact to provide a complete workflow, from experimental development to production deployment of models.
