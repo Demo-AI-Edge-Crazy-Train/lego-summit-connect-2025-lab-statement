@@ -75,20 +75,20 @@ Located in **AWS Cloud** with **5G connectivity** to the edge:
 
 ### Cloud Services
 
-#### 🤖 OpenShift AI Platform
+#### OpenShift AI Platform 🤖
 - **Data Science Projects**: Isolated environments for ML development
 - **Jupyter Notebooks**: Interactive development experience
 - **Pipeline Servers**: Automated ML workflow execution
 - **Model Serving**: REST API endpoints for inference
 - **GPU Clusters**: High-performance training infrastructure
 
-#### 🔄 CI/CD Pipeline Infrastructure
+#### CI/CD Pipeline Infrastructure 🔄
 - **Multi-architecture Builds**: Support for x86_64 and ARM64
 - **Tekton Pipelines**: Cloud-native CI/CD workflows
 - **Container Registry**: Secure image storage and distribution
 - **Automated Testing**: Quality assurance at every step
 
-#### 📹 Video Surveillance System
+#### Video Surveillance System 📹
 - **Real-time Streaming**: Live camera feed from the train
 - **Kafka Brokers**: High-throughput message streaming
 - **Web Interface**: Remote monitoring capabilities
