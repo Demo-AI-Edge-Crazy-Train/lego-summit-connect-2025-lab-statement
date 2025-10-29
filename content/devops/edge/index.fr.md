@@ -59,7 +59,7 @@ kafkaBroker.bootstrapNode.hostname={{< param kafkaBootstrapNode >}}
 
 Cliquez sur **Next** > **Next** et **Save**.
 
-Sur votre flotte, cliquez sur le **1/1** sous **Up-to-date/devices** pour accéder à votre liste de devices Edge.
+Sur votre flotte, cliquez sur le **X/Y** sous **Up-to-date/devices** pour accéder à votre liste de devices Edge.
 
 Cliquer sur votre unique device Edge.
 
@@ -124,7 +124,23 @@ Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Admin
 ![](pipelinerun-bootc.png)
 
 
-## Étape suivante
+## Surveiller le déploiement à l'Edge
 
-Les pipelines mettent environ 20 minutes pour les plus lents à se terminer.
-Pendant que ça compile, c'est le moment de passer à l'étape suivante !
+Le pipeline met environ 12 minutes à se terminer.
+Une fois le pipeline terminé, vous devriez constater que la flotte dans Red Hat Edge Manager a été mise à jour avec l'image générée par le pipeline.
+
+![](fleet-updated.png)
+
+Sur votre flotte, cliquez sur le **X/Y** sous **Up-to-date/devices** pour accéder à votre liste de devices Edge.
+
+Cliquer sur votre unique device Edge.
+
+![](device-out-of-date.png)
+
+Vous devriez voir que votre device Edge est en état "out-of-date".
+
+Patientez quelques minutes, pendant qu'il télécharge sa mise à jour, l'applique et redémarre.
+
+## Vérifications post mise à jour
+
+TODO
