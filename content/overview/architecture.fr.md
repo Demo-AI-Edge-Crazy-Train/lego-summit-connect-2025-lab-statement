@@ -27,9 +27,7 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 | **Mémoire** | Jusqu'à 64GB LPDDR5 | Traitement de données haute vitesse |
 | **Stockage** | SSD NVMe | Stockage de modèles & cache |
 
-## 🌐 Pile logicielle Edge
-
-### Couche système d'exploitation
+### Pile logicielle Edge
 ```
 ┌─────────────────────────────────────┐
 │         Red Hat Device Edge         │  ← Système d'exploitation Edge d'entreprise
