@@ -34,9 +34,9 @@ The heart of our edge system is the **NVIDIA Jetson Orin** - a powerful System o
 ┌─────────────────────────────────────┐
 │        Red Hat Device Edge          │  ← Enterprise Edge OS
 ├─────────────────────────────────────┤
-│           MicroShift               │  ← Lightweight Kubernetes
+│           MicroShift                │  ← Lightweight Kubernetes
 ├─────────────────────────────────────┤
-│     Edge Microservices             │  ← AI & Control Logic
+│     Edge Microservices              │  ← AI & Control Logic
 └─────────────────────────────────────┘
 ```
 
