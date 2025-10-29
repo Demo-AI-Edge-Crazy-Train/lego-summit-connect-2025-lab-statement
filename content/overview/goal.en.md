@@ -12,8 +12,8 @@ weight: 1
 > *Message to Agent Red Hat:*
 > 
 > *"The LEGO train is running without a driver! Your mission: develop and deploy an AI on board the train to stop it before it derails. This message will self-destruct in five seconds. Four... Three... Two... One..."*
-> 
-> *🎵 tum tum tada tum tum tada tum tum tada tum tum tada tiduduuummm tiduduuummm 🎵*
+
+*🎵 tum tum tada tum tum tada tum tum tada tum tum tada tiduduuummm tiduduuummm 🎵*
 
 ### 🎯 Your Mission
 
