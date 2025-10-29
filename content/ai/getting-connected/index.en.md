@@ -24,7 +24,7 @@ In a new window or tab, open the following URL and log in:
 
 * Because the password is simple, your browser may display a message such as:
 ![02-01-login-scary](02-01-login-scary.png)
-* It is safe here to ignore this message when it pops up.
+* You can ignore this message when it appears.
 
 * After you authenticate, the result should look like:
 ![02-01-rhoai-front-page](02-01-rhoai-front-page.png)
