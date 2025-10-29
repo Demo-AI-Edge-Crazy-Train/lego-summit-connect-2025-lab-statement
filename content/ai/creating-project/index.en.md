@@ -1,5 +1,5 @@
 +++
-title = "Setting up your project and pipeline server"
+title = "Environment Setup"
 draft= false
 weight= 2
 [[resources]]
