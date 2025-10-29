@@ -1,5 +1,5 @@
 +++
-title = "Retrain the model"
+title = "Model Training"
 draft= false
 weight= 4
 [[resources]]
