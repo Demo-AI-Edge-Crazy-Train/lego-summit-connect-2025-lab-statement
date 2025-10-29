@@ -19,19 +19,19 @@ weight: 1
 
 As an elite Red Hat agent, you must leverage cutting-edge **Edge AI** technologies to save the day! This isn't just any ordinary lab - it's a high-stakes mission where you'll combine:
 
-#### 🤖 Artificial Intelligence
+#### Artificial Intelligence 🤖
 - **Computer Vision**: Detect traffic signs using advanced neural networks
 - **Transfer Learning**: Adapt pre-trained models for LEGO traffic sign recognition
 - **MLOps**: Automate model training and deployment pipelines
 - **GPU Acceleration**: Harness the power of NVIDIA hardware for faster training
 
-#### 🌐 Edge Computing
+#### Edge Computing 🌐
 - **Nvidia Jetson Orin**: Deploy AI models directly on edge devices
 - **Red Hat Device Edge**: Run enterprise-grade Edge OS
 - **MicroShift**: Kubernetes for resource-constrained environments
 - **Real-time Processing**: Make split-second decisions to stop the train
 
-#### ☁️ Cloud Integration
+#### Cloud Integration ☁️
 - **OpenShift AI**: Centralized AI/ML platform for model development
 - **Multi-architecture Builds**: Create containers for both x86_64 and ARM64
 - **GitOps**: Deploy applications using modern DevOps practices
