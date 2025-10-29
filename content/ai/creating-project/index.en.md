@@ -53,6 +53,8 @@ The instructions below will guide you through these steps. Follow them carefully
 * The result should look like this:
 ![data-connection.png](data-connection.png)
 
+* Once you have filled out the form, click on `Add data connection` to confirm.
+
 ## Create a Pipeline Server
 
 It is highly recommended to create your pipeline server before creating a workbench. So let's do that now!
