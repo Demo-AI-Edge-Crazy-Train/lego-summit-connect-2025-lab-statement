@@ -27,7 +27,7 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 
 #### Edge Computing 🌐
 - **Nvidia Jetson Orin** : Déployer des modèles IA directement sur des dispositifs edge
-- **Red Hat Device Edge** : Exécuter un OS Edge de niveau entreprise
+- **Red Hat Device Edge** : Exécuter un OS Edge de qualité professionnelle
 - **MicroShift** : Kubernetes pour des environnements à ressources limitées
 - **Traitement temps réel** : Prendre des décisions en une fraction de seconde pour arrêter le train
 
