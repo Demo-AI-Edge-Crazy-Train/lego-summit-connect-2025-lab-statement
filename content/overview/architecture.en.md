@@ -9,7 +9,7 @@ weight: 2
 
 Our Edge AI solution represents a sophisticated **hybrid cloud-edge architecture** that brings enterprise-grade AI capabilities directly to the field. Here's how each component works together to create an intelligent, autonomous system:
 
-## 🚂 At the Edge: the LEGO Train Platform
+## 🚂 At the Edge: the LEGO Train
 
 ### Physical Components
 - **LEGO Technic Motor**: Provides precise movement control
