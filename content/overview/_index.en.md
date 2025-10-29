@@ -9,7 +9,7 @@ pre = "<b>1. </b>"
 
 # Presentation
 
-Welcome to the "Crazy Train" lab! In this first section, you'll discover the context and architecture of our Edge AI mission.
+Welcome to the "Mission AIpossible" lab! In this first section, you'll discover the context and architecture of our Edge AI mission.
 
 This presentation section covers:
 - **Mission Objective**: Stop a runaway LEGO train using AI at the Edge
