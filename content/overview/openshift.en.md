@@ -3,7 +3,7 @@ title: "OpenShift Environment"
 weight: 4
 ---
 
-## OpenShift cluster
+## OpenShift Cluster
 
 * **OCP Cluster console URL :** `{{< param ocpConsole >}}`
 
