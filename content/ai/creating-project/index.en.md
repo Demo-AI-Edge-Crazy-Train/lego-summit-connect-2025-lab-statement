@@ -12,10 +12,10 @@ It is important to understand the key concepts we will be working with in this O
 
 OpenShift AI is an integrated platform that simplifies the development, deployment, and management of Data Science and AI projects in a cloud-native environment based on OpenShift.
 
-Each participant will work within a **Data Science project**, which serves as an isolated space to organize resources such as models, data, notebooks, and pipelines.
-A **Data Connection** allows the platform to connect to a storage source (for example, S3 or Ceph) to save and share artifacts produced by pipelines.
-The **pipeline server** is the orchestration engine that executes and tracks the various stages of data processing and model training workflows.
-The **Workbench** provides an interactive Jupyter-based environment where data scientists can write, run, and test their code.
+Each participant will work within a **Data Science project**, which serves as an isolated space to organize resources such as models, data, notebooks, and pipelines.  
+A **Data Connection** allows the platform to connect to a storage source (for example, S3 or Ceph) to save and share artifacts produced by pipelines.  
+The **Pipeline Server** is the orchestration engine that executes and tracks the various stages of data processing and model training workflows.  
+The **Workbench** provides an interactive Jupyter-based environment where data scientists can write, run, and test their code.  
 Finally, the **Git repository** contains the project’s source code, ensuring reproducibility and collaboration around the same set of scripts and notebooks.
 
 These components interact to provide a complete workflow, from experimental development to production deployment of models.
@@ -24,7 +24,7 @@ The instructions below will guide you through these steps. Follow them carefully
 
 ## Connecting to a Project
 
-* First, in the OpenShift AI Dashboard application, navigate to the Data Science Projects menu on the left:
+* First, in the OpenShift AI Dashboard, navigate to the Data Science Projects menu on the left:
 
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
@@ -35,11 +35,11 @@ Click on the available project project. You should land on a similar page:
 
 ## Create a Data Connection for the pipeline server
 
-* We have deployed an instance of Minio in the cluster to act as a simple Object Storage for our purposes.
-* You will need to **Add data connection** that points to it. Scroll down to the bottom of data science project page and click on "Data Connections":
+* We have deployed a Minio instance in the cluster to act as a simple Object Storage.
+* You will need to **add a data connection** that points to it. Scroll down to the bottom of data science project page and click on "Data Connections":
 ![02-02-add-dc.png](02-02-add-dc.png)
 
-* You will land to and empty state page. Click on "Add data connection". Here are the information you need to enter:
+* You will land on a page that is empty for now. Click on "Add data connection". Here are the information you need to enter:
 - Name:  
 ```pipelines```
 - Access Key - **REPLACE WITH YOUR USER ID**:  
