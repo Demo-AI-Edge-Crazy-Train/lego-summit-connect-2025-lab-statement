@@ -3,7 +3,7 @@ title: "Vue d'ensemble de l'architecture"
 weight: 2
 ---
 
-## 🏗️ Architecture Technique Détaillée
+## 🏗️ Architecture technique détaillée
 
 ![global architecture](/images/architecture-global.png)
 
