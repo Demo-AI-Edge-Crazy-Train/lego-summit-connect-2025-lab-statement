@@ -152,4 +152,4 @@ Notre système supporte les environnements de calcul **hétérogènes** :
 - **Journalisation et audit** : Suivi d'activité complet
 - **Politiques réseau** : Micro-segmentation
 
-Cette architecture démontre comment **la stack Edge AI de Red Hat** permet des applications IA sophistiquées dans des environnements à ressources limitées tout en maintenant une sécurité, une fiabilité et une scalabilité de qualité professionnelle !
+Cette architecture démontre comment la **stack Edge AI de Red Hat** permet des applications IA sophistiquées dans des environnements à ressources limitées tout en maintenant une sécurité, une fiabilité et une scalabilité de qualité professionnelle !
