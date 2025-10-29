@@ -101,7 +101,7 @@ graph TD
     B -->|Connexion 5G| E[Cluster OpenShift]
     E -->|Données d'entraînement| F[OpenShift AI]
     F -->|Modèles mis-à-jour| B
-    E -->|Surveillance| G[Dashboard]
+    E -->|Surveillance| G[Tableau de bord]
     E -->|GitOps| H[Déploiement]
     
     style A fill:#e1f5fe
