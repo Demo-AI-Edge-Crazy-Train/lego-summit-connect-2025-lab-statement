@@ -11,7 +11,7 @@ weight: 1
 > 
 > *Message à l'Agent Red Hat :*
 > 
-> *"Le train roule à toute allure et n'a pas de conducteur ! Votre mission, si vous l'acceptez, est de former et de déployer un modèle d'intelligence artificielle en bordure pour arrêter le train avant qu'il ne s'écrase. Ce message s'autodétruira dans cinq secondes. Quatre... Trois... Deux... Un..."*
+> *"Le train LEGO roule sans conducteur ! Votre mission : développer et déployer une IA à bord du train pour l'arrêter avant qu'il ne déraille. Ce message s'autodétruira dans cinq secondes. Quatre... Trois... Deux... Un..."*
 > 
 > *🎵 tam tam tada tum tum tada tum tum tada tum tum tada tiduduuuuummmm tiduduuuuuuuuummm 🎵*
 
