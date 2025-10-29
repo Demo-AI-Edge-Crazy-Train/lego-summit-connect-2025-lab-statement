@@ -8,9 +8,9 @@ weight= 3
 
 ## Lancer un Workbench
 
-* Une fois que la Data Connection et le Pipeline Server ont été entièrement créés, vous pouvez passer à la création du workbench.
+* Une fois que la Data Connection et le Pipeline Server ont été entièrement créés, vous pouvez passer à la création du Workbench. Cliquez sur l'onglet `Workbenches` puis `Create workbench`.
 ![02-03-create-wb.png](02-03-create-wb.png)
-* Assurez-vous qu'il présente les caractéristiques suivantes :  
+* Assurez-vous de remplir les caractéristiques suivantes :  
     * Choisissez un nom, comme par exemple : `My Workbench`  
     * Sélectionnez l'image : `CUSTOM Crazy train lab`
     * Taille du conteneur : `Small`
