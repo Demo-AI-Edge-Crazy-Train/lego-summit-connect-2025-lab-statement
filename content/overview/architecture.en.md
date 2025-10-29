@@ -42,7 +42,7 @@ The heart of our edge system is the **NVIDIA Jetson Orin** - a powerful System o
 
 **Red Hat Device Edge** provides:
 - **Security**: Enterprise-grade security features
-- **OTA Updates**: Over-the-air deployment capabilities
+- **OTA Updates**: Over-the-air (OTA) deployment capabilities
 - **Performance**: Optimized for resource-constrained environments
 - **Reliability**: Production-ready edge computing platform
 
