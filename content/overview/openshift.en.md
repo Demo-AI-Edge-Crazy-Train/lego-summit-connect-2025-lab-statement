@@ -1,5 +1,5 @@
 ---
-title: "OpenShift"
+title: "OpenShift Environment"
 weight: 4
 ---
 
