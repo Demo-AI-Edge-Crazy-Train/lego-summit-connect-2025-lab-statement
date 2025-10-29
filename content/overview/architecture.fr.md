@@ -95,14 +95,14 @@ Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
 
 {{< mermaid >}}
 graph TD
-    A[Camera Train] -->|Flux Video| B[Jetson Orin]
-    B -->|Inference IA| C[Detection Panneaux]
-    C -->|Commandes Controle| D[Hub LEGO]
+    A[Caméra du train] -->|Flux vidéo| B[Jetson Orin]
+    B -->|Inference IA| C[Détection de panneaux]
+    C -->|Commandes de contrôle| D[Hub LEGO]
     B -->|Connexion 5G| E[Cluster OpenShift]
-    E -->|Donnees Entrainement| F[OpenShift AI]
-    F -->|Modeles Mis a Jour| B
+    E -->|Données d'entraînement| F[OpenShift AI]
+    F -->|Modèles mis-à-jour| B
     E -->|Surveillance| G[Dashboard]
-    E -->|GitOps| H[Deploiement]
+    E -->|GitOps| H[Déploiement]
     
     style A fill:#e1f5fe
     style B fill:#f3e5f5
