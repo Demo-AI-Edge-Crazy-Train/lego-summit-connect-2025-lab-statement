@@ -10,7 +10,7 @@ weight= 2
 
 Il est important de comprendre les principaux concepts que nous allons manipuler dans cet atelier autour d’OpenShift AI.
 
-OpenShift AI est une plateforme intégrée qui facilite le développement, le déploiement et la gestion de projets de Data Science et d’IA dans un environnement cloud-natif basé sur OpenShift.
+**OpenShift AI** est une plateforme intégrée qui facilite le développement, le déploiement et la gestion de projets de Data Science et d’IA dans un environnement cloud-natif basé sur OpenShift.
 
 Chaque participant travaillera dans un **projet Data Science**, qui sert d’espace isolé pour organiser ses ressources (modèles, données, notebooks, pipelines…).  
 Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits par les pipelines.  
