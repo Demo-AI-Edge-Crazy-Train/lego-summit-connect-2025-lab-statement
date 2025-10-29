@@ -24,23 +24,22 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 
 ## Connexion à un projet
 
-* Tout d'abord, dans le tableau de bord OpenShift AI, naviguez vers le menu *Data Science Projects* sur la gauche :
-
+* Tout d'abord, dans le tableau de bord OpenShift AI, naviguez vers le menu `Data Science Projects` sur la gauche :
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-* Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** que votre identifiant a été créé pour vous. Cliquez sur le projet disponible. Vous devriez arriver sur une page similaire :
+* Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** que votre identifiant a été créé pour vous. Cliquez sur ce projet. Vous devriez arriver sur une page similaire :
 ![project-empty-state](project-empty-state.png)
 
-## Créer une Data Connection pour le serveur de pipeline
+## Créer une Data Connection pour le Pipeline Server
 
 * Nous avons déployé une instance Minio pour gérer le stockage objet dans le cluster.
-* Vous devrez **ajouter une Data Connection** qui pointe vers lui. Faites défiler jusqu'au bas de la page du Data Science Project et cliquez sur "Data Connections" :
+* Vous devrez **ajouter une Data Connection** qui pointe vers ce stockage. Faites défiler jusqu'au bas de la page du project et cliquez sur `Data Connections` :
 ![02-02-add-dc.png](02-02-add-dc.png)
 
-* Vous arriverez sur une page pour l'instant vide. Cliquez sur "Add data connection". Voici les informations que vous devez saisir :
+* Vous arriverez sur une page vide pour l'instant. Cliquez sur `Add data connection`. Voici les informations que vous devez saisir :
 - Name:  
 ```pipelines```
-- Access Key - **REPLACE WITH YOUR USER ID**:  
+- Access Key: **REMPLACEZ PAR VOTRE IDENTIFIANT**  
 ```userX```
 - Secret Key:  
 ```{{< param minioPass >}}```
@@ -48,10 +47,10 @@ Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-l
 ```{{< param minioEndpoint >}}```
 - Region:  
 ```none```
-- Bucket - **REPLACE WITH YOUR USER ID**:  
+- Bucket: **REMPLACEZ PAR VOTRE IDENTIFIANT**  
 ```userX```
 
-**IMPORTANT**: Une fois de plus, la Bucket que vous utiliserez doit correspondre à l'ID utilisateur qui vous a été fourni.
+**IMPORTANT**: Une fois de plus, le bucket que vous utiliserez doit correspondre à l'ID utilisateur qui vous a été fourni.
 
 * Le résultat devrait ressembler à ceci :
 ![data-connection.png](data-connection.png)
