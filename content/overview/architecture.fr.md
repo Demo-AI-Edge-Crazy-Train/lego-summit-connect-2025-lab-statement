@@ -47,7 +47,7 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin** - un puissant Syst
 - **Fiabilité** : Plateforme d'edge computing prête pour la production
 
 **MicroShift** permet :
-- **Orchestration de conteneurs** : Kubernetes à la périphérie
+- **Orchestration de conteneurs** : Kubernetes à l'edge
 - **Gestion de services** : Déploiement et mise à l'échelle automatisés
 - **Auto-guérison** : Récupération automatique des pannes
 - **Surveillance** : Suivi de l'état du système en temps réel
