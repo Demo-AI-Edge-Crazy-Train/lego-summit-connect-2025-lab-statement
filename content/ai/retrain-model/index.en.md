@@ -6,118 +6,170 @@ weight= 4
   src = '**.png'
 +++
 
-In this section you will navigate through the python code used to retrain the model. You will then adapt a data science pipeline and run it on Openshift. You will finally visualize your pipeline in Openshift AI dashboard and retreive its output in different formats.
+In this section, you will explore the Python code used to retrain the model. You will then adapt a Data Science pipeline to run it on OpenShift. Finally, you will be able to visualize your pipeline in the OpenShift AI dashboard and retrieve its results.
 
-**WARNING:** You will run only the first steps of the model training inside the Jupyter Notebooks. The full training will happen on Openshift side in order to limit the RAM needed for each participant. Running the model training (*transfer-learning.ipynb*) notebook will crash due to OOM Killed. Your pod on Openshift will be deleted and automatically recreated. Nothing really bad but your environement will be down for a minute.
+**WARNING**: You will only run the first steps of model training in the Jupyter development environments. Full training will be executed outside of these environments via a Pipeline to limit the RAM used by each participant. Otherwise, running the model (in *transfer-learning.ipynb*) may fail with an **OOM Killed** error (insufficient memory). In this case, your OpenShift pod will be automatically deleted and recreated. Nothing serious, but your environment will be unavailable for about a minute.
 
-## Navigate through the code
+## Navigating the Model Training Code
 
-You previoulsy cloned a git repository. You should see on the file browser on the left hand side a folder that as the same name as the git projet: *{{< param gitRepoName >}}*. **Click** on it. From there you should see several objects:
-  - The *utils/* folder contains helpers and dependencies for the model training such as python functions or mappers
-  - The *inference/* folder contains material to query the models after you deployed them. We will use the content later on the lab.
-  - The *traffic-signs.pipeline* is a data science pipeline generated with Elyra. Elyra provides a graphical user interface that enables you to drag and drop your notebooks or python scripts and bind them together to create steps. You can run this pipeline in Openshift from the GUI.
-  - The *labeling-extraction.ipynb* notebook gets the images tagged with label studio. It downloads the images as well as their corresponding objects labeled with bounding boxes.
-  - The *synthetic-data.ipynb* notebook generates random synthetic data. Those are artifically created data that will add more data to the model training.  
-  - The *transfer-learning.ipynb* notebook is the model training itself.
-  - The *comparison.ipynb* notebook will compare the base model (that does not recognize the lego traffic signs) with the one you will train (that hopefully does). We want to ensure no regression on the model retraining.
+You have previously cloned a Git repository. In the file browser on the left, you should see a folder named after the Git project: *{{< param gitRepoName >}}*.
 
+1. Click to open the folder.  
+Inside, you will find several items:
+* The *utils/* folder contains utility functions and dependencies for model training, such as Python functions or mappers.  
+* The *inference/* folder contains resources for querying models after deployment. We will use it later.  
+* The *traffic-signs.pipeline* file is a Data Science Pipeline generated with Elyra. **Elyra** provides a graphical interface that allows you to drag-and-drop Notebooks or Python scripts for each step and link them together to create workflows. You will be able to run this Pipeline on OpenShift via the GUI.  
+* The *labeling-extraction.ipynb* Notebook retrieves images annotated with Label Studio. It downloads both the images and the corresponding annotations with **bounding boxes**.  
+* The *synthetic-data.ipynb* Notebook generates random synthetic data to enrich the model training dataset.  
+* The *transfer-learning.ipynb* Notebook contains the model training code itself.  
+* The *comparison.ipynb* Notebook compares the base model (which does not recognize LEGO traffic signs) with the model you will train (which should hopefully recognize them). This ensures that no regression is introduced during retraining.
 
-### Extract the images and their annotations
+### Extracting Images and Annotations
 
-Click on *labeling-extraction.ipynb*. Run the whole notebook using the icon on the top and click on restart the kernel when asked to (see bellow):
+1. Click on *labeling-extraction.ipynb* and explore the Notebook content.
+
+2. Run the entire Notebook using the double-arrow icon in the top toolbar. Click *Restart* when prompted:  
 ![run-notebook](run-notebook.png)
 ![restart-kernel](restart-kernel.png)
+You may notice that these scripts created a *dataset* directory. This directory contains two subfolders: *images* and *labels*, which contain the images and corresponding annotations, respectively.
 
-You may have noticed that those scripts has created in your filesystem a *dataset* directory. This *dataset* directory contains a *labels* and a *images* sub-directory. It contains the extracted images and labels. Jump down on the same notebook on the section "Select a random image and display its boundind boxes". Re-run that cell. It chooses a random image from the *dataset/images* and displays in the notebook the corresponding bounding boxes saved under *dataset/labels*.
+3. In the same Notebook, scroll to the section *Select a random image and display its bounding boxes* and rerun the cell by clicking it and then the arrow icon in the top toolbar.  
+This cell selects a random image from *dataset/images* and overlays the rectangles corresponding to the annotations saved in *dataset/labels*.
 
-### Generate synthetic data
+### Generating Synthetic Data
 
-You can close the preivous notebook and open the *synthetic-data.ipynb* notebook. This notebook generates random synthetic data. Those are artifically created data that will add more data to the model training. Run the whole notebook as explained on previous section. Have a quick look at the code and see examples on the visualization sections. Re-run the visualizaton step to display more synthetic data examples.
+1. Open the *synthetic-data.ipynb* Notebook.  
+This Notebook generates random **synthetic data** to supplement the model training dataset.
 
-### Review the model training step
+2. Run the entire Notebook as explained previously. Take time to review the code and observe the visualization examples.
 
-Be careful not to run the following notebook. It will crash your environement as we limited the allowed consommable RAM per environement.  
-Open *transfer-learning.ipynb* notebook and simply look at the code.
+3. You can rerun the visualization step to display other examples of synthetic data.
 
-### Review the comparison step
+### Examining the Model Training Step
 
-Be careful not to run the following notebook. It will crash your environement as we limited the allowed consommable RAM per environement.  
-Open *comparison.ipynb* notebook and simply look at the code.
+⚠️ **Do NOT run this Notebook!** Executing it could crash your environment, as the RAM available per participant is limited.  
 
-## Adapt the data science pipeline
+Simply open the *transfer-learning.ipynb* Notebook and review the code to understand its functionality.
 
-You will now adapt a data science pipeline to make your training be scheduled on a GPU. There are few small shared GPUs where the training will be executed. It should take around 8 minutes for the whole pipeline.
+### Examining the Comparison Step
 
-* **Open** the *traffic-signs.pipeline* data science pipeline.
+⚠️ **Do NOT run this Notebook!** Executing it could crash your environment, as the RAM available per participant is limited.  
 
-Here you see a graphical interface where you can create and run your data science pipelines. The pipeline has been created by drag and dropping the steps in the UI.
+Simply open the *comparison.ipynb* Notebook and review the code to understand its functionality.
 
-### Fix the pipeline
+## Running the Data Science Pipeline
 
-You can notice that this pipeline has 4 nodes and 2 bindings. 1 binding is missing between the third (*transfer-learning*) and fourth step (*comparison*). Click on the black dot on the right hand side of the third step (*transfer-learning*).  Hold down the mouse key until you reached the black dot of the left hand side of the fourth step (*comparison*).
+In this step, you will prepare the Data Science Pipeline to use a **GPU** to accelerate model training. On OpenShift, a few small shared GPUs have been deployed and will be used to run this Pipeline.
 
-You should have a similar result at the end:
+1. Open the *traffic-signs.pipeline* Pipeline.  
+You will see the Elyra graphical interface, which allows creating and running Data Science Pipelines. Our Pipeline was built by drag-and-dropping the Notebooks from the file explorer on the left.
+
+### Completing the Pipeline
+
+This Pipeline has 4 steps and 2 connections, but it is missing a connection between the third step (*transfer-learning*) and the fourth (*comparison*).  
+
+To create this connection:  
+1. Click the black dot on the right of the third step (*transfer-learning*).  
+2. Hold and drag it to the black dot on the left of the fourth step (*comparison*).  
+You should get the completed Pipeline as shown:
 ![full-pipeline](full-pipeline.png)
 
-### Review the node properties
+### Examining Step Properties
 
-Right click on the second step of the pipeline (**synthetic-data**). This will open a menu. Click on "Open Properties". They appear on the right hand side. Scroll down and see some properties such as:
-  - Runtime Image: Is the container image that will be used to run the python code extracted from your notebooks.
-  - CPU request: Is the amount of CPU that should be available on the node for this particular step.
-  - RAM limit: Is the maximum amount of RAM allowed for this particular step (container will be killed otherwise).
-  - Pipeline Parameters: Make the globally declared pipeline parameters available for this particular step.
-  - File Dependencies: Files that should be available on the container for the step execution. Here we need the whole *utils/* directory.
-  - Output Files: Thoses files generated during execution will be available to subsequent pipeline steps.
-  - Kubernetes Secret: Mount a secret inside inside the container. Here we make the object storage credentials available as environement variable during the execution.
+1. Right-click the second step of the Pipeline (*synthetic-data*).  
+2. In the menu, click *Open Properties*. Properties appear in the right panel.  
+3. Scroll down to see the main properties:  
+- **Runtime Image**: container image used to execute the Python code for this step.  
+- **CPU request**: amount of CPU reserved for this step.  
+- **RAM limit**: maximum RAM allowed for this step.  
+- **Pipeline Parameters**: globally declared Pipeline parameters that can be enabled for this step.  
+- **File Dependencies**: files required during execution inside the container. Here, the entire *utils/* directory is required.  
+- **Output Files**: files generated during execution, accessible by subsequent steps.  
+- **Kubernetes Secrets**: secrets mounted in the container. Here, object storage credentials are available as environment variables during execution.
 
-You can notice on the top of the right hand side properties menu that 3 different panels are available (pipeline properties, pipeline parameters, node properties). Feel free to navigate to the other panels.
+At the top of the properties panel, you will find three tabs: *Pipeline Properties*, *Pipeline Parameters*, and *Node Properties*. Feel free to explore them.
 
-### Request a GPU for the "transfer-learning" step
+### Requesting a GPU for the *transfer-learning* Step
 
-**Close the panel properties** opened on the previous step.
+1. Close the properties panel of the previous step.  
 ![close-properties](close-properties.png)
-You will now **work on the third step**.
-Right click on the third step of the pipeline (**transfer-learning**). This will open a menu. Click on "Open Properties". They appear on the right hand side. Look for the **GPU** property and select **1**. This will request 1 GPU for your model training. 
-![full-pipeline-gpu-count](full-pipeline-gpu-count.png)
-Scroll down to bottom.  
-The nodes containing GPUs has "Taints". It means that by default no workload can be scheduled on nodes with taints. We need to add a toleration to allow the training step to use a GPU. Taints and tolerations work together to ensure that pods are not scheduled onto inappropriate nodes.  
-**Click Add under Kubernetes Tolerations** (at the bottom of the node properties panel). Fill up as follow:
-- Key: type **```nvidia.com/gpu```**
-- Operator: select **Exists**
-- Effect: select **NoSchedule**
 
-You should have at the end:
+2. Now modify the **third step** of the Pipeline (*transfer-learning*). Do not touch the previous step.  
+Right-click the third step (*transfer-learning*) and select *Open Properties*. Properties appear in the right panel.
+
+3. Locate the *GPU* property and enter `1` to request a GPU for model training.  
+![full-pipeline-gpu-count](full-pipeline-gpu-count.png)
+
+4. Scroll to the bottom of the configuration panel.  
+Nodes with GPUs have **taints**, which by default prevent containers from running on them. To allow this step to use a GPU, add a **toleration**:  
+Click *Add* under *Kubernetes Tolerations* and fill in the fields as follows:
+- **Key**: `nvidia.com/gpu`  
+- **Operator**: *Exists*  
+- **Effect**: *NoSchedule*
+
+5. At the end, your configuration should look like this:  
 ![full-pipeline-toleration](full-pipeline-toleration.png)
 
-## Run the pipeline
+### Running the Pipeline
 
-It's now time to run the pipeline on Openshift. Click on the "Run Pipeline" button on the top of Elyra GUI. See bellow:
+Now it's time to run the Pipeline on OpenShift AI.  
+
+1. Click the *Run Pipeline* button (arrow icon) in the top toolbar:  
 ![elyra-run](elyra-run.png)
-**If** you have a popup warning you that the pipeline is **not saved**, click on the "**Save and Submit**" button.  
-Fill up the configurations. **Choose 10 epochs** as a pipeline parameter. It corresponds to the total number of iterations of all the training data in one cycle for training the machine learning model. Not enough epochs will cause your model to be inefficient. Too much epochs will cause your model to overfit (and thus being inefficient on predicting new data):
-![elyra-run-config](elyra-run-config.png)
-After a few moments, you will see a successful popup displayed. From this popup, you can click on "Run Details" to skip some instructions of the next session.
+
+2. If a popup warns that the Pipeline is unsaved, click *Save and Submit*.
+
+3. In the Pipeline configuration, set the value `10` for the *epochs* parameter.  
+![elyra-run-config](elyra-run-config.png)  
+An **epoch** corresponds to one full pass of the algorithm over the training dataset.  
+Choosing the **number of epochs** is crucial for good performance:
+- Too few epochs: the model will not have learned enough and will remain ineffective.  
+- Too many epochs: the model may **overfit**, meaning it becomes too close to the training data and fails to generalize to new data.
+
+4. After a few moments, a success popup will appear. Click *Run Details* to view the Pipeline execution details.  
 ![elyra-run-success](elyra-run-success.png)
 
+## Viewing Your Results
 
-## Visualizing your pipelines
+### Checking Pipeline Runs
 
-### Retreive the pipeline runs
+1. **If you missed the shortcut in the Elyra popup**, follow these steps to locate your Pipeline execution info. Otherwise, skip to the next step.  
 
-**If you missed the shortcut from elyra popup**, follow thoses steps to retreive your pipeline run. Otherwise pass to the next paragraph.
-You can now go back to Openshift AI dashboard: [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
-On the left hand side **click on "Experiments", then on "Experiments and runs"**. Choose the expriment associated with your pipeline name. 
-![experiments-and-runs](experiments-and-runs.png)
-**Click on the run**. Here can see the pipeline execution. One run should be visible as you created one during the previous section. Click on it.
+   1a. Go back to the OpenShift AI dashboard:  
+   [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
 
-You can see the status of your pipeline run. If you click on a node it displays some information such as the "Logs" panel. If you select the "Main" container from that panel, you will see the logs associated to the notebooks execution:
+   1b. In the left menu, click *Experiments*, then *Experiments and runs*.
+
+2. Select the experiment associated with your Pipeline.  
+   If you kept the default name, it is called *traffic-signs* and appears first.  
+   ![experiments-and-runs](experiments-and-runs.png)
+
+3. Click the current run to view the execution status. It usually appears first in the list, with the same name as the Pipeline plus a number.
+
+4. Clicking a Pipeline step opens a side panel on the right showing details, including *logs* in the *Logs* tab.
+
+5. Select *Main* from the dropdown to see the logs from the main container for that step.  
 ![pipeline-run-logs](pipeline-run-logs.png)
 
-Wait for the pipeline to complete. You should have something like that:
+6. Wait until all Pipeline steps are complete and marked in green.  
+You should get a result similar to this:  
 ![pipeline-run-succedded](pipeline-run-succedded.png)
 
-## Retreiving pipelines output
+### Retrieving Pipeline Outputs
 
-All the pipeline outputs are stored into the object storage. Connect to the S3 console using this link: [{{< param minioConsole >}}]({{< param minioConsole >}}). **Connect with the same username** we gave you at the begining of the lab. **The password is ```{{< param minioPass >}}```**. You should see few buckets. Click on the one corresponding to your username. There you have an "results.csv" file corresponding to your model performance. Download it if you wish.There should be one directory in the bucket that coresponds to your pipeline run. It starts with "traffic-sign". Open it. Here you can see html, ipynb files and archives. Click on the *comparison.html* file. A menu pops up on the right hand side. Click download and open this file locally on your browser. Note the difference in the scores of the base and new model. In this example we lost precision on the original dataset. But we can now detect "lego" traffic signs with the new model.
-![output-base-model](output-base-model.png)
+All Pipeline outputs are saved in **MinIO** object storage.
+
+1. Click this link to the MinIO console: [{{< param minioConsole >}}]({{< param minioConsole >}}).  
+
+2. Log in with the same username assigned at the start of the workshop. The password is `{{< param minioPass >}}`.
+
+3. You should see several buckets. Click the one matching your username:  
+   - You will find a *results.csv* file containing metrics from model training, which you can download.  
+   - You will also find a folder corresponding to your Pipeline, starting with *traffic-sign*.
+
+4. Open this folder. You will find HTML files, Notebooks (*.ipynb*), and archives.
+
+5. Click the *comparison.html* file. A menu will appear on the right. Click *Download* and open the file locally in your browser.  
+Compare the base model results with the new model. In this example, we lost some accuracy on classical traffic signs in the original dataset, but the new model can now detect LEGO signs that were previously unrecognized.
+![output-base-model](output-base-model.png)  
 ![output-new-model](output-new-model.png)
