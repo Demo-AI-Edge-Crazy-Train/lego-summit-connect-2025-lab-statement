@@ -57,32 +57,38 @@ Ouvrez simplement le notebook *transfer-learning.ipynb* et parcourez le code pou
 
 Ouvrez simplement le notebook *comparison.ipynb* et parcourez le code pour en comprendre le fonctionnement.
 
-## Adapter le pipeline de science des données
+## Adapter le pipeline de Data Science
 
-Vous allez maintenant adapter un pipeline de Data Science pour accélérer l’entraînement grâce à un GPU. Sur OpenShift, nous avons déployé quelques petits GPU partagés pour exécuter l’entraînement.
+Dans cette étape, vous allez préparer le pipeline de Data Science pour qu’il utilise un GPU afin d’accélérer l’entraînement du modèle. Sur OpenShift, quelques petits GPU partagés ont été déployés et seront utilisés pour exécuter ce pipeline.
 
 1. Ouvrez le pipeline *traffic-signs.pipeline*.  
 Vous verrez l’interface graphique d’Elyra, qui permet de créer et d’exécuter des pipelines de Data Science. Notre pipeline a été construit en glissant-déposant les notebooks depuis l’explorateur de fichiers situé à gauche.
 
-### Fixer le pipeline
+### Compléter le pipeline
 
-Vous pouvez remarquer que ce pipeline a 4 étapes et 2 liaisons. Il manque 1 liaison entre la troisième (*transfer-learning*) et la quatrième étape (*comparison*). Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).  Maintenez la touche de la souris enfoncée jusqu'à ce que vous atteigniez le point noir du côté gauche de la quatrième étape (*comparaison*).
+Ce pipeline comporte 4 étapes et 2 liaisons, mais il manque une connexion entre la troisième étape (*transfer-learning*) et la quatrième (*comparison*).  
 
-Vous devriez obtenir le résultat suivant :
+Pour créer cette liaison :  
+1. Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).  
+2. Maintenez le clic et faites glisser jusqu’au point noir à gauche de la quatrième étape (*comparison*).  
+
+Vous devriez obtenir le pipeline complet suivant :
 ![full-pipeline](full-pipeline.png)
 
-### Examiner les propriétés d'un nœud
+### Examiner les propriétés d’une étape
 
-Cliquez avec le bouton droit de la souris sur la deuxième étape du pipeline (**synthetic-data**). Un menu s'ouvre. Cliquez sur "Open Properties". Elles apparaissent sur le côté droit. Faites défiler vers le bas et voyez quelques propriétés telles que :
-  - Runtime Image : Il s'agit de l'image du conteneur qui sera utilisée pour exécuter le code python extrait de vos Notebook.
-  - CPU request : Est la quantité de CPU qui devrait être disponible sur le nœud pour cette étape en particulier.
-  - RAM limit : Quantité maximale de RAM autorisée pour cette étape.
-  - Pipeline Parameters : Rendre les paramètres de pipeline déclarés globalement disponibles pour cette étape particulière.
-  - File Dependencies : Fichiers qui doivent être disponibles sur le conteneur pour l'exécution de l'étape. Ici, nous avons besoin de tout le répertoire *utils/*.
-  - Output Files : Ces fichiers générés pendant l'exécution seront disponibles pour les étapes suivantes du pipeline.
-  - Kubernetes Secret : Monter un secret à l'intérieur du conteneur. Ici, nous rendons les informations d'identification du stockage d'objets disponibles en tant que variable d'environnement pendant l'exécution.
+1. Cliquez avec le bouton droit sur la deuxième étape du pipeline (*synthetic-data*).  
+2. Dans le menu qui s’ouvre, cliquez sur *Open Properties*. Les propriétés s’affichent dans le panneau de droite.  
+3. Faites défiler vers le bas pour observer les principales propriétés :  
+- **Runtime Image** : l’image du conteneur utilisée pour exécuter le code Python associé à cette étape.  
+- **CPU request** : la quantité de CPU réservée pour cette étape.  
+- **RAM limit** : la quantité maximale de RAM autorisée pour cette étape.  
+- **Pipeline Parameters** : les paramètres de pipeline déclarés globalement, que l’on peut activer pour les rendre disponibles pour cette étape.  
+- **File Dependencies** : les fichiers nécessaires à l’exécution dans le conteneur. Ici, tout le répertoire *utils/* est requis.  
+- **Output Files** : les fichiers générés pendant l’exécution, accessibles aux étapes suivantes.  
+- **Kubernetes Secrets** : les secrets montés dans le conteneur. Ici, les informations d’accès au stockage objet sont disponibles comme variables d’environnement pendant l’exécution.
 
-Vous pouvez remarquer qu'en haut du menu de droite des propriétés, 3 panneaux différents sont disponibles (pipeline properties, pipeline parameters, node properties). N'hésitez pas à naviguer vers les autres panneaux.
+En haut du panneau des propriétés, vous trouverez trois onglets : *Pipeline Properties*, *Pipeline Parameters* et *Node Properties*. N’hésitez pas à naviguer entre eux pour explorer les différents paramètres disponibles.
 
 ### Demander un GPU pour l'étape "transfer-learning".
 
