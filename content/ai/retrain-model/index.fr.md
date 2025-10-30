@@ -147,7 +147,7 @@ Le choix du nombre d'epochs est essentiel pour obtenir de bonnes performances :
 
 3. Cliquez sur le run en cours pour visualiser le statut d'exécution de votre Pipeline. Il apparaît généralement en premier dans la liste, avec le même nom que le Pipeline suivi d'un nombre.
 
-4. En cliquant sur une étape du Pipeline, un panneau latéral s'ouvre à droite et affiche plusieurs informations, dont les journaux (*logs*) dans l'onglet **Logs**.
+4. En cliquant sur une étape du Pipeline, un panneau latéral s'ouvre à droite et affiche plusieurs informations, dont les journaux (*logs*) dans l'onglet *Logs*.
 
 5. Sélectionnez *Main* dans le menu déroulant : vous verrez alors les logs associés à l'exécution du conteneur principal de cette étape.  
    ![pipeline-run-logs](pipeline-run-logs.png)
