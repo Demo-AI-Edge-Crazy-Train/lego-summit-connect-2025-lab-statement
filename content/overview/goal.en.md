@@ -24,7 +24,7 @@ As an elite Red Hat agent, you must leverage cutting-edge **Edge AI** technologi
 - **GPU Acceleration**: Harness the power of NVIDIA hardware for faster training
 
 #### Edge Computing 🌐
-- **Nvidia Jetson Orin**: Deploy AI models directly on edge devices
+- **NVIDIA Jetson Orin**: Deploy AI models directly on edge devices
 - **Red Hat Device Edge**: Run enterprise-grade Edge OS
 - **MicroShift**: Kubernetes for resource-constrained environments
 - **Real-time Processing**: Make split-second decisions to stop the train
