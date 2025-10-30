@@ -7,7 +7,7 @@ weight: 4
 
 ⚠️ There is a **dedicated OpenShift user** for each of you. The workshop facilitator will provide you with the relevant information. Throughout the lab, please use the username you have been assigned instead of *userX*. ⚠️
 
-* **OCP Cluster console URL :** `{{< param ocpConsole >}}`
+* **OCP Cluster console URL :** [{{< param ocpConsole >}}]({{< param ocpConsole >}})
 
 * **OCP Cluster API URL :** `{{< param ocpApi >}}`
 
