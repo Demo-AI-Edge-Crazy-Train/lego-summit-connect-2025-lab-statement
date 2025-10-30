@@ -24,7 +24,7 @@ Ces composants interagissent pour offrir une chaîne complète, du développemen
 1. Dans le tableau de bord OpenShift AI, naviguez vers le menu *Data Science Projects* sur la gauche :  
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-2. Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** a été créé pour vous. Cliquez dessus pour l’ouvrir. Vous devriez arriver sur une page similaire :  
+2. Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** a été créé pour vous. Cliquez dessus pour l'ouvrir. Vous devriez arriver sur une page similaire :  
 ![project-empty-state](project-empty-state.png)
 
 ## Création d'une Data Connection
