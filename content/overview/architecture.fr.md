@@ -7,7 +7,7 @@ weight: 2
 
 ![global architecture](/images/architecture-global.png)
 
-Notre solution Edge AI représente une **architecture hybride cloud-edge** sophistiquée qui apporte les capacités IA de niveau entreprise directement sur le terrain. Voici comment chaque composant fonctionne ensemble pour créer un système intelligent et autonome :
+Notre solution Edge AI est une **architecture hybride cloud-edge** sophistiquée qui apporte des capacités IA de qualité professionnelle directement sur le terrain. Voici comment tous les composants fonctionnent ensemble pour créer un système intelligent et autonome :
 
 ## 🚂 À l'edge : le train LEGO
 
