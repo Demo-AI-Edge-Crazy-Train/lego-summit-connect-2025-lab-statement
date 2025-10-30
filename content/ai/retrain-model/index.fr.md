@@ -6,11 +6,11 @@ weight= 4
   src = '**.png'
 +++
 
-Dans cette section, vous naviguerez à travers le code python utilisé pour réentraîner le modèle. Vous adapterez ensuite un pipeline de science des données et l'exécuterez sur Openshift. Enfin, vous visualiserez votre pipeline dans le tableau de bord Openshift AI et récupérerez ses résultats.
+Dans cette section, vous explorerez le code Python utilisé pour réentraîner le modèle. Vous adapterez ensuite un pipeline de Data Science afin de l’exécuter sur OpenShift. Enfin, vous pourrez visualiser votre pipeline dans le tableau de bord OpenShift AI et récupérer ses résultats.
 
-**ATTENTION:** Vous n'exécuterez que les premières étapes de l'entraînement du modèle dans les Notebooks Jupyter. L'entrainement complet se déroulera sur Openshift afin de limiter la RAM nécessaire à chaque participant. Dans le cas contraire, l'exécution du modèle d'apprentissage (*transfer-learning.ipynb*) plantera pour cause OOM Killed (dépassement de mémoire allouée). Votre pod sur Openshift sera supprimé et recréé automatiquement. Rien de bien méchant mais votre environnement sera indisponible pendant une minute.
+ATTENTION : Vous ne lancerez que les premières étapes de l’entraînement du modèle dans les notebooks Jupyter. L’entraînement complet se fera sur OpenShift afin de limiter la mémoire RAM utilisée par chaque participant. Sinon, l’exécution du modèle (dans *transfer-learning.ipynb*) risque d’échouer avec une erreur OOM Killed (mémoire insuffisante). Dans ce cas, votre pod OpenShift sera automatiquement supprimé et recréé. Rien de grave, mais votre environnement sera indisponible pendant environ une minute.
 
-## Naviguez dans le code
+## Naviguer dans le code
 
 Vous avez précédemment cloné un repo git. Vous devriez voir dans le navigateur de fichiers sur la gauche un dossier qui porte le même nom que le projet git : *{{< param gitRepoName >}}*. **Cliquez** dessus. A partir de là, vous devriez voir plusieurs objets :
   - Le dossier *utils/* contient des aides et des dépendances pour l'apprentissage du modèle, comme des fonctions python ou des mappers
