@@ -22,4 +22,4 @@ You can ignore this message if it appears.
 After authentication, the display should look like this:  
 ![02-01-rhoai-front-page](02-01-rhoai-front-page.png)
 
-If you’ve made it this far, congratulations! You are now successfully logged in to the OpenShift AI dashboard.
+If you've made it this far, congratulations! You are now successfully logged in to the OpenShift AI dashboard.
