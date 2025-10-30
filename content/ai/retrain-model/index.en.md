@@ -16,13 +16,13 @@ You have previously cloned a Git repository. In the file browser on the left, yo
 
 1. Click to open the folder.  
 Inside, you will find several items:
-* The *utils/* folder contains utility functions and dependencies for model training, such as Python functions or mappers.  
-* The *inference/* folder contains resources for querying models after deployment. We will use it later.  
-* The *traffic-signs.pipeline* file is a Data Science Pipeline generated with Elyra. **Elyra** provides a graphical interface that allows you to drag-and-drop Notebooks or Python scripts for each step and link them together to create workflows. You will be able to run this Pipeline on OpenShift via the GUI.  
-* The *labeling-extraction.ipynb* Notebook retrieves images annotated with Label Studio. It downloads both the images and the corresponding annotations with **bounding boxes**.  
-* The *synthetic-data.ipynb* Notebook generates random synthetic data to enrich the model training dataset.  
-* The *transfer-learning.ipynb* Notebook contains the model training code itself.  
-* The *comparison.ipynb* Notebook compares the base model (which does not recognize LEGO traffic signs) with the model you will train (which should hopefully recognize them). This ensures that no regression is introduced during retraining.
+  * The *utils/* folder contains utility functions and dependencies for model training, such as Python functions or mappers.  
+  * The *inference/* folder contains resources for querying models after deployment. We will use it later.  
+  * The *traffic-signs.pipeline* file is a Data Science Pipeline generated with Elyra. **Elyra** provides a graphical interface that allows you to drag-and-drop Notebooks or Python scripts for each step and link them together to create workflows. You will be able to run this Pipeline on OpenShift via the GUI.  
+  * The *labeling-extraction.ipynb* Notebook retrieves images annotated with Label Studio. It downloads both the images and the corresponding annotations with **bounding boxes**.  
+  * The *synthetic-data.ipynb* Notebook generates random synthetic data to enrich the model training dataset.  
+  * The *transfer-learning.ipynb* Notebook contains the model training code itself.  
+  * The *comparison.ipynb* Notebook compares the base model (which does not recognize LEGO traffic signs) with the model you will train (which should hopefully recognize them). This ensures that no regression is introduced during retraining.
 
 ### Extracting Images and Annotations
 
