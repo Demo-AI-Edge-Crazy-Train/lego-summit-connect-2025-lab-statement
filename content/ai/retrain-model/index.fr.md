@@ -16,13 +16,13 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 
 1. Cliquez dessus pour ouvrir le dossier.  
 À l'intérieur, vous trouverez plusieurs éléments :
-* Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle, comme des fonctions Python ou des mappers.  
-* Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l'utiliserons plus tard.  
-* Le fichier *traffic-signs.pipeline* est un Pipeline de Data Science généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline sur OpenShift via l'interface graphique.  
-* Le Notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les annotations correspondantes avec des **bounding boxes**.  
-* Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.  
-* Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle lui-même.  
-* Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) avec celui que vous allez entraîner (qui, espérons-le, les reconnaît). L'objectif est de s'assurer qu'aucune régression n'est introduite lors du réentraînement du modèle.
+  * Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle, comme des fonctions Python ou des mappers.  
+  * Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l'utiliserons plus tard.  
+  * Le fichier *traffic-signs.pipeline* est un Pipeline de Data Science généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline sur OpenShift via l'interface graphique.  
+  * Le Notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les annotations correspondantes avec des **bounding boxes**.  
+  * Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.  
+  * Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle lui-même.  
+  * Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) avec celui que vous allez entraîner (qui, espérons-le, les reconnaît). L'objectif est de s'assurer qu'aucune régression n'est introduite lors du réentraînement du modèle.
 
 ### Extraire les images et leurs annotations
 
