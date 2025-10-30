@@ -171,6 +171,6 @@ Toutes les outputs du Pipeline sont sauvegardées dans le stockage objet MinIO.
 4. Ouvrez ce répertoire. Vous y trouverez des fichiers HTML, des Notebooks (*.ipynb*) et des archives.
 
 5. Cliquez sur le fichier *comparison.html*. Un menu apparaîtra sur le côté droit : cliquez sur *Download* et ouvrez le fichier localement dans votre navigateur.  
-Comparez les résultats du modèle de base avec ceux du nouveau modèle. Dans cet exemple, nous avons perdu en confiance dans la reconnaissance des panneaux classiques de l'ensemble de données original, mais le nouveau modèle permet désormais de détecter les panneaux LEGO qui n'étaient pas reconnus auparavant.
+Comparez les résultats du modèle de base avec ceux du nouveau modèle. Dans cet exemple, nous avons perdu en précision dans la reconnaissance des panneaux classiques de l'ensemble de données original, mais le nouveau modèle permet désormais de détecter les panneaux LEGO qui n'étaient pas reconnus auparavant.
 ![output-base-model](output-base-model.png)  
 ![output-new-model](output-new-model.png)
