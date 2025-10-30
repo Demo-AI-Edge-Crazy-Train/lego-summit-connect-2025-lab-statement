@@ -45,7 +45,7 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 4. **Implémenté du GitOps** pour le déploiement automatisé d'applications
 5. **Sauvé le train** avant qu'il ne s'écrase !
 
-### ⚡ Les Enjeux
+### ⚡ Les enjeux
 
 - **Limite de temps** : Le train approche de la falaise !
 - **Technologie** : Stack de pointe Red Hat Edge AI
