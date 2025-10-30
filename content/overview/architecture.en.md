@@ -43,7 +43,7 @@ The heart of our edge system is the **NVIDIA Jetson Orin**, a powerful System on
 - **OTA Updates**: Over-the-air (OTA) deployment capabilities
 
 **MicroShift** enables:
-- **Container Orchestration**: Kubernetes at the edge
+- **Container Orchestration**: Kubernetes platform at the edge
 - **Service Management**: Automated deployment and scaling
 - **Self-healing**: Automatic recovery from failures
 - **Monitoring**: Real-time system health tracking
