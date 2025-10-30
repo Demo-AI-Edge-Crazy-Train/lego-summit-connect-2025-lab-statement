@@ -39,7 +39,7 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 
 À la fin de cette mission, vous aurez :
 
-1. **Entraîné un modèle IA** capable de détecter les panneaux de signalisation LEGO
+1. **Entraîné un modèle d'IA** capable de détecter des panneaux de signalisation LEGO
 2. **Déployé le modèle** sur une plateforme de edge computing
 3. **Construit des pipelines CI/CD** pour des déploiements multi-architecture
 4. **Implémenté du GitOps** pour le déploiement automatisé d'applications
