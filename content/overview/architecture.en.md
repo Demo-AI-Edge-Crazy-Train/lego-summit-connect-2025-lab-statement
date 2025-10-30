@@ -131,7 +131,7 @@ Our system supports **heterogeneous** computing environments:
 | **Multi-arch** | Universal Images | Container Registry |
 
 ### Deployment Strategy
-- **Cloud Development**: Models trained on powerful x86_64 clusters
+- **Cloud Development**: AI models trained on powerful x86_64 clusters
 - **Cross-compilation**: Applications built for ARM64
 - **Edge Deployment**: Lightweight containers deployed to Jetson
 - **Continuous Integration**: Automated testing across all architectures
