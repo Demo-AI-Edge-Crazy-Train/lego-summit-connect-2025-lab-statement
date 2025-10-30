@@ -8,7 +8,7 @@ weight= 4
 
 Dans cette section, vous explorerez le code Python utilisé pour réentraîner le modèle. Vous adapterez ensuite un pipeline de Data Science afin de l'exécuter sur OpenShift. Enfin, vous pourrez visualiser votre pipeline dans le tableau de bord OpenShift AI et récupérer ses résultats.
 
-ATTENTION : Vous ne lancerez que les premières étapes de l'entraînement du modèle dans les environnements de développement Jupyter. L'entraînement complet se fera en dehors de ces environnements via un Pipeline, afin de limiter la mémoire RAM utilisée par chaque participant. Sinon, l'exécution du modèle (dans *transfer-learning.ipynb*) risque d'échouer avec une erreur OOM Killed (mémoire insuffisante). Dans ce cas, votre pod OpenShift sera automatiquement supprimé et recréé. Rien de grave, mais votre environnement sera indisponible pendant environ une minute.
+ATTENTION : Vous ne lancerez que les premières étapes de l'entraînement du modèle dans les environnements de développement Jupyter. L'entraînement complet se fera en dehors de ces environnements via un Pipeline, afin de limiter la mémoire RAM utilisée par chaque participant. Sinon, l'exécution du modèle (dans *transfer-learning.ipynb*) risque d'échouer avec une erreur **OOM Killed** (mémoire insuffisante). Dans ce cas, votre pod OpenShift sera automatiquement supprimé et recréé. Rien de grave, mais votre environnement sera indisponible pendant environ une minute.
 
 ## Naviguer dans le code d'entraînement du modèle
 
@@ -19,7 +19,7 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 * Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle, comme des fonctions Python ou des mappers.  
 * Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l'utiliserons plus tard.  
 * Le fichier *traffic-signs.pipeline* est un Pipeline de Data Science généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline sur OpenShift via l'interface graphique.  
-* Le Notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les objets correspondants étiquetés avec des bounding boxes.  
+* Le Notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les annotations correspondantes avec des **bounding boxes**.  
 * Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.  
 * Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle lui-même.  
 * Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) avec celui que vous allez entraîner (qui, espérons-le, les reconnaît). L'objectif est de s'assurer qu'aucune régression n'est introduite lors du réentraînement du modèle.
@@ -39,7 +39,7 @@ Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images*
 ### Générer des données synthétiques
 
 1. Ouvrez le Notebook *synthetic-data.ipynb*.  
-Ce Notebook génère des données synthétiques de manière aléatoire, c'est-à-dire des données artificielles qui viendront compléter l'ensemble d'entraînement du modèle.  
+Ce Notebook génère des **données synthétiques** de manière aléatoire, c'est-à-dire des données artificielles qui viendront compléter l'ensemble d'entraînement du modèle.  
 
 2. Exécutez l'intégralité du Notebook comme expliqué précédemment. Prenez le temps de parcourir le code et d'observer les exemples affichés dans les sections de visualisation.
 
@@ -59,7 +59,7 @@ Ouvrez simplement le Notebook *comparison.ipynb* et parcourez le code pour en co
 
 ## Lancer le Pipeline de Data Science
 
-Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu'il utilise un GPU afin d'accélérer l'entraînement du modèle. Sur OpenShift, quelques petits GPU partagés ont été déployés et seront utilisés pour exécuter ce Pipeline.
+Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu'il utilise un **GPU** afin d'accélérer l'entraînement du modèle. Sur OpenShift, quelques petits GPU partagés ont été déployés et seront utilisés pour exécuter ce Pipeline.
 
 1. Ouvrez le Pipeline *traffic-signs.pipeline*.  
 Vous verrez l'interface graphique d'Elyra, qui permet de créer et d'exécuter des Pipelines de Data Science. Notre Pipeline a été construit en glissant-déposant les Notebooks depuis l'explorateur de fichiers situé à gauche.
@@ -122,7 +122,7 @@ Il est maintenant temps de lancer le Pipeline sur OpenShift.
 3. Dans la configuration du Pipeline, renseignez la valeur `10` pour le paramètre *epochs*.
 ![elyra-run-config](elyra-run-config.png)
 Une *epoch* correspond à un passage complet de l'algorithme sur l'ensemble du dataset d'entraînement.  
-Le choix du nombre d'epochs est essentiel pour obtenir de bonnes performances :
+Le **choix du nombre d'epochs** est essentiel pour obtenir de bonnes performances :
 - Trop peu d'epochs : le modèle n'aura pas suffisamment appris et restera inefficace.  
 - Trop d'epochs : le modèle risque de faire de l'**overfitting**, c'est-à-dire d'être trop proche des données d'entraînement et de mal généraliser sur de nouvelles données.  
 
@@ -157,7 +157,7 @@ Le choix du nombre d'epochs est essentiel pour obtenir de bonnes performances :
 
 ### Récupérer les outputs des Pipelines
 
-Toutes les outputs du Pipeline sont sauvegardées dans le stockage objet MinIO.
+Toutes les outputs du Pipeline sont sauvegardées dans le stockage objet **MinIO**.
 
 1. Cliquez sur ce lien vers la console MinIO : [{{< param minioConsole >}}]({{< param minioConsole >}}).  
 
