@@ -24,10 +24,10 @@ Ces composants interagissent pour offrir une chaîne complète, du développemen
 1. Dans le tableau de bord OpenShift AI, naviguez vers le menu *Data Science Projects* sur la gauche :  
 ![02-02-ds-proj-nav](02-02-ds-proj-nav.png)
 
-2. Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** a été créé pour vous. Cliquez sur ce projet. Vous devriez arriver sur une page similaire :  
+2. Un identifiant unique vous a été attribué au début de l'atelier. Un projet portant le **même nom** a été créé pour vous. Cliquez dessus pour l’ouvrir. Vous devriez arriver sur une page similaire :  
 ![project-empty-state](project-empty-state.png)
 
-## Création d'une Data Connection pour le Pipeline Server
+## Création d'une Data Connection
 
 Nous avons déployé une instance Minio pour gérer le stockage objet dans le cluster. Vous devrez **ajouter une Data Connection** pointant vers ce stockage.
 
