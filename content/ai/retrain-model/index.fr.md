@@ -31,7 +31,6 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 2. Exécutez le Notebook en entier en utilisant l’icône à double flèche dans la barre d’outils en haut. Cliquez sur *Restart* lorsqu’on vous le demande (voir ci-dessous) :  
 ![run-notebook](run-notebook.png)
 ![restart-kernel](restart-kernel.png)
-
 Vous avez peut-être remarqué que ces scripts ont créé un répertoire *dataset*. Ce répertoire contient deux sous-dossiers : *images* et *labels*, qui regroupent respectivement les images et les annotations correspondantes.
 
 3. Dans le même Notebook, descendez à la section *Select a random image and display its bounding boxes* et réexécutez la cellule en cliquant dessus, puis sur l’icône flèche dans la barre d’outils en haut. 
@@ -39,17 +38,24 @@ Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images*
 
 ### Générer des données synthétiques
 
-Vous pouvez fermer le Notebook précédent et ouvrir le Notebook *synthetic-data.ipynb*. Ce Notebook génère des données synthétiques de manière aléatoire. Il s'agit de données créées artificiellement qui ajouteront des données supplémentaires à l'entraînement du modèle. Exécutez l'ensemble du Notebook comme expliqué dans la section précédente. Jetez un coup d'œil au code et voyez les exemples dans les sections de visualisation. Exécutez à nouveau l'étape de visualisation pour afficher d'autres exemples de données synthétiques.
+1. Fermez le notebook *labeling-extraction.ipynb* et ouvrez le notebook *synthetic-data.ipynb*.  
+Ce notebook génère des données synthétiques de manière aléatoire, c’est-à-dire des données artificielles qui viendront compléter l’ensemble d’entraînement du modèle.  
 
-### Examiner l'étape d'apprentissage du modèle
+2. Exécutez l’intégralité du Notebook comme expliqué précédemment. Prenez le temps de parcourir le code et d’observer les exemples affichés dans les sections de visualisation.
 
-Attention à ne pas exécuter le notebook suivant. Il ferait crasher votre environnement car nous avons limité la RAM consommable par environnement.  
-Ouvrez le Notebook *transfer-learning.ipynb* et regardez simplement le code.
+3. Vous pouvez relancer l’étape de visualisation pour afficher d’autres exemples de données synthétiques.
 
-### Examiner l'étape de comparaison
+### Examiner l’étape d’apprentissage du modèle
 
-Attention à ne pas exécuter le notebook suivant. Il ferait crasher votre environnement car nous avons limité la RAM consommable par environnement.  
-Ouvrez le notebook *comparison.ipynb* et regardez simplement le code.
+⚠️ **Ne lancez pas ce Notebook !** Son exécution ferait crasher votre environnement, car la RAM disponible par participant est limitée.  
+
+Ouvrez simplement le notebook *transfer-learning.ipynb* et parcourez le code pour en comprendre le fonctionnement.
+
+### Examiner l’étape de comparaison
+
+⚠️ **Ne lancez pas ce Notebook !** Son exécution ferait crasher votre environnement, car la RAM disponible par participant est limitée.  
+
+Ouvrez simplement le notebook *comparison.ipynb* et parcourez le code pour en comprendre le fonctionnement.
 
 ## Adapter le pipeline de science des données
 
