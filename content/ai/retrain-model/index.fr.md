@@ -156,8 +156,21 @@ Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances 
    Vous devriez obtenir un résultat similaire à celui-ci :  
    ![pipeline-run-succedded](pipeline-run-succedded.png)
 
-## Récupérer les output des pipelines
+## Récupérer les outputs des pipelines
 
-Toutes les output du pipeline sont sauvegardées dans le stockage objet. Connectez-vous à la console S3 en utilisant ce lien : [{{< param minioConsole >}}]({{< param minioConsole >}}). **Connectez-vous avec le même nom d'utilisateur** que nous vous avons donné au début du lab. **Le mot de passe est ``{{< param minioPass >}}``**. Vous devriez voir plusieurs buckets. Cliquez sur celui qui correspond à votre nom d'utilisateur. Il devrait y avoir un fichier *results.csv* dans lequel se trouve les métriques liées à l'entrainement du modèle que vous pouvez télécharger si vous le souhaitez. Il devrait également y avoir un répertoire qui correspond à votre pipeline. Il commence par "traffic-sign". Ouvrez-le. Vous y trouverez des fichiers html, ipynb et des archives. Cliquez sur le fichier *comparison.html*. Un menu apparaît sur le côté droit. Cliquez sur télécharger et ouvrez ce fichier localement sur votre navigateur. Notez la différence entre les scores du modèle de base et du nouveau modèle. Dans cet exemple, nous avons perdu en précision sur l'ensemble de données original. Mais nous pouvons maintenant détecter les panneaux de signalisation "lego" avec le nouveau modèle.
-![output-base-model](output-base-model.png)
+Toutes les outputs du pipeline sont sauvegardées dans le stockage objet MinIO.
+
+1. Cliquez sur ce lien vers la console MinIO : [{{< param minioConsole >}}]({{< param minioConsole >}}).  
+
+2. Connectez-vous avec le même nom d'utilisateur qui vous a été attribué au début de l'atelier. Le mot de passe est `{{< param minioPass >}}`.
+
+3. Vous devriez voir plusieurs buckets. Cliquez sur celui qui correspond à votre nom d'utilisateur :  
+   - Vous y trouverez un fichier *results.csv*, contenant les métriques liées à l'entraînement du modèle, que vous pouvez télécharger si vous le souhaitez.  
+   - Vous trouverez également un répertoire correspondant à votre pipeline, dont le nom commence par *traffic-sign*.
+
+4. Ouvrez ce répertoire. Vous y trouverez des fichiers HTML, des notebooks (*.ipynb*) et des archives.
+
+5. Cliquez sur le fichier *comparison.html*. Un menu apparaîtra sur le côté droit : cliquez sur *Download* et ouvrez le fichier localement dans votre navigateur.  
+Comparez les résultats du modèle de base avec ceux du nouveau modèle. Dans cet exemple, nous avons perdu en confiance dans la reconnaissance des panneaux classiques de l'ensemble de données original, mais le nouveau modèle permet désormais de détecter les panneaux LEGO qui n'étaient pas reconnus auparavant.
+![output-base-model](output-base-model.png)  
 ![output-new-model](output-new-model.png)
