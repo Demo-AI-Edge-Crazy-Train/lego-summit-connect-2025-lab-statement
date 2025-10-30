@@ -73,7 +73,7 @@ Situé dans le **cloud AWS** avec **connectivité 5G** vers l'edge :
 #### Plateforme OpenShift AI 🤖
 - **Projets Data Science** : Environnements isolés pour le développement ML
 - **Jupyter Notebooks** : Expérience de développement interactive
-- **Pipeline Server** : Exécution automatisée de workflows ML
+- **Pipeline Servers** : Exécution automatisée de workflows ML
 - **Model Serving** : Points d'accès API REST pour l'inférence
 - **Accélérateurs GPU** : Infrastructure d'entraînement haute performance
 
