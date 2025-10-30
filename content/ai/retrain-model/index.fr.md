@@ -132,19 +132,30 @@ Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances 
 
 ## Visualiser vos pipelines
 
-### Récupérer les exécutions de pipelines
+### Consulter les exécutions de pipelines
 
-**Si vous avez manqué le raccourci** de la fenêtre popup d'elyra, suivez ces étapes pour récupérer votre pipeline. Sinon, passez au paragraphe suivant.
-Vous pouvez maintenant retourner au tableau de bord d'Openshift AI : [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
-Sur le côté gauche **cliquez sur "Experiments", puis sur "Experiments and runs"**. Choisissez l'expérimentation associée au nom de votre pipeline. 
-![experiments-and-runs](experiments-and-runs.png)
-**Cliquer sur le run en cours**. Vous pouvez voir ici l'exécution du pipeline. Un run devrait être visible puisque vous en avez créé un dans la section précédente. Cliquez dessus.
+1. **Si vous avez manqué le raccourci** affiché dans la fenêtre popup d’Elyra, suivez les étapes ci-dessous pour retrouver les informations d’exécution de votre pipeline.  
+   Sinon, passez directement à l’étape suivante.
 
-Vous pouvez voir le statut de votre pipeline. Si vous cliquez sur un nœud, il affiche des informations telles que le panneau "Logs". Si vous sélectionnez le conteneur "Main" dans ce panneau, vous verrez les logs associés à l'exécution des notebooks :
-![pipeline-run-logs](pipeline-run-logs.png)
+   1a. Retournez sur le tableau de bord OpenShift AI :  
+   [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
 
-Attendez que le pipeline se termine. Vous devriez avoir quelque chose comme ça :
-![pipeline-run-succedded](pipeline-run-succedded.png)
+   1b. Dans le menu latéral gauche, cliquez sur *Experiments*, puis sur *Experiments and runs*.
+
+2. Sélectionnez l’expérimentation associée à votre pipeline.  
+   Si vous avez conservé le nom par défaut, elle s’appelle **traffic-signs** et apparaît en premier dans la liste.  
+   ![experiments-and-runs](experiments-and-runs.png)
+
+3. Cliquez sur le run en cours pour visualiser le statut d’exécution de votre pipeline. Il apparaît généralement en premier dans la liste, avec le même nom que le pipeline suivi d’un nombre.
+
+4. En cliquant sur une étape du pipeline, un panneau latéral s’ouvre à droite et affiche plusieurs informations, dont les journaux (*logs*) dans l’onglet **Logs**.
+
+5. Sélectionnez *Main* dans le menu déroulant : vous verrez alors les logs associés à l’exécution du conteneur principal de cette étape.  
+   ![pipeline-run-logs](pipeline-run-logs.png)
+
+6. Attendez que toutes les étapes du pipeline soient terminées et s’affichent en vert.  
+   Vous devriez obtenir un résultat similaire à celui-ci :  
+   ![pipeline-run-succeeded](pipeline-run-succeeded.png)
 
 ## Récupérer les output des pipelines
 
