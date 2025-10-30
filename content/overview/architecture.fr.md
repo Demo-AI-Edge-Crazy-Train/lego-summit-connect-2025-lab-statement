@@ -3,8 +3,6 @@ title: "Vue d'ensemble de l'architecture"
 weight: 2
 ---
 
-## 🏗️ Architecture technique détaillée
-
 ![global architecture](/images/architecture-global.png)
 
 Notre solution Edge AI est une **architecture hybride cloud-edge** sophistiquée qui apporte des capacités IA de qualité professionnelle directement sur le terrain. Voici comment tous les composants fonctionnent ensemble pour créer un système intelligent et autonome :
