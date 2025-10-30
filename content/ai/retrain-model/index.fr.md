@@ -90,21 +90,25 @@ Vous devriez obtenir le pipeline complet suivant :
 
 En haut du panneau des propriétés, vous trouverez trois onglets : *Pipeline Properties*, *Pipeline Parameters* et *Node Properties*. N’hésitez pas à naviguer entre eux pour explorer les différents paramètres disponibles.
 
-### Demander un GPU pour l'étape "transfer-learning".
+### Demander un GPU pour l'étape *transfer-learning*
 
-**Fermer les propriétés** ouvertes à l'étape précédente.
+1. Fermez les propriétés ouvertes à l'étape précédente.  
 ![close-properties](close-properties.png)
-Vous allez maintenant **travailler sur la troisième étape**. Encore une fois, veillez à modifier les propriéts de l'étape d'entrainement du modèle et non pas les propriétés vues à l'étape précédente.
-Cliquez avec le bouton droit de la souris sur la troisième étape du pipeline (**transfer-learning**). Un menu s'ouvre. Cliquez sur "Open Properties". Elles apparaissent sur le côté droit. Cherchez la propriété **GPU** et sélectionnez **1**. Cela demandera 1 GPU pour l'entraînement de votre modèle. 
-![full-pipeline-gpu-count](full-pipeline-gpu-count.png)
-Descendez jusqu'en bas.  
-Les nœuds contenant des GPU ont des "Taints". Cela signifie que par défaut, aucun conteneur ne peut être executé sur les nœuds avec des taints. Nous devons ajouter une "toleration" pour permettre à l'étape d'entrainement d'utiliser un GPU. Les taints et les "toleration" fonctionnent ensemble pour s'assurer que les pods ne sont pas exexcutés sur des nœuds inappropriés.  
-**Click Add** sous la propriété **Kubernetes Tolerations** (en bas du menu des propriétés du nœud). Remplissez les champs comme suit :
-- Key : tapez **```nvidia.com/gpu```**
-- Operator : sélectionnez **Exists**
-- Effect : sélectionnez **NoSchedule**.
 
-Vous devriez avoir à la fin :
+2. Nous allons maintenant modifier la **troisième étape** du pipeline (*transfer-learning*). Assurez-vous de ne pas toucher aux propriétés de l'étape précédente.  
+Faites un clic droit sur la troisième étape (*transfer-learning*) et sélectionnez *Open Properties*. Les propriétés s’affichent dans le panneau de droite.
+
+3. Cherchez la propriété *GPU* et saisissez `1` pour demander un GPU pour l’entraînement du modèle.  
+![full-pipeline-gpu-count](full-pipeline-gpu-count.png)
+
+4. Descendez jusqu’en bas du panneau de paramétrage.  
+Les noeuds contenant des GPU ont des **taints**, ce qui empêche par défaut l’exécution de conteneurs dessus. Pour permettre à cette étape d’utiliser un GPU, il faut ajouter une **toleration**.  
+Cliquez sur *Add* sous la propriété *Kubernetes Tolerations* et remplissez les champs comme suit :
+- **Key** : `nvidia.com/gpu`
+- **Operator** : *Exists*
+- **Effect** : *NoSchedule*
+
+5. À la fin, votre configuration devrait ressembler à ceci :  
 ![full-pipeline-toleration](full-pipeline-toleration.png)
 
 ## Exécuter le pipeline
