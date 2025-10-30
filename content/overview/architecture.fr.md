@@ -77,10 +77,10 @@ Situé dans le **cloud AWS** avec **connectivité 5G** vers l'edge :
 - **Model Serving** : Points d'accès API REST pour l'inférence
 - **Accélérateurs GPU** : Infrastructure d'entraînement haute performance
 
-#### Infrastructure pipeline CI/CD 🔄
-- **Builds multi-architecture** : Support pour x86_64 et ARM64
+#### Pipelines CI/CD 🔄
 - **Pipelines Tekton** : Workflows CI/CD cloud-natifs
 - **Registry de conteneurs** : Stockage et distribution d'images sécurisés
+- **Builds multi-architecture** : Support pour x86_64 et ARM64
 - **Tests automatisés** : Évaluation de la qualité à chaque étape
 
 #### Système de vidéosurveillance 📹
