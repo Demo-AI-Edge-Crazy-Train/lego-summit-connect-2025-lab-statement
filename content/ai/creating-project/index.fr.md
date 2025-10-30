@@ -15,7 +15,7 @@ Il est important de comprendre les principaux concepts que nous allons utiliser 
 * Le **Workbench** fournit un environnement de développement interactif basé sur Jupyter, dans lequel les data scientists peuvent écrire, exécuter et tester leur code.  
 * Le **Pipeline Server** est le moteur de workflow qui exécute et trace les différentes étapes du traitement des données et de l'entraînement des modèles.  
 * Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits dans un Workbench ou un Pipeline. 
-* Enfin, le **repo Git** contient le code source du projet, garantissant une bonne reproductibilité et favorisant la collaboration autour du même ensemble de scripts et de notebooks.
+* Enfin, le **repository Git** contient le code source du projet, garantissant une bonne reproductibilité et favorisant la collaboration autour du même ensemble de scripts et de notebooks.
 
 Ces composants interagissent pour offrir une chaîne complète, du développement expérimental jusqu'à la mise en production des modèles.
 
