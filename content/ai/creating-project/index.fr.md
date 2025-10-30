@@ -56,7 +56,7 @@ Le résultat devrait ressembler à ceci :
 
 ## Création d'un Pipeline Server
 
-Il est conseillé de créer dès maintenant le Pipeline Server, qui hébergera vos workflows IA plus tard, avant de créer le Workbench. C’est ce que nous allons faire maintenant :
+Il est conseillé de créer dès maintenant le Pipeline Server, qui hébergera vos workflows IA plus tard. C’est ce que nous allons faire maintenant :
 
 1. Dans le menu en haut, ouvrez l'onglet *Pipelines* et cliquez ensuite sur *Configure pipeline server*.  
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
