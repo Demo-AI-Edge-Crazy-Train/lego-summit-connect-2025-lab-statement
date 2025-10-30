@@ -56,7 +56,7 @@ The result should look like this:
 
 ## Creating a Pipeline Server
 
-It is strongly recommended to create your Pipeline Server before creating the Workbench. That's what we will do now:
+It is recommended to create the Pipeline Server now, which will host your AI workflows later, before creating the Workbench. That’s what we will do now:  
 
 1. In the top menu, open the *Pipelines* tab and then click on *Configure pipeline server*.  
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
@@ -66,7 +66,6 @@ It is strongly recommended to create your Pipeline Server before creating the Wo
 
 3. Wait for the Pipeline Server to finish creating. When it is ready, your screen should look like this:  
 ![02-02-pipelineserver03.png](02-02-pipelineserver03.png)
+⚠️ It is essential to wait until the Pipeline Server creation is complete.
 
-At this stage, your Pipeline Server is ready and deployed.
-
-⚠️ It is essential to wait until the Pipeline Server creation is complete. If it is still in progress, please be patient until it finishes.
+At this stage, you are connected to your Data Science Project, the Data Connection has been configured for storage, and your Pipeline Server is now ready and deployed for workflows.
