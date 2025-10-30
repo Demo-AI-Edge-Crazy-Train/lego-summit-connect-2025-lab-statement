@@ -16,7 +16,7 @@ Our Edge AI solution is a sophisticated **hybrid cloud-edge architecture** that 
 - **Portable Battery**: Powers the entire duration of the mission
 
 ### Edge Computing Brain
-The heart of our edge system is the **NVIDIA Jetson Orin** - a powerful System on Chip (SoC) that combines:
+The heart of our edge system is the **NVIDIA Jetson Orin**, a powerful System on Chip (SoC) that combines:
 
 | Component | Specification | Purpose |
 |-----------|---------------|---------|
