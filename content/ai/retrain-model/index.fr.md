@@ -123,9 +123,9 @@ Il est maintenant temps de lancer le pipeline sur OpenShift.
 3. Dans la configuration du pipeline, renseignez la valeur `10` pour le paramètre *epochs*.
 ![elyra-run-config](elyra-run-config.png)
 Une *epoch* correspond à un passage complet de l’algorithme sur l’ensemble du dataset d’entraînement.  
-Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances :  
-- **Trop peu d’epochs** : le modèle n’aura pas suffisamment appris et restera inefficace.  
-- **Trop d’epochs** : le modèle risque de faire de l’**overfitting**, c’est-à-dire d’être trop proche des données d’entraînement et de mal généraliser sur de nouvelles données.  
+Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances :
+- Trop peu d’epochs : le modèle n’aura pas suffisamment appris et restera inefficace.  
+- Trop d’epochs : le modèle risque de faire de l’**overfitting**, c’est-à-dire d’être trop proche des données d’entraînement et de mal généraliser sur de nouvelles données.  
 
 4. Après quelques instants, un popup de succès s’affichera. Cliquez sur *Run Details* pour consulter les informations d'exécution du pipeline.  
 ![elyra-run-success](elyra-run-success.png)
