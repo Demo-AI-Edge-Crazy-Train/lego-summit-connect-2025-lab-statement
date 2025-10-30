@@ -87,7 +87,7 @@ Located in the **AWS Cloud** with **5G connectivity** to the edge:
 - **Real-time Streaming**: Live camera feed from the train
 - **Kafka Brokers**: High-throughput message streaming
 - **Web Interface**: Remote monitoring capabilities
-- **Alert System**: Immediate notifications for anomalies
+- **Alert System**: Instant notifications for anomalies
 
 ## 📊 Data Flow
 
