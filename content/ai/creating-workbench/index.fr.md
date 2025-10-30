@@ -1,5 +1,5 @@
 +++
-title = "Création du workbench"
+title = "Création du Workbench"
 draft= false
 weight= 3
 [[ressources]]
