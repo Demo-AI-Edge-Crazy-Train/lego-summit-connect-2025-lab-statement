@@ -19,7 +19,7 @@ The username for the **MinIO object storage** is the same (*userX*), and the pas
 
 You also have access to the Red Hat Edge Manager console, which enables you to manage your fleet of Edge devices.
 
-* **Red Hat Edge Manager console URL:** `{{< param flightctlUi >}}`
+* **Red Hat Edge Manager console URL:** [{{< param flightctlUi >}}]({{< param flightctlUi >}})
 
 * **Red Hat Edge Manager API URL:** `{{< param flightctlApi >}}`
 
