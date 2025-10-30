@@ -8,38 +8,31 @@ weight= 3
 
 ## Lancer un Workbench
 
-* Une fois que la Data Connection et le Pipeline Server ont été entièrement créés, vous pouvez passer à la création du Workbench. Cliquez sur l'onglet `Workbenches` puis `Create workbench`.
+Une fois la Data Connection et le Pipeline Server entièrement créés, vous pouvez passer à la création du Workbench, qui servira d’environnement principal pour le développement IA.
 
+1. Cliquez sur l'onglet *Workbenches*, puis sur le bouton *Create workbench*.
 ![02-03-create-wb.png](02-03-create-wb.png)
 
-* Assurez-vous de remplir les caractéristiques suivantes :  
-    * Choisissez un nom, comme par exemple : `My Workbench`  
-    * Sélectionnez l'image : `CUSTOM Crazy train lab`
-    * Taille du conteneur : `Small`
-    * Conservez les paramètres de stockage par défaut.
-    * En bas, cochez `Use a data connection`.
-    * Faites défiler vers le bas jusqu'à `Use existing data connection`
-    * Sélectionnez dans la liste la Data Connection `pipelines` que vous avez précédemment créée.
-    * Cela devrait ressembler à ce qui suit :
+2. Remplissez les paramètres suivants dans le formulaire :  
+- **Name** : choisissez un nom, par exemple `My Workbench`  
+- **Image selection** : *CUSTOM Crazy train lab*  
+- **Container size** : *Small*  
+- **Use a data connection** : cochez cette case, puis sélectionnez *Use existing data connection*. Dans la liste déroulante, choisissez la Data Connection *pipelines* que vous avez créée précédemment.
+Le résultat devrait ressembler à ceci :  
 ![02-02-launch-workbench-01.png](02-02-launch-workbench-01.png)
 ![02-02-launch-workbench-02.png](02-02-launch-workbench-02.png)
 
-* Cliquez sur `Create workbench` pour valider et attendez que son statut bleu `Starting` passe en vert `Running`.
+3. Cliquez sur *Create workbench* pour valider, puis attendez que le statut bleu *Starting* devienne vert *Running*.
 
-* Une fois que le Workbench est créé, cliquez sur le lien `Open` pour vous y connecter.
-
+4. Une fois le Workbench créé, cliquez sur le lien *Open* pour y accéder.
 ![02-03-open-link.png](02-03-open-link.png)
 
-* Authentifiez-vous avec les mêmes informations que précédemment.
+5. Authentifiez-vous en utilisant les mêmes identifiants qu'auparavant.
 
-* Il vous sera demandé d'accepter les paramètres suivants :
+6. Vous serez invité à accepter certains paramètres. Cliquez sur *Allow selected permissions*.  
+![02-02-accept.png](02-02-accept.png)  
 
-![02-02-accept.png](02-02-accept.png)
-
-* Cliquez sur `Allow selected permissions`.
-
-* Vous devriez maintenant voir ceci :
-
+Vous devriez maintenant voir l’interface suivante :  
 ![02-02-jupyter.png](02-02-jupyter.png)
 
 ## Cloner le repo Git de l'atelier
