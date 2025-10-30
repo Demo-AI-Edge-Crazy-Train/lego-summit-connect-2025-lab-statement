@@ -63,7 +63,7 @@ Situé dans le **cloud AWS** avec **connectivité 5G** vers l'edge :
 │ └───────────────┘ └───────────────┘ │
 │ ┌───────────────┐ ┌───────────────┐ │
 │ │  Surveillance │ │  Déploiement  │ │
-│ │     Video     │ │     GitOps    │ │
+│ │     vidéo     │ │     GitOps    │ │
 │ └───────────────┘ └───────────────┘ │
 └─────────────────────────────────────┘
 ```
