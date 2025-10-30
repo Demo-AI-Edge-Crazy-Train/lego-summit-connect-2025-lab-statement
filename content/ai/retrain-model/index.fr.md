@@ -113,14 +113,22 @@ Cliquez sur *Add* sous la propriété *Kubernetes Tolerations* et remplissez les
 
 ## Exécuter le pipeline
 
-Il est maintenant temps d'exécuter le pipeline sur Openshift. Cliquez sur le bouton "Run Pipeline" en haut de l'interface graphique d'Elyra. Voir ci-dessous :
-![elyra-run](elyra-run.png)
-**Si** vous avez un popup vous avertissant que le pipeline  n'est **pas sauvegardé**, cliquez sur le bouton "**Save and Submit**".  
-Remplissez les configurations. **Choisissez 10 epochs** comme paramètre du pipeline. On peut définir une epoch comme le nombre de passages d’un dataset d’entraînement par un algorithme. Un nombre insuffisant d'epoch rendra votre modèle inefficace. Trop d'époques entraînera un overfit du modèle (et donc une inefficacité dans la prédiction de nouvelles données) :
-![elyra-run-config](elyra-run-config.png)
-Après quelques instants, vous verrez s'afficher une fenêtre popup de succès. Dans ce popup, vous pouvez cliquer sur "Run Details" pour sauter certaines instructions de la prochaine session.
-![elyra-run-success](elyra-run-success.png)
+Il est maintenant temps de lancer le pipeline sur OpenShift.  
 
+1. Cliquez sur le bouton *Run Pipeline* en forme de flèche dans la barre d’outils en haut :  
+![elyra-run](elyra-run.png)
+
+2. Si un popup apparaît vous avertissant que le pipeline n’est pas sauvegardé, cliquez sur *Save and Submit*.
+
+3. Dans la configuration du pipeline, renseignez la valeur `10` pour le paramètre *epochs*.
+![elyra-run-config](elyra-run-config.png)
+Une *epoch* correspond à un passage complet de l’algorithme sur l’ensemble du dataset d’entraînement.  
+Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances :  
+- **Trop peu d’epochs** : le modèle n’aura pas suffisamment appris et restera inefficace.  
+- **Trop d’epochs** : le modèle risque de faire de l’**overfitting**, c’est-à-dire d’être trop proche des données d’entraînement et de mal généraliser sur de nouvelles données.  
+
+4. Après quelques instants, un popup de succès s’affichera. Cliquez sur *Run Details* pour consulter les informations d'exécution du pipeline.  
+![elyra-run-success](elyra-run-success.png)
 
 ## Visualiser vos pipelines
 
