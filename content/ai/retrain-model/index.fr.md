@@ -26,12 +26,16 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 
 ### Extraire les images et leurs annotations
 
-1. Cliquez sur *labeling-extraction.ipynb*.
-2. Exécutez le notebook en entier en utilisant l'icône en haut et cliquez sur "restart the kernel" quand on vous le demande (voir ci-dessous) :
+1. Cliquez sur *labeling-extraction.ipynb* et parcourez le contenu du Notebook.
+
+2. Exécutez le Notebook en entier en utilisant l’icône à double flèche dans la barre d’outils en haut. Cliquez sur *Restart* lorsqu’on vous le demande (voir ci-dessous) :  
 ![run-notebook](run-notebook.png)
 ![restart-kernel](restart-kernel.png)
 
-Vous avez peut-être remarqué que ces scripts ont créé un répertoire *dataset*. Ce répertoire *dataset* contient un sous-répertoire *labels* et un sous-répertoire *images*. Il contient les images et les annotations extraites. Dans le même Notebook descendez à la section "Select a random image and display its boundind boxes". Réexécutez cette cellule. Elle choisit une image aléatoire dans le dossier *dataset/images* et affiche dans le notebook les carrés corrspondant à l'annotation sauvegardés dans le dossier *dataset/labels*.
+Vous avez peut-être remarqué que ces scripts ont créé un répertoire *dataset*. Ce répertoire contient deux sous-dossiers : *images* et *labels*, qui regroupent respectivement les images et les annotations correspondantes.
+
+3. Dans le même Notebook, descendez à la section *Select a random image and display its bounding boxes* et réexécutez la cellule en cliquant dessus, puis sur l’icône flèche dans la barre d’outils en haut. 
+Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les rectangles correspondant aux annotations sauvegardées dans *dataset/labels*.
 
 ### Générer des données synthétiques
 
