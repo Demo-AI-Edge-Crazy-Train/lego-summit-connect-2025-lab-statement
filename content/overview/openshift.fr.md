@@ -7,7 +7,7 @@ weight: 4
 
 ⚠️ Chaque participant dispose d’un **utilisateur OpenShift dédié**. L’animateur de l’atelier vous fournira les informations nécessaires. Tout au long de l’atelier, veuillez utiliser le nom d’utilisateur qui vous a été attribué à la place de *userX*. ⚠️
 
-* **URL de la console du cluster OCP :** `{{< param ocpConsole >}}`
+* **URL de la console du cluster OCP :** [{{< param ocpConsole >}}]({{< param ocpConsole >}})
 
 * **URL de l'API du cluster OCP :** `{{< param ocpApi >}}`
 
