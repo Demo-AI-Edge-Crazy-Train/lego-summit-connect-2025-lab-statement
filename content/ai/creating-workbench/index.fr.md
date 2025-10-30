@@ -8,7 +8,7 @@ weight= 3
 
 ## Lancer un Workbench
 
-Une fois la Data Connection et le Pipeline Server entièrement créés, vous pouvez passer à la création du Workbench, qui servira d’environnement principal pour le développement IA.
+Une fois la Data Connection et le Pipeline Server entièrement créés, vous pouvez passer à la création du Workbench, qui servira d'environnement principal pour le développement IA.
 
 1. Cliquez sur l'onglet *Workbenches*, puis sur le bouton *Create workbench*.
 ![02-03-create-wb.png](02-03-create-wb.png)
@@ -32,7 +32,7 @@ Le résultat devrait ressembler à ceci :
 6. Vous serez invité à accepter certains paramètres. Cliquez sur *Allow selected permissions*.  
 ![02-02-accept.png](02-02-accept.png)  
 
-Vous devriez maintenant voir l’interface suivante :  
+Vous devriez maintenant voir l'interface suivante :  
 ![02-02-jupyter.png](02-02-jupyter.png)
 
 ## Cloner le repository Git
