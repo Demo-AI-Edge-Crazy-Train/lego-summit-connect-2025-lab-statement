@@ -15,7 +15,7 @@ ATTENTION : Vous ne lancerez que les premières étapes de l’entraînement du 
 Vous avez précédemment cloné un repository Git. Dans le navigateur de fichiers à gauche, vous devriez voir un dossier portant le même nom que le projet Git : *{{< param gitRepoName >}}*.
 
 1. Cliquez dessus pour ouvrir le dossier.  
-À l’intérieur, vous trouverez plusieurs éléments :  
+À l’intérieur, vous trouverez plusieurs éléments :
 - Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l’entraînement du modèle, comme des fonctions Python ou des mappers.  
 - Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l’utiliserons plus tard.  
 - Le fichier *traffic-signs.pipeline* est un pipeline de Data Science généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce pipeline sur OpenShift via l’interface graphique.  
@@ -38,7 +38,7 @@ Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images*
 
 ### Générer des données synthétiques
 
-1. Fermez le notebook *labeling-extraction.ipynb* et ouvrez le notebook *synthetic-data.ipynb*.  
+1. Ouvrez le notebook *synthetic-data.ipynb*.  
 Ce notebook génère des données synthétiques de manière aléatoire, c’est-à-dire des données artificielles qui viendront compléter l’ensemble d’entraînement du modèle.  
 
 2. Exécutez l’intégralité du Notebook comme expliqué précédemment. Prenez le temps de parcourir le code et d’observer les exemples affichés dans les sections de visualisation.
@@ -59,11 +59,10 @@ Ouvrez simplement le notebook *comparison.ipynb* et parcourez le code pour en co
 
 ## Adapter le pipeline de science des données
 
-Vous allez maintenant adapter un pipeline de science des données pour que votre entraînement soit accéléré au moyen un GPU. Nous avons déployés sur Openshfit quelques petits GPUs partagés où l'entraînement sera exécuté. Cela devrait prendre moins de 8 minutes pour l'ensemble du pipeline.
+Vous allez maintenant adapter un pipeline de Data Science pour accélérer l’entraînement grâce à un GPU. Sur OpenShift, nous avons déployé quelques petits GPU partagés pour exécuter l’entraînement.
 
-*  Ouvrez le pipeline de science des données *traffic-signs.pipeline*.
-
-Vous voyez ici une interface graphique où vous pouvez créer et exécuter vos pipelines de science des données. Le pipeline a été créé en glissant-déposant les Notebooks depuis l'explorateur de fichiers.
+1. Ouvrez le pipeline *traffic-signs.pipeline*.  
+Vous verrez l’interface graphique d’Elyra, qui permet de créer et d’exécuter des pipelines de Data Science. Notre pipeline a été construit en glissant-déposant les notebooks depuis l’explorateur de fichiers situé à gauche.
 
 ### Fixer le pipeline
 
