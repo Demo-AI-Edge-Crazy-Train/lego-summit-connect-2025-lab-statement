@@ -119,7 +119,7 @@ graph TD
 4. **Transmission commande** : Commandes BLE envoyées au Hub LEGO
 5. **Boucle de rétroaction** : Résultats envoyés au cloud pour l'apprentissage en continu
 
-## 🏢 Support Multi-Architecture
+## 🏢 Support multi-architecture
 
 ### Infrastructure du build
 Notre système supporte les environnements de calcul **hétérogènes** :
