@@ -51,7 +51,7 @@ The heart of our edge system is the **NVIDIA Jetson Orin**, a powerful System on
 ## ☁️ In the Cloud: the OpenShift Cluster
 
 ### Infrastructure Components
-Located in **AWS Cloud** with **5G connectivity** to the edge:
+Located in the **AWS Cloud** with **5G connectivity** to the edge:
 
 ```
 ┌─────────────────────────────────────┐
