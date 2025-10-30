@@ -71,7 +71,6 @@ Ce Pipeline comporte 4 étapes et 2 liaisons, mais il manque une connexion entre
 Pour créer cette liaison :  
 1. Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).  
 2. Maintenez le clic et faites glisser jusqu'au point noir à gauche de la quatrième étape (*comparison*).  
-
 Vous devriez obtenir le Pipeline complet suivant :
 ![full-pipeline](full-pipeline.png)
 
