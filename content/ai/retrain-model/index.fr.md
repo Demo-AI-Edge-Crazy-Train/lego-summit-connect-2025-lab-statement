@@ -14,8 +14,7 @@ ATTENTION : Vous ne lancerez que les premières étapes de l’entraînement du 
 
 Vous avez précédemment cloné un repository Git. Dans le navigateur de fichiers à gauche, vous devriez voir un dossier portant le même nom que le projet Git : *{{< param gitRepoName >}}*.
 
-1. Cliquez dessus pour ouvrir le dossier.
-
+1. Cliquez dessus pour ouvrir le dossier.  
 À l’intérieur, vous trouverez plusieurs éléments :  
 - Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l’entraînement du modèle, comme des fonctions Python ou des mappers.  
 - Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l’utiliserons plus tard.  
@@ -27,7 +26,8 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 
 ### Extraire les images et leurs annotations
 
-Cliquez sur *labeling-extraction.ipynb*. Exécutez le notebook en entier en utilisant l'icône en haut et cliquez sur "restart the kernel" quand on vous le demande (voir ci-dessous) :
+1. Cliquez sur *labeling-extraction.ipynb*.
+2. Exécutez le notebook en entier en utilisant l'icône en haut et cliquez sur "restart the kernel" quand on vous le demande (voir ci-dessous) :
 ![run-notebook](run-notebook.png)
 ![restart-kernel](restart-kernel.png)
 
