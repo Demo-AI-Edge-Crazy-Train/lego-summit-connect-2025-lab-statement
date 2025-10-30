@@ -38,9 +38,9 @@ Pour l'instant, la page est vide.
 2. Cliquez sur *Add data connection* et saisissez les informations suivantes :
 - **Name** :  
 ```pipelines```
-- **Access Key** :  
+- **Access key** :  
 ```userX```  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
-- **Secret Key** :  
+- **Secret key** :  
 ```{{< param minioPass >}}```
 - **Endpoint** :  
 ```{{< param minioEndpoint >}}```
