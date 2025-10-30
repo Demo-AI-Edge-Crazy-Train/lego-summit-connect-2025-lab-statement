@@ -12,15 +12,18 @@ ATTENTION : Vous ne lancerez que les premières étapes de l’entraînement du 
 
 ## Naviguer dans le code
 
-Vous avez précédemment cloné un repo git. Vous devriez voir dans le navigateur de fichiers sur la gauche un dossier qui porte le même nom que le projet git : *{{< param gitRepoName >}}*. **Cliquez** dessus. A partir de là, vous devriez voir plusieurs objets :
-  - Le dossier *utils/* contient des aides et des dépendances pour l'apprentissage du modèle, comme des fonctions python ou des mappers
-  - Le dossier *inference/* contient du matériel pour interroger les modèles après les avoir déployés. Nous utiliserons ce contenu plus tard dans le lab.
-  - Le fichier *traffic-signs.pipeline* est un pipeline de science des données généré avec Elyra. Elyra fournit une interface utilisateur graphique qui vous permet de glisser-déposer vos Notebooks ou vos scripts python et de les lier ensemble pour créer des étapes. Vous pouvez exécuter ce pipeline dans Openshift à partir de l'interface graphique.
-  - Le notebook *labeling-extraction.ipynb* récupère les images étiquetées avec label studio. Il télécharge les images ainsi que leurs annotations correspondantes.
-  - Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires. Il s'agit de données créées artificiellement qui ajouteront des données supplémentaires à l'entraînement du modèle.  
-  - Le Notebook *transfer-learning.ipynb* est l'entraînement du modèle lui-même.
-  - Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation Lego) à celui que vous allez entraîner (qui, espérons-le, les reconnaît). Nous voulons nous assurer qu'il n'y a pas de régression dans la nouvelle version du modèle.
+Vous avez précédemment cloné un repository Git. Dans le navigateur de fichiers à gauche, vous devriez voir un dossier portant le même nom que le projet Git : *{{< param gitRepoName >}}*.
 
+1. Cliquez dessus pour ouvrir le dossier.
+
+À l’intérieur, vous trouverez plusieurs éléments :  
+- Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l’entraînement du modèle, comme des fonctions Python ou des mappers.  
+- Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l’utiliserons plus tard.  
+- Le fichier *traffic-signs.pipeline* est un pipeline de Data Science généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce pipeline sur OpenShift via l’interface graphique.  
+- Le notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les objets correspondants étiquetés avec des bounding boxes.  
+- Le notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l’ensemble de données d’entraînement.  
+- Le notebook *transfer-learning.ipynb* contient le code d’entraînement du modèle lui-même.  
+- Le notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) avec celui que vous allez entraîner (qui, espérons-le, les reconnaît). L’objectif est de s’assurer qu’aucune régression n’est introduite lors du réentraînement du modèle.
 
 ### Extraire les images et leurs annotations
 
