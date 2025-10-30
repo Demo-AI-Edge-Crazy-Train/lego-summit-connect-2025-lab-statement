@@ -75,7 +75,7 @@ Located in the **AWS Cloud** with **5G connectivity** to the edge:
 - **Jupyter Notebooks**: Interactive development experience
 - **Pipeline Servers**: Automated ML workflow execution
 - **Model Serving**: REST API endpoints for inference
-- **GPU Clusters**: High-performance training infrastructure
+- **GPU accelerators**: High-performance training infrastructure
 
 #### CI/CD Pipeline Infrastructure 🔄
 - **Multi-architecture Builds**: Support for x86_64 and ARM64
