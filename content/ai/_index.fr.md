@@ -12,11 +12,11 @@ pre = "<b>2. </b>"
 Dans cette section, vous allez explorer les différentes étapes du cycle de vie d'un modèle avec **Red Hat OpenShift AI** (**RHOAI**).
 
 Cette section comprend :
-- **Se connecter** : Accéder au tableau de bord OpenShift AI et configurer votre environnement
-- **Créer votre projet** : Configurer les projets, connexions aux données et serveurs de pipeline
-- **Créer un Workbench** : Lancer l'environnement Jupyter notebooks avec des images personnalisées
-- **Réentraîner le modèle** : Construire et exécuter des pipelines de data science avec accélération GPU
-- **Déployement du modèle** : Déployer votre modèle entraîné comme endpoint API REST pour l'inférence
+- **Connexion** : Accéder au tableau de bord OpenShift AI et configurer votre environnement
+- **Préparation de l'environnement** : Configurer les projets, connexions aux données et serveurs de pipeline
+- **Création du Workbench** : Lancer l'environnement Jupyter notebooks avec des images personnalisées
+- **Réentraînement du modèle** : Construire et exécuter des pipelines de data science avec accélération GPU
+- **Déploiement du modèle** : Déployer votre modèle entraîné comme endpoint API REST pour l'inférence
 
 Vous travaillerez sur la détection de panneaux de signalisation en utilisant la vision par ordinateur et le transfer learning, tout en appliquant les meilleures pratiques MLOps pour le déploiement.  
 Au terme de cette section, vous aurez développé un pipeline IA complet, de la préparation des données à la mise en service du modèle.
