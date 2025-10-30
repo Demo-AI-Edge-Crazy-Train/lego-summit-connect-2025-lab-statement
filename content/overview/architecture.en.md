@@ -77,10 +77,10 @@ Located in the **AWS Cloud** with **5G connectivity** to the edge:
 - **Model Serving**: REST API endpoints for inference
 - **GPU accelerators**: High-performance training infrastructure
 
-#### CI/CD Pipeline Infrastructure 🔄
-- **Multi-architecture Builds**: Support for x86_64 and ARM64
+#### CI/CD Pipelines 🔄
 - **Tekton Pipelines**: Cloud-native CI/CD workflows
 - **Container Registry**: Secure image storage and distribution
+- **Multi-architecture Builds**: Support for x86_64 and ARM64
 - **Automated Testing**: Quality assessment at every step
 
 #### Video Surveillance System 📹
