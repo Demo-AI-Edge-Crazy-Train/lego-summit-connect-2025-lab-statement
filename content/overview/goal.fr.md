@@ -24,7 +24,7 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 - **Accélération GPU** : Exploiter la puissance du matériel NVIDIA pour un entraînement plus rapide
 
 #### Edge Computing 🌐
-- **Nvidia Jetson Orin** : Déployer des modèles IA directement sur des dispositifs edge
+- **NVIDIA Jetson Orin** : Déployer des modèles IA directement sur des dispositifs edge
 - **Red Hat Device Edge** : Exécuter un OS Edge de qualité professionnelle
 - **MicroShift** : Kubernetes pour des environnements à ressources limitées
 - **Traitement temps réel** : Prendre des décisions en une fraction de seconde pour arrêter le train
