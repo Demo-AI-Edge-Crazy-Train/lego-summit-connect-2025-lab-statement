@@ -21,7 +21,7 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin**, un puissant Syste
 | Composant | Spécification | Objectif |
 |-----------|---------------|----------|
 | **CPU** | ARM Cortex-A78AE | Contrôle système & coordination |
-| **GPU** | NVIDIA Ampere | Accélération d'inférence IA |
+| **GPU** | NVIDIA Ampere | Accélération de l'inférence IA |
 | **Mémoire** | Jusqu'à 64GB LPDDR5 | Traitement de données haute vitesse |
 | **Stockage** | SSD NVMe | Stockage de modèles & cache |
 
