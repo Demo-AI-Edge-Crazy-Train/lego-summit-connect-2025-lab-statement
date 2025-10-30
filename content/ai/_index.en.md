@@ -9,7 +9,7 @@ pre = "<b>2. </b>"
 
 # Artificial Intelligence
 
-In this section, you will explore the different stages of a model’s lifecycle with **Red Hat OpenShift AI** (**RHOAI**).
+In this section, you will explore the different stages of a model’s lifecycle with **Red Hat OpenShift AI**.
 
 This section includes:
 - **Connection** : Access the OpenShift AI dashboard and set up your environment
