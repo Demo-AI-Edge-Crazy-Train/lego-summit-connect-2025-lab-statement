@@ -35,14 +35,15 @@ Le résultat devrait ressembler à ceci :
 Vous devriez maintenant voir l’interface suivante :  
 ![02-02-jupyter.png](02-02-jupyter.png)
 
-## Cloner le repo Git de l'atelier
+## Cloner le repository Git
 
-Nous allons cloner le contenu de notre repo Git afin que vous puissiez accéder à tout le matériel nécessaire à l'entrainement du modèle d'IA.
+Nous allons cloner le contenu de notre repository Git afin que vous puissiez accéder à tout le matériel nécessaire pour l'entraînement du modèle d'IA.
 
-* Ouvrez l'onglet avec l'icône Git dans le menu de gauche et cliquez sur `Clone a Repository` :
+1. Ouvrez l'onglet avec l'icône Git dans le menu de gauche et cliquez sur *Clone a Repository* :  
 ![git-clone-1.png](git-clone-1.png)
 
-* Entrez l'URL du repo Git : ``{{< param gitAIRepoUrl >}}``. Sélectionnez également `Download the repository` puis validez avec `Clone` :
+2. Entrez l'URL du repo Git : ``{{< param gitAIRepoUrl >}}``. Cochez également *Download the repository*, puis cliquez sur *Clone* :  
 ![git-clone-2.png](git-clone-2.png)
 
-À ce stade, votre environnement Jupyter est prêt pour le travail que nous voulons y faire.
+À ce stade, votre environnement Jupyter est prêt pour commencer le travail.
+
