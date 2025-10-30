@@ -13,11 +13,11 @@ weight: 1
 
 *🎵 tum tum tada tum tum tada tum tum tada tum tum tada tiduduuummm tiduduuummm 🎵*
 
-### 🎯 Votre Mission
+### 🎯 Votre mission
 
 En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge AI** de pointe pour sauver la situation ! Ce n'est pas un atelier ordinaire - c'est une mission à haut risque où vous combinerez :
 
-#### Intelligence Artificielle 🤖
+#### Intelligence artificielle 🤖
 - **Vision par ordinateur** : Détecter les panneaux de signalisation avec des réseaux de neurones avancés
 - **Transfer Learning** : Adapter des modèles pré-entraînés pour la reconnaissance de panneaux LEGO
 - **MLOps** : Automatiser les pipelines d'entraînement et de déploiement de modèles
@@ -29,13 +29,13 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 - **MicroShift** : Kubernetes pour des environnements à ressources limitées
 - **Traitement temps réel** : Prendre des décisions en une fraction de seconde pour arrêter le train
 
-#### Intégration Cloud ☁️
+#### Intégration cloud ☁️
 - **OpenShift AI** : Plateforme IA/ML centralisée pour le développement de modèles
 - **Builds multi-architecture** : Créer des conteneurs pour x86_64 et ARM64
 - **GitOps** : Déployer des applications avec des pratiques DevOps modernes
 - **Connectivité 5G** : Maintenir la communication cloud-edge
 
-### 🏆 Critères de Réussite
+### 🏆 Critères de réussite
 
 À la fin de cette mission, vous aurez :
 
