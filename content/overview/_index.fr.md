@@ -12,9 +12,9 @@ pre = "<b>1. </b>"
 Bienvenue dans l'atelier "Mission AIpossible" ! Dans cette première section, vous découvrirez le contexte et l'architecture de notre mission d'IA embarquée.
 
 Cette section de présentation couvre :
-- **Objectif de la mission** : Arrêter un train LEGO fou grâce à l'IA à l'Edge
-- **Vue d'ensemble de l'architecture** : Comprendre la configuration Edge Computing avec Nvidia Jetson Orin
-- **Environnement OpenShift** : Votre infrastructure cloud et détails d'accès
-- **Organisation de l'atelier** : Comment l'atelier est structuré à travers différentes technologies
+- **Objectif de la mission** : Arrêter un train LEGO fou grâce à une IA à l'edge
+- **Vue d'ensemble de l'architecture** : Voir la configuration Edge Computing basée sur le Nvidia Jetson Orin
+- **Environnement OpenShift** : Découvrir votre infrastructure cloud et les détails d'accès
+- **Organisation de l'atelier** : Comprendre comment l'atelier est structuré à travers différentes technologies
 
 À la fin de cette section, vous comprendrez l'écosystème complet avec lequel nous travaillons, du train LEGO physique à la plateforme d'entraînement IA basée sur le cloud.
