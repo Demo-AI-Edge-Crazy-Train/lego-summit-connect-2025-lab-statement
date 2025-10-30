@@ -43,7 +43,7 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 2. **Déployé le modèle** sur une plateforme de edge computing
 3. **Construit des pipelines CI/CD** pour des déploiements multi-architecture
 4. **Implémenté du GitOps** pour le déploiement automatisé d'applications
-5. **Sauvé le train** avant qu'il ne s'écrase ! 🎉
+5. **Sauvé le train** avant qu'il ne s'écrase !
 
 ### ⚡ Les Enjeux
 
@@ -52,4 +52,4 @@ En tant qu'agent d'élite Red Hat, vous devez exploiter les technologies **Edge 
 - **Défi** : Contraintes réelles de l'edge computing
 - **Récompense** : Maîtriser les technologies modernes d'IA/ML et d'Edge Computing
 
-**Prêt, Agent ? Votre mission commence maintenant ! 🚀**
+**Prêt, Agent ? Votre mission commence maintenant 🚀**
