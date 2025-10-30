@@ -142,7 +142,7 @@ Le choix du nombre d'epochs est essentiel pour obtenir de bonnes performances :
    1b. Dans le menu latéral gauche, cliquez sur *Experiments*, puis sur *Experiments and runs*.
 
 2. Sélectionnez l'expérimentation associée à votre Pipeline.  
-   Si vous avez conservé le nom par défaut, elle s'appelle **traffic-signs** et apparaît en premier dans la liste.  
+   Si vous avez conservé le nom par défaut, elle s'appelle *traffic-signs* et apparaît en premier dans la liste.  
    ![experiments-and-runs](experiments-and-runs.png)
 
 3. Cliquez sur le run en cours pour visualiser le statut d'exécution de votre Pipeline. Il apparaît généralement en premier dans la liste, avec le même nom que le Pipeline suivi d'un nombre.
