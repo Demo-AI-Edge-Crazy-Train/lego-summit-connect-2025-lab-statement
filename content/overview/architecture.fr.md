@@ -51,7 +51,7 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin**, un puissant Syste
 ## ☁️ Dans le Cloud : le cluster OpenShift
 
 ### Composants d'infrastructure
-Situé dans le **Cloud AWS** avec **connectivité 5G** vers l'edge :
+Situé dans le **cloud AWS** avec **connectivité 5G** vers l'edge :
 
 ```
 ┌─────────────────────────────────────┐
