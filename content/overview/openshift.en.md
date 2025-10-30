@@ -23,4 +23,4 @@ You also have access to the Red Hat Edge Manager console, which enables you to m
 
 * **Red Hat Edge Manager API URL:** `{{< param flightctlApi >}}`
 
-To connect to Red Hat Edge Manager, [click on this link]({{< param flightctlUi >}}) and enter your username and password.
+To connect to Red Hat Edge Manager, go to the console URL and enter your username and password.
