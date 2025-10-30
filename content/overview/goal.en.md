@@ -48,7 +48,6 @@ By the end of this mission, you will have:
 ### ⚡ The Stakes
 
 - **Time limit**: The train is approaching the cliff!
-- **Technology**: State-of-the-art Red Hat Edge AI stack
 - **Challenge**: Real-world edge computing constraints
 - **Reward**: Master modern AI/ML and Edge Computing technologies
 
