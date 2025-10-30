@@ -19,7 +19,7 @@ Le nom d’utilisateur pour le **stockage objet MinIO** est le même (*userX*), 
 
 Vous avez également accès à la console Red Hat Edge Manager qui vous permettra de gérer votre flotte de périphériques Edge.
 
-* **URL de la console Red Hat Edge Manager :** `{{< param flightctlUi >}}`
+* **URL de la console Red Hat Edge Manager :** [{{< param flightctlUi >}}]({{< param flightctlUi >}})
 
 * **URL de l'API Red Hat Edge Manager :** `{{< param flightctlApi >}}`
 
