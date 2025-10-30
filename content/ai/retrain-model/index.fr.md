@@ -134,8 +134,7 @@ Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances 
 
 ### Consulter les exécutions de pipelines
 
-1. **Si vous avez manqué le raccourci** affiché dans la fenêtre popup d’Elyra, suivez les étapes ci-dessous pour retrouver les informations d’exécution de votre pipeline.  
-   Sinon, passez directement à l’étape suivante.
+1. **Si vous avez manqué le raccourci affiché dans la fenêtre popup d’Elyra**, suivez les étapes ci-dessous pour retrouver les informations d’exécution de votre pipeline. Sinon, passez directement à l’étape suivante.  
 
    1a. Retournez sur le tableau de bord OpenShift AI :  
    [https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}}](https://rhods-dashboard-redhat-ods-applications.apps.{{< param openshift_domain >}})
@@ -155,7 +154,7 @@ Le choix du nombre d’epochs est essentiel pour obtenir de bonnes performances 
 
 6. Attendez que toutes les étapes du pipeline soient terminées et s’affichent en vert.  
    Vous devriez obtenir un résultat similaire à celui-ci :  
-   ![pipeline-run-succeeded](pipeline-run-succeeded.png)
+   ![pipeline-run-succedded](pipeline-run-succedded.png)
 
 ## Récupérer les output des pipelines
 
