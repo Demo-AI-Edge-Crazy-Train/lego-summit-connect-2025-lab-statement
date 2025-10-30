@@ -43,9 +43,9 @@ Le cœur de notre système edge est le **NVIDIA Jetson Orin**, un puissant Syste
 - **Mises-à-jour OTA** : Capacités de déploiement over-the-air (OTA)
 
 **MicroShift** permet :
-- **Orchestration de conteneurs** : Kubernetes à l'edge
+- **Orchestration de conteneurs** : Plateforme Kubernetes à l'edge
 - **Gestion de services** : Déploiement et mise à l'échelle automatisés
-- **Auto-guérison** : Récupération automatique des pannes
+- **Auto-réparation** : Récupération automatique en cas de défaillances
 - **Surveillance** : Suivi de l'état du système en temps réel
 
 ## ☁️ Dans le Cloud : le cluster OpenShift
