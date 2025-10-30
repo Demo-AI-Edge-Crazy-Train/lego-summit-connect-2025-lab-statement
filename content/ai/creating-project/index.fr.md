@@ -8,19 +8,16 @@ weight= 2
 
 ## Introduction
 
-Il est important de comprendre les principaux concepts que nous allons manipuler dans cet atelier autour d’OpenShift AI.
+Il est important de comprendre les principaux concepts que nous allons utiliser autour de l'IA.
 
-**OpenShift AI** est une plateforme intégrée qui facilite la gestion de projets d’IA dans un environnement cloud-natif basé sur OpenShift.
-
-Chaque participant travaillera dans un **Projet Data Science**, qui sert d’espace isolé pour organiser ses ressources (données, notebooks, modèles, pipelines…).  
-Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits par les pipelines.  
-Le **Pipeline Server** est le moteur d’orchestration qui exécute et trace les différentes étapes du traitement des données et de l’entraînement des modèles.  
-Le **Workbench** fournit un environnement de développement interactif basé sur Jupyter, dans lequel les data scientists peuvent écrire, exécuter et tester leur code.  
-Enfin, le **repo Git** contient le code source du projet, garantissant la reproductibilité et la collaboration autour du même ensemble de scripts et de notebooks.
+* **OpenShift AI** est une plateforme intégrée qui facilite la gestion de projets d’IA dans un environnement cloud-natif basé sur OpenShift.
+* Chaque participant travaillera dans un **Data Science Project**, qui sert d’espace isolé pour organiser ses ressources (données, notebooks, modèles, pipelines…).  
+* Le **Workbench** fournit un environnement de développement interactif basé sur Jupyter, dans lequel les data scientists peuvent écrire, exécuter et tester leur code.  
+* Le **Pipeline Server** est le moteur de workflow qui exécute et trace les différentes étapes du traitement des données et de l’entraînement des modèles.  
+* Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits dans un Workbench ou un Pipeline. 
+* Enfin, le **repo Git** contient le code source du projet, garantissant une bonne reproductibilité et favorisant la collaboration autour du même ensemble de scripts et de notebooks.
 
 Ces composants interagissent pour offrir une chaîne complète, du développement expérimental jusqu’à la mise en production des modèles.
-
-Les instructions ci-dessous vous guideront tout au long de ces étapes. Suivez-les attentivement.
 
 ## Connexion à un projet
 
