@@ -61,7 +61,7 @@ Il est fortement recommandé de créer votre Pipeline Server avant de créer le 
 1. Dans le menu en haut, ouvrez l'onglet *Pipelines* et cliquez ensuite sur *Configure pipeline server*.  
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
 
-2. Dans le menu déroulant avec l'icône de clé, sélectionnez la Data Connection créée précédemment (nommée *pipelines*) et cliquez sur le bouton *Configure pipeline server*.  
+2. Dans le menu déroulant avec l'icône de clé, sélectionnez la Data Connection créée précédemment (nommée *pipelines*) pour remplir automatiquement le formulaire avec les informations enregistrées et cliquez sur le bouton *Configure pipeline server*.  
 ![02-02-pipelineserver02.png](02-02-pipelineserver02.png)
 
 3. Attendez que le Pipeline Server termine sa création. Lorsque celui-ci est prêt, votre écran devrait ressembler à ceci :  
