@@ -131,9 +131,9 @@ Notre système supporte les environnements de calcul **hétérogènes** :
 | **Multi-arch** | Images universelles | Registry de conteneurs |
 
 ### Stratégie de déploiement
-- **Développement cloud** : Modèles entraînés sur des clusters x86_64 puissants
+- **Développement cloud** : Modèles d'IA entraînés sur des clusters x86_64 puissants
 - **Compilation croisée** : Applications construites pour ARM64
-- **Déploiement edge** : Conteneurs légers déployés sur Jetson
+- **Déploiement edge** : Conteneurs légers déployés sur le Jetson
 - **Intégration continue** : Tests automatisés sur toutes les architectures
 
 ## 🛡️ Sécurité & fiabilité
