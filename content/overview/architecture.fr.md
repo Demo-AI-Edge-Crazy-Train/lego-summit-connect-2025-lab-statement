@@ -138,13 +138,13 @@ Notre système supporte les environnements de calcul **hétérogènes** :
 
 ## 🛡️ Sécurité & fiabilité
 
-### Sécurité edge
+### Sécurité à l'edge
 - **Démarrage sécurisé** : Démarrage système vérifié
-- **Sécurité conteneurs** : Environnements d'exécution isolés
-- **Gestion certificats** : Authentification TLS mutuelle
+- **Sécurité des conteneurs** : Environnements d'exécution isolés
+- **Gestion des certificats** : Authentification TLS mutuelle
 - **Isolation réseau** : Canaux de communication segmentés
 
-### Sécurité cloud
+### Sécurité dans le cloud
 - **RBAC** : Contrôle d'accès basé sur les rôles
 - **Gestion des secrets** : Stockage d'identifiants chiffrés
 - **Journalisation et audit** : Suivi d'activité complet
