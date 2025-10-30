@@ -15,7 +15,7 @@ It is important to understand the key concepts we will be using in this AI works
 * The **Workbench** provides an interactive development environment based on Jupyter, where data scientists can write, run, and test their code.  
 * The **Pipeline Server** is the workflow engine that executes and tracks the various stages of data processing and model training.  
 * A **Data Connection** allows the platform to connect to a storage source (e.g., S3 or Ceph) to save and share artifacts produced in a Workbench or a Pipeline.  
-* Finally, the **Git repo** contains the project's source code, ensuring reproducibility and fostering collaboration around the same set of scripts and notebooks.
+* Finally, the **Git repository** contains the project's source code, ensuring reproducibility and fostering collaboration around the same set of scripts and notebooks.
 
 These components work together to provide a complete workflow, from experimental development to production deployment of models.
 
