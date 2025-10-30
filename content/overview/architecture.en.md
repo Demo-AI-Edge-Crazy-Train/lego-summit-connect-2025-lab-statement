@@ -126,8 +126,8 @@ Our system supports **heterogeneous** computing environments:
 
 | Architecture | Use Case | Platform |
 |-------------|----------|----------|
-| **x86_64** | Development & Training | OpenShift Cluster |
-| **ARM64** | Edge Deployment | Jetson Orin |
+| **x86_64** | AI Development & Training | OpenShift Cluster |
+| **ARM64** | Edge Deployment | NVIDIA Jetson Orin |
 | **Multi-arch** | Universal Images | Container Registry |
 
 ### Deployment Strategy
