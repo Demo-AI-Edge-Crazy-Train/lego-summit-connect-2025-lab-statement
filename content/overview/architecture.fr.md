@@ -9,7 +9,7 @@ Notre solution Edge AI est une **architecture hybride cloud-edge** sophistiquée
 
 ## 🚂 À l'edge : le train LEGO
 
-### Composants Physiques
+### Composants physiques
 - **Moteur LEGO Technic** : Fournit un contrôle de mouvement précis
 - **Hub LEGO** : Unité de contrôle centrale recevant les commandes via **Bluetooth Low Energy (BLE)**
 - **Caméra embarquée** : Capture le flux vidéo en temps réel pour le traitement IA
