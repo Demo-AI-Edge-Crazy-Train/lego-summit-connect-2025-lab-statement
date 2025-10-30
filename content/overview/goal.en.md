@@ -43,7 +43,7 @@ By the end of this mission, you will have:
 2. **Deployed the model** to an edge computing platform
 3. **Built CI/CD pipelines** for multi-architecture deployments
 4. **Implemented GitOps** for automated application deployment
-5. **Saved the train** before it crashes! 🎉
+5. **Saved the train** before it crashes!
 
 ### ⚡ The Stakes
 
@@ -52,4 +52,4 @@ By the end of this mission, you will have:
 - **Challenge**: Real-world edge computing constraints
 - **Reward**: Master modern AI/ML and Edge Computing technologies
 
-**Ready, Agent? Your mission starts now! 🚀**
+**Ready, Agent? Your mission starts now 🚀**
