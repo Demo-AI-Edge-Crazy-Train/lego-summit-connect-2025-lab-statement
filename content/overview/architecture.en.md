@@ -93,12 +93,12 @@ Located in the **AWS Cloud** with **5G connectivity** to the edge:
 
 {{< mermaid >}}
 graph TD
-    A[Train Camera] -->|Video Stream| B[Jetson Orin]
+    A[Train Camera] -->|Video Stream| B[NVIDIA Jetson Orin]
     B -->|AI Inference| C[Traffic Sign Detection]
     C -->|Control Commands| D[LEGO Hub]
     B -->|5G Connection| E[OpenShift Cluster]
     E -->|Training Data| F[OpenShift AI]
-    F -->|Updated Models| B
+    F -->|Updated Model| B
     E -->|Monitoring| G[Dashboard]
     E -->|GitOps| H[Deployment]
     
