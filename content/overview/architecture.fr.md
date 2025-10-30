@@ -126,8 +126,8 @@ Notre système supporte les environnements de calcul **hétérogènes** :
 
 | Architecture | Cas d'usage | Plateforme |
 |-------------|-------------|------------|
-| **x86_64** | Développement & entraînement | Cluster OpenShift |
-| **ARM64** | Déploiement edge | Jetson Orin |
+| **x86_64** | Développement & entraînement IA | Cluster OpenShift |
+| **ARM64** | Déploiement edge | NVIDIA Jetson Orin |
 | **Multi-arch** | Images universelles | Registry de conteneurs |
 
 ### Stratégie de déploiement
