@@ -32,7 +32,7 @@ Ces composants interagissent pour offrir une chaîne complète, du développemen
 Nous avons déployé une instance Minio pour gérer le stockage objet dans le cluster. Vous devrez **ajouter une Data Connection** pointant vers ce stockage.
 
 1. Faites défiler jusqu'au bas de la page du projet et cliquez sur *Data Connections* :  
-![02-02-add-dc.png](02-02-add-dc.png)  
+![02-02-add-dc.png](02-02-add-dc.png)
 Pour l'instant, la page est vide.
 
 2. Cliquez sur *Add data connection* et saisissez les informations suivantes :
