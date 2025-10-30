@@ -84,10 +84,10 @@ Situé dans le **cloud AWS** avec **connectivité 5G** vers l'edge :
 - **Tests automatisés** : Évaluation de la qualité à chaque étape
 
 #### Système de vidéosurveillance 📹
-- **Streaming temps réel** : Flux caméra en direct depuis le train
-- **Brokers Kafka** : Streaming de messages haute débit
-- **Interface web** : Capacités de surveillance à distance
-- **Système d'alerte** : Notifications immédiates pour les anomalies
+- **Streaming en temps réel** : Flux vidéo en direct depuis le train
+- **Brokers Kafka** : Streaming de messages à haut débit
+- **Interface web** : Capacités de supervision à distance
+- **Système d'alerte** : Notifications immédiates en cas d’anomalie
 
 ## 📊 Flux de données
 
