@@ -13,9 +13,10 @@ In this section, you will explore the different stages of a model’s lifecycle 
 
 This section includes:
 - **Connection** : Access the OpenShift AI dashboard and set up your environment
-- **Environment Setup** : Set up projects, data connections, and pipeline servers
-- **Workbench Creation** : Launch Jupyter notebooks environment with custom images
-- **Model Training** : Build and execute data science pipelines with GPU acceleration
+- **Environment Setup** : Set up your projects, data connections, and Pipeline Servers
+- **Workbench Creation** : Launch your Jupyter environment with a custom image
+- **Model Training** : Build and execute AI pipelines with GPU acceleration
 - **Model Serving** : Deploy your trained model as a REST API endpoint for inference
 
-You'll work with traffic sign detection using computer vision, transfer learning, and deploy everything using MLOps best practices. By the end, you'll have a complete AI pipeline running from data preparation to model serving.
+You will work on traffic sign detection using Computer Vision and Transfer Learning, while applying MLOps best practices for deployment.  
+By the end of this section, you will have developed a complete AI pipeline, from data preparation to model deployment.
