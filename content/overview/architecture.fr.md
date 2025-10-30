@@ -87,7 +87,7 @@ Situé dans le **cloud AWS** avec **connectivité 5G** vers l'edge :
 - **Streaming en temps réel** : Flux vidéo en direct depuis le train
 - **Brokers Kafka** : Streaming de messages à haut débit
 - **Interface web** : Capacités de supervision à distance
-- **Système d'alerte** : Notifications immédiates en cas d’anomalie
+- **Système d'alerte** : Notifications immédiates en cas d'anomalie
 
 ## 📊 Flux de données
 
@@ -150,4 +150,4 @@ Notre système supporte les environnements de calcul **hétérogènes** :
 - **Journalisation et audit** : Suivi d'activité complet
 - **Politiques réseau** : Micro-segmentation
 
-Cette architecture démontre comment la **stack Edge AI de Red Hat** permet des applications IA sophistiquées dans des environnements à ressources limitées tout en maintenant une sécurité, une fiabilité et une scalabilité de qualité professionnelle !
+Cette architecture démontre comment la **stack Edge AI de Red Hat** permet de déployer des applications IA sophistiquées dans des environnements aux ressources limitées, tout en garantissant une sécurité, une fiabilité et une scalabilité de qualité professionnelle !
