@@ -10,7 +10,7 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 
 **Remarque** : si quelque chose s'est mal passé lors de l'entraînement du modèle dans la section précédente, vous pouvez toujours suivre cette section en commençant par la première partie intitulée **Fallback**.
 
-## Fallback - Vous pouvez sauter cette section si vous avez entrainer votre modèle avec succès
+## Fallback – Vous pouvez passer cette section si vous avez entraîné votre modèle avec succès
 
 * Dans votre projet Data Science, créez une "Data Connection" qui se réfère à la registry de modèles globale où nous avons stocké un modèle par défaut. Pour ce faire, allez dans votre projet de science des données, faites défiler vers le bas et cliquez sur "Data Connection" ou cliquez directement sur l'onglet "Data Connection" dans le menu supérieur. Veuillez vous référer à [cette section](/ai/creating-project/#create-a-data-connection-for-the-pipeline-server) si vous avez des difficultés à créer une "Data Connection".
 * Voici les informations que vous devez saisir :
