@@ -81,18 +81,23 @@ Nous allons maintenant vérifier que le modèle fonctionne correctement en l'int
 
 ## Interroger le modèle deployé
 
-Une fois que le modèle est servi, nous pouvons l'utiliser comme un endpoint qui peut être requêté. Nous envoyons une requête REST ou gRPC au modèle et obtenons un résultat. Cela s'applique à toute personne travaillant au sein de notre cluster. Il peut s'agir de collègues ou d'applications.
+Une fois que le modèle est servi, nous pouvons l'utiliser comme un endpoint pouvant recevoir des requêtes. Nous envoyons une requête REST (ou gRPC) au modèle et recevons un résultat. Ce endpoint peut être utilisé par des applications ou d'autres services.
 
-* Tout d'abord, nous devons obtenir l'URL du serveur de modèle.
-* Pour ce faire, cliquez sur le lien **Internal Service** dans la colonne **Inference endpoint**.
-* Dans le popup, vous verrez quelques URLs pour notre serveur de modèle.
+1. Tout d'abord, récupérez l'URL de l'endpoint. Pour cela, cliquez sur le lien *Internal endpoint details* dans la colonne *Inference endpoint*.
+
+2. Dans le popup qui s'affiche, vous verrez plusieurs URLs associées à notre serveur de modèles.
 ![inference-url.png](inference-url.png)
 
-* Notez ou copiez le **RestUrl**, qui devrait être quelque chose comme `http://modelmesh-serving.{userX}:8008`
+3. Copiez le **restUrl**, qui devrait ressembler à `http://modelmesh-serving.{userX}:8008`. Nous allons maintenant utiliser cette URL pour envoyer des requêtes au modèle.
 
-Nous allons maintenant utiliser cette URL pour interroger le modèle. Retournez dans votre workbench, c'est-à-dire dans l'environnement jupyter notebooks.
+4. Retournez dans votre Workbench, c'est-à-dire dans l'environnement Jupyter, via l'onglet *Workbenches*.
 
-- Dans votre workbench, naviguez vers le notebook `inference/inference.ipynb`. **Mettez à jour la variable** "RestUrl" avec l'url copié précédemment dans votre presse papier.
-- Exécutez les cellules du notebook, et assurez-vous que vous comprenez ce qui se passe.
+5. Ouvrez le Notebook *inference/inference.ipynb*.
 
-La première section interroge le modèle de base qui a été déployé globalement pour tout le monde. La deuxième section prend endpoint RestUrl et interroge le modèle que vous avez formé et déployé. Vous devriez constater qu'avec le modèle de base, seuls les panneaux de signalisation de limitation de vitesse sont reconnus. Après le réapprentissage du modèle, vous avez maintenant un modèle qui peut mieux détecter les panneaux de signalisation Lego. Félicitations !
+6. **Mettez à jour la variable** *RestUrl* avec l'URL que vous avez copiée précédemment dans votre presse-papiers.
+
+7. Exécutez toutes les cellules du notebook en utilisant l'icône à double flèche ▶▶, et prenez le temps d'observer le fonctionnement du code.  
+La section *Base model detection* interroge le modèle de base, déployé globalement pour tous les participants.  
+La section *New model detection* utilise l'endpoint *RestUrl* pour interroger le modèle que vous avez entraîné et déployé.  
+Vous devriez constater qu'avec le modèle de base, seuls les panneaux de signalisation standard sont détectés.  
+Après le réentraînement, votre modèle est désormais capable de mieux reconnaître les panneaux de signalisation LEGO. Félicitations !
