@@ -124,14 +124,14 @@ Il est maintenant temps de lancer le Pipeline sur OpenShift AI.
 1. Click the *Run Pipeline* button shaped like an arrow ▷ in the toolbar at the top:
 ![elyra-run](elyra-run.png)
 
-2. Si un popup apparaît vous avertissant que le Pipeline n'est pas sauvegardé, cliquez sur *Save and Submit*.
+2. Si un popup apparaît pour vous avertir que le Pipeline n'a pas été sauvegardé, cliquez sur *Save and Submit*.
 
 3. Dans la configuration du Pipeline, renseignez la valeur `10` pour le paramètre *epochs*.
 ![elyra-run-config](elyra-run-config.png)
 Une **epoch** correspond à un passage complet de l'algorithme sur l'ensemble du dataset d'entraînement.  
 Le **choix du nombre d'epochs** est essentiel pour obtenir de bonnes performances :
-- Trop peu d'epochs : le modèle n'aura pas suffisamment appris et restera inefficace.  
-- Trop d'epochs : le modèle risque de faire de l'**overfitting**, c'est-à-dire d'être trop proche des données d'entraînement et de mal généraliser sur de nouvelles données.  
+- Trop peu d'epochs : le modèle risque de faire de l'**underfitting**, c'est-à-dire qu'il n'apprendra pas suffisamment et restera inefficace.
+- Trop d'epochs : le modèle risque de faire de l'**overfitting**, c'est-à-dire qu'il s'ajustera trop aux données d'entraînement et généralisera mal sur de nouvelles données.
 
 4. Après quelques instants, un popup de succès s'affichera. Cliquez sur *Run Details* pour consulter les informations d'exécution du Pipeline.  
 ![elyra-run-success](elyra-run-success.png)
