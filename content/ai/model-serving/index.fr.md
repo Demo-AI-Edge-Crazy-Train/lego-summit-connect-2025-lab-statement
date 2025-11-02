@@ -32,24 +32,28 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 - **Bucket** :  
 ```{{< param baseModelBucket >}}```
 
-## Créer un serveur de modèle
+## Créer un serveur de modèles
 
-Dans votre projet, créez un serveur de modèle. Vous pouvez cliquer ici pour voir tous les modèles déployés :
+1. Dans le tableau de bord OpenShift AI, ouvrez le menu de gauche et cliquez sur *Data Science Projects*.
+
+2. Cliquez sur le projet correspondant à votre nom d'utilisateur.
+
+3. Sélectionnez l'onglet *Models*.
 ![go-to-models](go-to-models.png)
 
-* Cliquez sur **Add model server**
+4. Cliquez sur *Add model server*
 ![add-model-server.png](add-model-server.png)
 
-* Voici les informations que vous devez entrer :
+5. Voici les informations que vous devez entrer :
 
-- Model server name: ```{{< param newModelServerName >}}```
-- Serving runtime: ```OpenVINO Model Server```
-- Number of model server replicas to deploy: ```1```
-- Model server size ```{{< param newModelServerSize >}}```
-- Model route ```unchecked```
-- Token authorization ```unchecked```
+- **Model server name** : ```{{< param newModelServerName >}}```
+- **Serving runtime** : sélectionnez *OpenVINO Model Server*
+- **Number of model server replicas to deploy** : ```1```
+- **Model server size** : ```{{< param newModelServerSize >}}```  
+- **Model route** : non-coché
+- **Token authentication** : non-coché
 
-* Le résultat devrait ressembler à ceci:
+Le résultat devrait ressembler à ceci :
 ![add-model-server-config.png](add-model-server-config.png)
 
 * Vous pouvez cliquer sur **Add** pour créer le serveur de modèle.
