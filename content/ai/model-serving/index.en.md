@@ -51,6 +51,7 @@ In this section, you will deploy the model you just created to the OpenShift AI 
 - **Model server size** : select *{{< param newModelServerSize >}}*
 - **Model route** : unchecked
 - **Token authentication** : unchecked
+
 The result should look like this:
 ![add-model-server-config.png](add-model-server-config.png)
 
