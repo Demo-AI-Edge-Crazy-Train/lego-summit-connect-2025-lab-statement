@@ -39,7 +39,7 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 Vous avez peut-être remarqué que ces scripts ont créé un répertoire *dataset*. Ce répertoire contient deux sous-dossiers : *images* et *labels*, qui regroupent respectivement les images et les annotations correspondantes.
 
 3. Dans le même Notebook, descendez à la section *Select a random image and display its bounding boxes*. Ensuite, réexécutez la première cellule juste en dessous en cliquant dessus, puis en cliquant sur l'icône de flèche ▶ dans la barre d'outils en haut.  
-Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les **bounding boxes** correspondantes dans *dataset/labels*, des rectangles indiquant les coordonnées des objets détectés dans l'image.
+Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les **bounding boxes** correspondantes dans *dataset/labels*, i.e. des rectangles indiquant les coordonnées des objets détectés dans l'image.
 
 ### Générer des données synthétiques
 
