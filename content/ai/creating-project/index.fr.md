@@ -56,7 +56,7 @@ Le résultat devrait ressembler à ceci :
 
 ## Création d'un Pipeline Server
 
-Il est conseillé de créer dès maintenant le Pipeline Server, qui hébergera vos workflows IA plus tard. C'est ce que nous allons faire maintenant :
+Il est conseillé de créer dès maintenant le Pipeline Server, qui hébergera vos pipelines IA plus tard. C'est ce que nous allons faire maintenant :
 
 1. Dans le menu en haut, ouvrez l'onglet *Pipelines* et cliquez ensuite sur *Configure pipeline server*.  
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
@@ -68,4 +68,4 @@ Il est conseillé de créer dès maintenant le Pipeline Server, qui hébergera v
 ![02-02-pipelineserver03.png](02-02-pipelineserver03.png)
 ⚠️ Il est impératif d'attendre la fin de la création du Pipeline Server.
 
-À ce stade, vous êtes connecté à votre Data Science Project, la Data Connection a été configurée pour le stockage et votre Pipeline Server est maintenant prêt et déployé pour les workflows.
+À ce stade, vous êtes connecté à votre Data Science Project, la Data Connection a été configurée pour le stockage et votre Pipeline Server est maintenant prêt et déployé pour les pipelines.
