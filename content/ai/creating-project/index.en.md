@@ -56,7 +56,7 @@ The result should look like this:
 
 ## Creating a Pipeline Server
 
-It is recommended to create the Pipeline Server now, which will host your AI workflows later. That's what we will do now:  
+It is recommended to create the Pipeline Server now, which will host your AI pipelines later. That's what we will do now:  
 
 1. In the top menu, open the *Pipelines* tab and then click on *Configure pipeline server*.  
 ![02-02-pipelineserver01.png](02-02-pipelineserver01.png)
@@ -68,4 +68,4 @@ It is recommended to create the Pipeline Server now, which will host your AI wor
 ![02-02-pipelineserver03.png](02-02-pipelineserver03.png)
 ⚠️ It is essential to wait until the Pipeline Server creation is complete.
 
-At this stage, you are connected to your Data Science Project, the Data Connection has been configured for storage, and your Pipeline Server is now ready and deployed for workflows.
+At this stage, you are connected to your Data Science Project, the Data Connection has been configured for storage, and your Pipeline Server is now ready and deployed for pipelines.
