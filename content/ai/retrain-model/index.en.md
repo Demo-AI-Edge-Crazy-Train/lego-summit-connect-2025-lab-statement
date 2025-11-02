@@ -33,12 +33,14 @@ You have previously cloned a Git repository. In the file browser on the left, yo
 
 1. Click on *labeling-extraction.ipynb* and explore the Notebook content.
 
-2. Run the entire Notebook using the double-arrow icon ▶▶ in the toolbar at the top. Click *Restart* when prompted (see below):  
+2. Run the entire Notebook using the double-arrow icon ▶▶ in the toolbar at the top:  
 ![run-notebook](run-notebook.png)
+
+3. Click *Restart* when prompted:
 ![restart-kernel](restart-kernel.png)
 You may have noticed that these scripts created a *dataset* directory. This directory contains two subfolders: *images* and *labels*, which hold the images and their corresponding annotations respectively.
 
-3. In the same Notebook, scroll down to the section *Select a random image and display its bounding boxes*. Then, re-run the first cell just below by clicking on it, and then clicking the arrow icon ▶ in the toolbar at the top.  
+4. In the same Notebook, scroll down to the section *Select a random image and display its bounding boxes*. Then, re-run the first cell just below by clicking on it, and then clicking the arrow icon ▶ in the toolbar at the top.  
 This cell selects a random image from the *dataset/images* folder and overlays the corresponding **bounding boxes** from *dataset/labels*, i.e. rectangles indicating the coordinates of the objects detected in the image.
 
 ### Generating Synthetic Data
