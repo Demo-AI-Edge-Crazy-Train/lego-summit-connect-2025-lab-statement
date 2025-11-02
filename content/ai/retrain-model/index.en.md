@@ -155,7 +155,7 @@ Choosing the **number of epochs** is crucial for good performance:
 
 4. Clicking a Pipeline step opens a side panel on the right showing details, including *logs* in the *Logs* tab.
 
-5. Select *Main* from the dropdown to see the logs from the main container for that step.  
+5. Select *main* from the dropdown to see the logs from the main container for that step.  
 ![pipeline-run-logs](pipeline-run-logs.png)
 
 6. Wait until all Pipeline steps are complete and marked in green.  
