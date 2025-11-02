@@ -65,18 +65,17 @@ Ouvrez simplement le Notebook *comparison.ipynb* et parcourez le code pour en co
 
 ## Lancer le Pipeline de Data Science
 
-Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu'il utilise un **GPU** afin d'accélérer l'entraînement du modèle. Sur OpenShift, quelques petits GPU partagés ont été déployés et seront utilisés pour exécuter ce Pipeline.
-
-1. Ouvrez le Pipeline *traffic-signs.pipeline*.  
-Vous verrez l'interface graphique d'Elyra, qui permet de créer et d'exécuter des Pipelines de Data Science. Notre Pipeline a été construit en glissant-déposant les Notebooks depuis l'explorateur de fichiers situé à gauche.
+Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu’il s’exécute en dehors de l’environnement de développement Jupyter et qu’il utilise un **GPU** afin d’accélérer l’entraînement du modèle. Dans notre cluster, quelques petits GPU partagés ont déjà été déployés et seront utilisés pour exécuter ce Pipeline.
 
 ### Compléter le Pipeline
 
-Ce Pipeline comporte 4 étapes et 2 liaisons, mais il manque une connexion entre la troisième étape (*transfer-learning*) et la quatrième (*comparison*).  
+1. Ouvrez le Pipeline *traffic-signs.pipeline*.  
+Vous verrez l'interface graphique d'Elyra, qui permet de créer et d'exécuter des Pipelines de Data Science. Notre Pipeline a été construit en glissant-déposant les Notebooks depuis l'explorateur de fichiers situé à gauche.  
+Ce Pipeline comporte 4 étapes et 2 liaisons seulement, donc il manque une connexion entre la troisième étape (*transfer-learning*) et la quatrième (*comparison*).  
 
 Pour créer cette liaison :  
-1. Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).  
-2. Maintenez le clic et faites glisser jusqu'au point noir à gauche de la quatrième étape (*comparison*).  
+2. Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).  
+3. Maintenez le clic et faites glisser jusqu'au point noir à gauche de la quatrième étape (*comparison*).  
 Vous devriez obtenir le Pipeline complet suivant :
 ![full-pipeline](full-pipeline.png)
 
