@@ -9,7 +9,7 @@ pre = "<b>1. </b>"
 
 # Présentation
 
-Bienvenue dans l'atelier "Mission AIpossible" ! Dans cette première section, vous découvrirez le contexte et l'architecture de notre mission d'IA embarquée.
+Bienvenue dans l'atelier [Mission AIpossible](#) ! Dans cette première section, vous découvrirez le contexte et l'architecture de notre mission d'IA embarquée.
 
 Cette section de présentation couvre :
 - **Objectif de la mission** : Arrêter un train LEGO fou grâce à une IA à l'edge
