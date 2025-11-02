@@ -21,7 +21,7 @@ En cas d'erreur, votre pod serait automatiquement supprimé puis recréé. Rien 
 Vous avez précédemment cloné un repository Git. Dans le navigateur de fichiers à gauche, vous devriez voir un dossier portant le même nom que le projet Git : *{{< param gitRepoName >}}*.
 
 1. Cliquez sur *{{< param gitRepoName >}}* pour ouvrir le dossier. À l'intérieur, vous trouverez plusieurs éléments :
-- Le Notebook *labeling-extraction.ipynb* récupère les données annotées avec Label Studio, en téléchargeant à la fois les images et leurs annotations correspondantes avec des **bounding boxes**.
+- Le Notebook *labeling-extraction.ipynb* récupère les données annotées avec Label Studio, en téléchargeant à la fois les images et leurs annotations correspondantes.
 - Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.
 - Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle.
 - Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) au modèle réentraîné (qui, espérons-le, les reconnaît).
@@ -33,13 +33,13 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 
 1. Cliquez sur *labeling-extraction.ipynb* et parcourez le contenu du Notebook.
 
-2. Exécutez le Notebook en entier en utilisant l'icône à double flèche dans la barre d'outils en haut. Cliquez sur *Restart* lorsqu'on vous le demande (voir ci-dessous) :  
+2. Exécutez le Notebook en entier en utilisant l'icône à double flèche ▶▶ dans la barre d'outils en haut. Cliquez sur *Restart* lorsqu'on vous le demande (voir ci-dessous) :  
 ![run-notebook](run-notebook.png)
 ![restart-kernel](restart-kernel.png)
 Vous avez peut-être remarqué que ces scripts ont créé un répertoire *dataset*. Ce répertoire contient deux sous-dossiers : *images* et *labels*, qui regroupent respectivement les images et les annotations correspondantes.
 
-3. Dans le même Notebook, descendez à la section *Select a random image and display its bounding boxes* et réexécutez la cellule en cliquant dessus, puis sur l'icône flèche dans la barre d'outils en haut.  
-Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les rectangles correspondant aux annotations sauvegardées dans *dataset/labels*.
+3. Dans le même Notebook, descendez à la section *Select a random image and display its bounding boxes*. Ensuite, réexécutez la première cellule juste en dessous en cliquant dessus, puis en cliquant sur l'icône de flèche ▶ dans la barre d'outils en haut.
+Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les **bounding boxes** correspondantes dans *dataset/labels*, des rectangles indiquant les coordonnées des objets détectés dans l'image.
 
 ### Générer des données synthétiques
 
