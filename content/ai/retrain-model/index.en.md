@@ -8,8 +8,8 @@ weight= 4
 
 In this section, you will:  
 - Explore the Python code used to retrain the model.  
-- Automate the execution of the different steps using a workflow.  
-- Visualize the workflow and its results in the OpenShift AI dashboard.
+- Automate the execution of the different steps using a Pipeline.  
+- Visualize the Pipeline and its results in the OpenShift AI dashboard.
 
 ⚠️ **WARNING**:  
 You will only run the initial steps of model training in the Jupyter development environment.  
