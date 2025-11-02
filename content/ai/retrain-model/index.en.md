@@ -43,8 +43,9 @@ This cell selects a random image from the *dataset/images* folder and overlays t
 
 ### Generating Synthetic Data
 
-1. Open the *synthetic-data.ipynb* Notebook.  
-This Notebook generates random **synthetic data** to supplement the model training dataset.
+1. Open the Notebook *synthetic-data.ipynb*.  
+This Notebook generates **synthetic data**, i.e. artificial data used to enrich the model's training dataset.  
+To do this, we take photos of the tracks from the train's point of view and randomly overlay cut-out traffic signs, simulating the various real-world conditions the train might encounter.
 
 2. Run the entire Notebook as explained previously. Take time to review the code and observe the visualization examples.
 
