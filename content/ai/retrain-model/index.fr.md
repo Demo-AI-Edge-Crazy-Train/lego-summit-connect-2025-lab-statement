@@ -53,19 +53,19 @@ Pour cela, nous prenons des photos des rails depuis le point de vue du train et 
 
 ### Examiner l'étape d'apprentissage du modèle
 
-⚠️ **N’exécutez pas ce Notebook !** Son exécution ferait planter votre environnement, car la mémoire RAM disponible pour chaque participant est limitée.
+⚠️ **N'exécutez pas ce Notebook !** Son exécution ferait planter votre environnement, car la mémoire RAM disponible pour chaque participant est limitée.
 
 Ouvrez simplement le Notebook *transfer-learning.ipynb* et parcourez le code pour en comprendre le fonctionnement.
 
 ### Examiner l'étape de comparaison
 
-⚠️ **N’exécutez pas ce Notebook !** Son exécution ferait planter votre environnement, car la mémoire RAM disponible pour chaque participant est limitée.
+⚠️ **N'exécutez pas ce Notebook !** Son exécution ferait planter votre environnement, car la mémoire RAM disponible pour chaque participant est limitée.
 
 Ouvrez simplement le Notebook *comparison.ipynb* et parcourez le code pour en comprendre le fonctionnement.
 
 ## Lancer le Pipeline de Data Science
 
-Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu’il s’exécute en dehors de l’environnement de développement Jupyter et qu’il utilise un **GPU** afin d’accélérer l’entraînement du modèle. Dans notre cluster, quelques petits GPU partagés ont déjà été déployés et seront utilisés pour exécuter ce Pipeline.
+Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu'il s'exécute en dehors de l'environnement de développement Jupyter et qu'il utilise un **GPU** afin d'accélérer l'entraînement du modèle. Dans notre cluster, quelques petits GPU partagés ont déjà été déployés et seront utilisés pour exécuter ce Pipeline.
 
 ### Compléter le Pipeline
 
