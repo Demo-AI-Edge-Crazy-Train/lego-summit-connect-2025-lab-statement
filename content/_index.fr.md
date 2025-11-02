@@ -2,26 +2,26 @@
 title: "Welcome"
 ---
 
-# Summit connect 2025 - Lab "Crazy Train"
+# Red Hat Summit Connect Paris 2025 - Mission AIpossible
 
-Bienvenue, dans ce Lab où vous découvrirez une partie de l'offre Red Hat dans le domaine du Edge Computing et de l'IA.
+Bienvenue dans cet atelier, où vous découvrirez une partie de l’offre Red Hat dans le domaine du Edge Computing et de l’IA.
 
-Vous jouerez avec les technologies suivantes :
-
-* **Red Hat OpenShift** - Plateforme d'orchestration de conteneurs
-* **Red Hat OpenShift AI (RHOAI)** - Plateforme IA/ML avec projets de data science et pipelines
-* **Red Hat Device Edge** - Variante RHEL pour le Edge Computing
-* **Microshift** - Distribution Kubernetes pour environnements Edge
-* **Nvidia Jetson Orin** - Plateforme Edge AI avec accélération GPU
-* **Pipelines de Data Science** - Workflows MLOps utilisant Elyra et Kubeflow
-* **Model Serving** - Serveur de modèles OpenVINO pour déploiement IA
-* **Jupyter Notebooks** - Environnement de développement interactif
-* **OpenShift DevSpaces** - Environnement de développement cloud-native
-* **Pipelines Tekton** - CI/CD pour builds de conteneurs multi-architecture (x86_64 & ARM64)
-* **Helm Charts** - Packaging et déploiement d'applications
-* **GitOps** - Gestion d'infrastructure et d'applications via Git
-* **Kafka & MQTT** - Messagerie et streaming pour communications Edge
-* **MinIO** - Stockage d'objets pour artefacts ML et données
+Vous expérimenterez avec les technologies suivantes :
+* **NVIDIA Jetson Orin** – Plateforme matérielle Edge AI avec accélération GPU
+* **Red Hat Device Edge** – Version de RHEL adaptée à l’Edge Computing
+* **MicroShift** – Distribution Kubernetes pour environnements Edge
+* **Red Hat OpenShift** – Plateforme d'orchestration de conteneurs
+* **Red Hat OpenShift AI** – Plateforme IA sur OpenShift
+* **Jupyter Notebooks** – Environnement de développement interactif pour code et analyse de données
+* **Elyra** – Outil de création graphique de workflows MLOps
+* **Kubeflow** – Orchestration de workflows MLOps sur Kubernetes
+* **OpenVINO** – Framework d’inférence IA sur CPU et GPU
+* **OpenShift DevSpaces** – Environnement de développement cloud-native
+* **Tekton** – Outil de pipelines CI/CD pour builds de conteneurs multi-architecture (x86_64 & ARM64)
+* **Helm Charts** – Packaging et déploiement d'applications
+* **GitOps** – Gestion d'infrastructure et d'applications via Git
+* **Kafka & MQTT** – Messagerie et streaming pour communications Edge
+* **MinIO** – Stockage d'objets pour artefacts ML et données
 
 Dans cet atelier, vous devrez :
 
