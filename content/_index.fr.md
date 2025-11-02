@@ -2,10 +2,8 @@
 title: "Bienvenue"
 ---
 
-<div style="text-align:center;">
-  <h1 style="color:red; margin-bottom:0;">Red Hat Summit Connect Paris 2025</h1>
-  <h2 style="color:black; font-weight:normal; margin-top:0;">Mission AIpossible</h2>
-</div>
+# [Red Hat Summit Connect Paris 2025](#)
+# Mission AIpossible
 
 Bienvenue dans cet atelier, où vous découvrirez une partie de l'offre Red Hat dans le domaine du Edge Computing et de l'IA.
 
