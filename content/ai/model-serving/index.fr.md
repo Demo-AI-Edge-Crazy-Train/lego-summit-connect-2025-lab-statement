@@ -69,18 +69,15 @@ Le résultat devrait ressembler à ceci :
 - **Existing data connection** - **Name** : sélectionnez *{{< param newModelDataConnection >}}* (ou *Model Registry* pour ceux qui ont fait le FALLBACK)
 - **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (ou ```default/model.onnx``` pour ceux qui ont fait le FALLBACK)
 
-* Voici les informations que vous devrez entrer. **Si vous avez suivi le fallback, veuillez remplacer la "Existing data connection - Name" par le nom de la "Data Connection" que vous avez créée (Model Registry)**:
-
-
-
-* Le résultat devrait ressembler à ceci
+Le résultat devrait ressembler à ceci :
 ![deploy-a-model.png](deploy-a-model.png)
 
-* Cliquez sur **Deploy model**.
-* Si le modèle est déployé avec succès, vous verrez son statut en vert après quelques secondes.
+3. Cliquez sur *Deploy* pour valider le déploiement du modèle.
+
+4. Patientez quelques instants. Si le modèle est déployé avec succès, son statut passera au vert après quelques secondes.
 ![model-deployed-success.png](model-deployed-success.png)
 
-Nous allons maintenant confirmer que le modèle fonctionne bien en l'interrogeant !
+Nous allons maintenant vérifier que le modèle fonctionne correctement en l'interrogeant !
 
 ## Interroger le modèle deployé
 
