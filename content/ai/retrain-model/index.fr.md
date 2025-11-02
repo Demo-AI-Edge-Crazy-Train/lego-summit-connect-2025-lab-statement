@@ -53,13 +53,13 @@ Pour cela, nous prenons des photos des rails depuis le point de vue du train et 
 
 ### Examiner l'étape d'apprentissage du modèle
 
-⚠️ **Ne lancez pas ce Notebook !** Son exécution ferait crasher votre environnement, car la RAM disponible par participant est limitée.  
+⚠️ **N’exécutez pas ce Notebook !** Son exécution ferait planter votre environnement, car la mémoire RAM disponible pour chaque participant est limitée.
 
 Ouvrez simplement le Notebook *transfer-learning.ipynb* et parcourez le code pour en comprendre le fonctionnement.
 
 ### Examiner l'étape de comparaison
 
-⚠️ **Ne lancez pas ce Notebook !** Son exécution ferait crasher votre environnement, car la RAM disponible par participant est limitée.  
+⚠️ **N’exécutez pas ce Notebook !** Son exécution ferait planter votre environnement, car la mémoire RAM disponible pour chaque participant est limitée.
 
 Ouvrez simplement le Notebook *comparison.ipynb* et parcourez le code pour en comprendre le fonctionnement.
 
