@@ -79,22 +79,22 @@ This Pipeline currently has 4 steps and only 2 connections, so there is a missin
 You should then have the complete Pipeline as shown below:  
 ![full-pipeline](full-pipeline.png)
 
-### Examining Step Properties
+### Inspecting Step Properties
 
-1. Right-click the second step of the Pipeline (*synthetic-data.ipynb*).
+1. Right-click on the second step of the Pipeline (*synthetic-data.ipynb*).
 
-2. In the menu, click *Open Properties*. Properties appear in the right panel.
+2. In the menu that appears, click *Open Properties*. The properties will be displayed in the panel on the right.
 
-3. Scroll down to see the main properties:  
-- **Runtime Image**: container image used to execute the Python code for this step.  
-- **CPU request**: amount of CPU reserved for this step.  
-- **RAM limit**: maximum RAM allowed for this step.  
-- **Pipeline Parameters**: globally declared Pipeline parameters that can be enabled for this step.  
-- **File Dependencies**: files required during execution inside the container. Here, the entire *utils/* directory is required.  
-- **Output Files**: files generated during execution, accessible by subsequent steps.  
-- **Kubernetes Secrets**: secrets mounted in the container. Here, object storage credentials are available as environment variables during execution.
+3. Scroll down to view the main properties:  
+- **Runtime Image**: the container image used to run the Python code associated with this step.  
+- **CPU request**: the amount of CPU reserved for this step.  
+- **RAM limit**: the maximum amount of RAM allowed for this step.  
+- **Pipeline Parameters**: the globally declared parameters, which you can enable to make them available for this step.  
+- **File Dependencies**: the files required to execute this step. Here, the entire *utils/* directory is needed.  
+- **Output Files**: the files generated during this step’s execution, which are accessible to subsequent steps.  
+- **Kubernetes Secrets**: secrets mounted into the container. Here, object storage access information is available as environment variables during execution.
 
-At the top of the properties panel, you will find three tabs: *Pipeline Properties*, *Pipeline Parameters*, and *Node Properties*. Feel free to explore them.
+At the top of the properties panel, you will also find two additional tabs besides *Node Properties*: *Pipeline Properties* and *Pipeline Parameters*. Feel free to explore them to discover the different available settings.
 
 ### Requesting a GPU for the *transfer-learning* Step
 
