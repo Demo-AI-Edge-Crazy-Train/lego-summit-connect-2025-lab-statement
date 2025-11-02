@@ -6,9 +6,12 @@ weight= 4
   src = '**.png'
 +++
 
-Dans cette section, vous explorerez le code Python utilisé pour réentraîner le modèle. Vous adapterez ensuite un pipeline de Data Science afin de l'exécuter sur OpenShift. Enfin, vous pourrez visualiser votre pipeline dans le tableau de bord OpenShift AI et récupérer ses résultats.
+Dans cette section, vous allez :
+- Explorer le code Python utilisé pour réentraîner le modèle.
+- Automatiser l’exécution des différentes étapes à l’aide d’un workflow.
+- Visualiser le workflow et ses résultats dans le tableau de bord OpenShift AI.
 
-ATTENTION : Vous ne lancerez que les premières étapes de l'entraînement du modèle dans les environnements de développement Jupyter. L'entraînement complet se fera en dehors de ces environnements via un Pipeline, afin de limiter la mémoire RAM utilisée par chaque participant. Sinon, l'exécution du modèle (dans *transfer-learning.ipynb*) risque d'échouer avec une erreur **OOM Killed** (mémoire insuffisante). Dans ce cas, votre pod OpenShift sera automatiquement supprimé et recréé. Rien de grave, mais votre environnement sera indisponible pendant environ une minute.
+ATTENTION : Vous n’exécuterez que les premières étapes de l'entraînement du modèle dans l'environnement de développement Jupyter. L’entraînement complet sera effectué à l’extérieur de Jupyter, via un Pipeline, afin d’éviter une erreur **OOM Killed** (mémoire insuffisante). En cas d’erreur, votre pod serait automatiquement supprimé puis recréé. Rien de grave, mais votre environnement Jupyter serait temporairement indisponible pendant quelques minutes.
 
 ## Naviguer dans le code d'entraînement du modèle
 
