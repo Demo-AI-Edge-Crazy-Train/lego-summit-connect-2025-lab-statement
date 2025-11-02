@@ -91,7 +91,7 @@ You should then have the complete Pipeline as shown below:
 - **RAM limit**: the maximum amount of RAM allowed for this step.  
 - **Pipeline Parameters**: the globally declared parameters, which you can enable to make them available for this step.  
 - **File Dependencies**: the files required to execute this step. Here, the entire *utils/* directory is needed.  
-- **Output Files**: the files generated during this step’s execution, which are accessible to subsequent steps.  
+- **Output Files**: the files generated during this step's execution, which are accessible to subsequent steps.  
 - **Kubernetes Secrets**: secrets mounted into the container. Here, object storage access information is available as environment variables during execution.
 
 At the top of the properties panel, you will also find two additional tabs besides *Node Properties*: *Pipeline Properties* and *Pipeline Parameters*. Feel free to explore them to discover the different available settings.
