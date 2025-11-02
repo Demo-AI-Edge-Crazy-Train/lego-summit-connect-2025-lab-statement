@@ -16,7 +16,7 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 
 2. Cliquez sur le projet correspondant à votre nom d'utilisateur.
 
-3. Sélectionnez l'onglet *Data Connection*.
+3. Sélectionnez l'onglet *Data connections*.
 
 4. Cliquez sur *Add data connection* et saisissez les informations suivantes :
 - **Name** :  
