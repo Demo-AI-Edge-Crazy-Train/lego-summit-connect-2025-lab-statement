@@ -1,5 +1,5 @@
 ---
-title: "Welcome"
+title: "Bienvenue"
 ---
 
 # Red Hat Summit Connect Paris 2025 - Mission AIpossible
