@@ -96,13 +96,13 @@ You should then have the complete Pipeline as shown below:
 
 At the top of the properties panel, you will also find two additional tabs besides *Node Properties*: *Pipeline Properties* and *Pipeline Parameters*. Feel free to explore them to discover the different available settings.
 
-### Requesting a GPU for the *transfer-learning* Step
+### Allocating a GPU for the model retraining step
 
 1. Close the properties panel of the previous step.  
 ![close-properties](close-properties.png)
 
-2. Now modify the **third step** of the Pipeline (*transfer-learning*). Do not touch the previous step.  
-Right-click the third step (*transfer-learning*) and select *Open Properties*. Properties appear in the right panel.
+2. Now modify the **third step** of the Pipeline (*transfer-learning.ipynb*). Do not touch the previous step.  
+Right-click the third step (*transfer-learning.ipynb*) and select *Open Properties*. Properties appear in the right panel.
 
 3. Locate the *GPU* property and enter `1` to request a GPU for model training.  
 ![full-pipeline-gpu-count](full-pipeline-gpu-count.png)
