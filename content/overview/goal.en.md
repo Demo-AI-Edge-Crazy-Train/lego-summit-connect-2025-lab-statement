@@ -3,15 +3,15 @@ title: "Mission Objective"
 weight: 1
 ---
 
-### 🚂 Mission AIpossible
+### 📨 CLASSIFIED TRANSMISSION
 
-**CLASSIFIED TRANSMISSION**
+Message to Agent Red Hat:  
 
-> *Message to Agent Red Hat:*
-> 
-> *"The LEGO train is running without a driver! Your mission: develop and deploy an AI on board the train to stop it before it derails. This message will self-destruct in five seconds. Four... Three... Two... One..."*
+> The LEGO train is running without a driver!  
+> Your mission: develop and deploy an AI on board the train to stop it before it derails.  
+> This message will self-destruct in five seconds. Four... Three... Two... One...
 
-*🎵 tum tum tada tum tum tada tum tum tada tum tum tada tiduduuummm tiduduuummm 🎵*
+🎵 *tum tum tada tum tum tada tum tum tada tum tum tada tiduduuummm tiduduuummm* 🎵
 
 ### 🎯 Your Mission
 
