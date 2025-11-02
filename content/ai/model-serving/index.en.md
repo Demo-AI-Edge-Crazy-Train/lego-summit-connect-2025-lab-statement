@@ -6,7 +6,7 @@ weight= 6
   src = '**.png'
 +++
 
-In this section, you will deploy the model you just created to the OpenShift AI Model Server.
+In this ==section==, you will deploy the model you just created to the OpenShift AI Model Server.
 
 **Note**: If something went wrong during model training in the previous section, you can still follow this section starting with the first part titled **FALLBACK**.
 
