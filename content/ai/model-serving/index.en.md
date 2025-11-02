@@ -19,18 +19,12 @@ In this section, you will deploy the model you just created to the OpenShift AI 
 3. Select the *Data connections* tab.
 
 4. Click *Add data connection* and enter the following information:
-- **Name** :  
-```Model Registry```
-- **Access key** :  
-```userX```  **⏪ REPLACE WITH YOUR USER ID**
-- **Secret key** :  
-```{{< param minioPass >}}```
-- **Endpoint** :  
-```{{< param minioEndpoint >}}```
-- **Region** :  
-```none```
-- **Bucket** :  
-```{{< param baseModelBucket >}}```
+- **Name** : `Model Registry`
+- **Access key** : `userX`  **⫷ REPLACE WITH YOUR USER ID**
+- **Secret key** : `{{< param minioPass >}}`
+- **Endpoint** : `{{< param minioEndpoint >}}`
+- **Region** : `none`
+- **Bucket** : `{{< param baseModelBucket >}}`
 
 ## Create a Model Server
 
@@ -45,9 +39,9 @@ In this section, you will deploy the model you just created to the OpenShift AI 
 ![add-model-server.png](add-model-server.png)
 
 5. Enter the following information:
-- **Model server name** : ```{{< param newModelServerName >}}```
+- **Model server name** : `{{< param newModelServerName >}}`
 - **Serving runtime** : select *OpenVINO Model Server*
-- **Number of model server replicas to deploy** : ```1```
+- **Number of model server replicas to deploy** : `1`
 - **Model server size** : select *{{< param newModelServerSize >}}*
 - **Model route** : unchecked
 - **Token authentication** : unchecked
@@ -63,11 +57,11 @@ The result should look like this:
 ![select-deploy-model.png](select-deploy-model.png)
 
 2. Enter the following information:
-- **Model deployment name** : ```{{< param newModelName >}}```
-- **Model server** : ```{{< param newModelServerName >}}```, which should already be automatically selected
+- **Model deployment name** : `{{< param newModelName >}}`
+- **Model server** : `{{< param newModelServerName >}}`, which should already be automatically selected
 - **Model framework (name - version)** : select *onnx - 1*
 - **Existing data connection** - **Name** : select *{{< param newModelDataConnection >}}* (or *Model Registry* if you followed the FALLBACK section)
-- **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (or ```default/model.onnx``` if you followed the FALLBACK section)
+- **Existing data connection** - **Path** : `{{< param newModelPath >}}` (or `default/model.onnx` if you followed the FALLBACK section)
 
 The result should look like this:
 ![deploy-a-model.png](deploy-a-model.png)
@@ -95,9 +89,12 @@ Once the model is served, we can use it as an endpoint that can receive requests
 5. Open the Notebook *inference/inference.ipynb*.
 
 6. **Update the variable** *RestUrl* with the URL you copied previously to your clipboard.
+![notebook-replace.png](notebook-replace.png)
 
 7. Run all cells in the notebook using the double-arrow ▶▶ icon, and take a moment to observe the code execution.  
 The *Base model detection* section queries the base model, deployed globally for all participants.  
-The *New model detection* section uses the *RestUrl* endpoint to query the model you trained and deployed.  
+The *New model detection* section uses the *RestUrl* endpoint to query the model you trained and deployed.
+![result-before.png](result-before.png)
+![result-after.png](result-after.png)
 You should notice that with the base model, only standard traffic signs are detected.  
 After retraining, your model can now better recognize LEGO traffic signs. Congratulations!
