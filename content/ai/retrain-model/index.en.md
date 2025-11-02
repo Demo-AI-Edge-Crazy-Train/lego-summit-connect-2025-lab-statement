@@ -11,7 +11,8 @@ In this section, you will:
 - Automate the execution of the different steps using a workflow.  
 - Visualize the workflow and its results in the OpenShift AI dashboard.
 
-⚠️ **WARNING**: You will only run the initial steps of model training in the Jupyter development environment.  
+⚠️ **WARNING**:  
+You will only run the initial steps of model training in the Jupyter development environment.  
 The full training will be executed outside of Jupyter via a Pipeline to avoid an **OOM Killed** error (insufficient memory).  
 If an error occurs, your pod will be automatically deleted and recreated. Nothing serious, but your development environment will be temporarily unavailable for a few minutes.
 
