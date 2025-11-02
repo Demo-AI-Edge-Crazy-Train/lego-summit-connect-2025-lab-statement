@@ -44,19 +44,17 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 4. Cliquez sur *Add model server*
 ![add-model-server.png](add-model-server.png)
 
-5. Voici les informations que vous devez entrer :
-
+5. Saisissez les informations suivantes :
 - **Model server name** : ```{{< param newModelServerName >}}```
 - **Serving runtime** : sélectionnez *OpenVINO Model Server*
 - **Number of model server replicas to deploy** : ```1```
 - **Model server size** : sélectionnez *{{< param newModelServerSize >}}*
-- **Model route** : non-coché
-- **Token authentication** : non-coché
-
+- **Model route** : décoché
+- **Token authentication** : décoché
 Le résultat devrait ressembler à ceci :
 ![add-model-server-config.png](add-model-server-config.png)
 
-* Vous pouvez cliquer sur **Add** pour créer le serveur de modèle.
+6. Cliquez sur *Add* pour valider la création du serveur de modèles.
 
 ## Déployer le modèle
 
