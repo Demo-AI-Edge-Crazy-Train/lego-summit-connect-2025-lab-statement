@@ -71,17 +71,17 @@ In this step, you will prepare the Data Science Pipeline to run outside of the J
 
 1. Open the Pipeline *traffic-signs.pipeline*.  
 You will see the Elyra graphical interface, which allows you to create and run Data Science Pipelines. Our Pipeline was built by dragging and dropping the Notebooks from the file explorer on the left.  
-This Pipeline currently has 4 steps and only 2 connections, so there is a missing link between the third step (*transfer-learning*) and the fourth (*comparison*).
+This Pipeline currently has 4 steps and only 2 connections, so there is a missing link between the third step (*transfer-learning.ipynb*) and the fourth (*comparison.ipynb*).
 
-2. To create this connection, click on the black dot on the right side of the third step (*transfer-learning*).
+2. To create this connection, click on the black dot on the right side of the third step (*transfer-learning.ipynb*).
 
-3. Hold and drag it to the black dot on the left side of the fourth step (*comparison*).  
+3. Hold and drag it to the black dot on the left side of the fourth step (*comparison.ipynb*).  
 You should then have the complete Pipeline as shown below:  
 ![full-pipeline](full-pipeline.png)
 
 ### Examining Step Properties
 
-1. Right-click the second step of the Pipeline (*synthetic-data*).  
+1. Right-click the second step of the Pipeline (*synthetic-data.ipynb*).  
 2. In the menu, click *Open Properties*. Properties appear in the right panel.  
 3. Scroll down to see the main properties:  
 - **Runtime Image**: container image used to execute the Python code for this step.  
