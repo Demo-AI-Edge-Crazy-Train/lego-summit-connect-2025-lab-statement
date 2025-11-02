@@ -20,8 +20,7 @@ En cas d’erreur, votre pod serait automatiquement supprimé puis recréé. Rie
 
 Vous avez précédemment cloné un repository Git. Dans le navigateur de fichiers à gauche, vous devriez voir un dossier portant le même nom que le projet Git : *{{< param gitRepoName >}}*.
 
-1. Cliquez sur *{{< param gitRepoName >}}* pour ouvrir le dossier.  
-À l'intérieur, vous trouverez plusieurs éléments :
+1. Cliquez sur *{{< param gitRepoName >}}* pour ouvrir le dossier. À l'intérieur, vous trouverez plusieurs éléments :
   * Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle, comme des fonctions Python ou des mappers.  
   * Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l'utiliserons plus tard.  
   * Le fichier *traffic-signs.pipeline* est un Pipeline de Data Science généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline sur OpenShift via l'interface graphique.  
