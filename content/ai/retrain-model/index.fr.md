@@ -96,13 +96,13 @@ Vous devriez obtenir le Pipeline complet suivant :
 
 En haut du panneau des propriétés, vous trouverez deux autres onglets en plus de *Node Properties* : *Pipeline Properties* et *Pipeline Parameters*. N'hésitez pas à les explorer pour découvrir les différents paramètres disponibles.
 
-### Demander un GPU pour l'étape *transfer-learning*
+### Réserver un GPU pour l'étape de réentraînement du modèle
 
 1. Fermez les propriétés ouvertes à l'étape précédente.  
 ![close-properties](close-properties.png)
 
-2. Nous allons maintenant modifier la **troisième étape** du Pipeline (*transfer-learning*). Assurez-vous de ne pas toucher aux propriétés de l'étape précédente.  
-Faites un clic droit sur la troisième étape (*transfer-learning*) et sélectionnez *Open Properties*. Les propriétés s'affichent dans le panneau de droite.
+2. Nous allons maintenant modifier la **troisième étape** du Pipeline (*transfer-learning.ipynb*). Assurez-vous de ne pas toucher aux propriétés de l'étape précédente.  
+Faites un clic droit sur la troisième étape (*transfer-learning.ipynb*) et sélectionnez *Open Properties*. Les propriétés s'affichent dans le panneau de droite.
 
 3. Cherchez la propriété *GPU* et saisissez `1` pour demander un GPU pour l'entraînement du modèle.  
 ![full-pipeline-gpu-count](full-pipeline-gpu-count.png)
