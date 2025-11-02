@@ -6,9 +6,9 @@ weight= 6
   src = '**.png'
 +++
 
-A ce stade, vous allez déployer le modèle que vous venez de créer dans le serveur de modèle d'Openshift AI. Si quelque chose s'est mal passé pendant l'entrainement du modèle, vous pouvez toujours faire cette section. Suivez simplement la première section "Fallback".
+Dans cette section, vous allez déployer le modèle que vous venez de créer sur le serveur de modèles d'OpenShift AI.
 
-Une fois de plus, dans les objets suivants que vous allez créer, **vous êtes priés de remplacer "userX "** par votre véritable ID d'utilisateur.
+**Remarque** : si quelque chose s'est mal passé lors de l'entraînement du modèle dans la section précédente, vous pouvez toujours suivre cette section en commençant par la première partie intitulée **Fallback**.
 
 ## Fallback - Vous pouvez sauter cette section si vous avez entrainer votre modèle avec succès
 
