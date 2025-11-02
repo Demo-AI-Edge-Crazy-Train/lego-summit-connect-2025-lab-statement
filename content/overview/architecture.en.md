@@ -112,7 +112,7 @@ graph TD
     style H fill:#fff8e1
 {{< /mermaid >}}
 
-### Real-time Processing Pipeline
+### Real-time Processing Workflow
 1. **Image Capture**: Camera captures traffic sign images
 2. **AI Inference**: Jetson processes images using trained model
 3. **Decision Making**: AI determines appropriate action (stop/go)
