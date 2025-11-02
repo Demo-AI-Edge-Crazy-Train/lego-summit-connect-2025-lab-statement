@@ -21,7 +21,7 @@ If an error occurs, your pod will be automatically deleted and recreated. Nothin
 You have previously cloned a Git repository. In the file browser on the left, you should see a folder named after the Git project: *{{< param gitRepoName >}}*.
 
 1. Click on *{{< param gitRepoName >}}* to open the folder. Inside, you will find several items:
-  * The *utils/* folder contains utility functions and dependencies for model training, such as Python functions or mappers.  
+  * The *utils/* folder contains utility functions and dependencies for model training.  
   * The *inference/* folder contains resources for querying models after deployment. We will use it later.  
   * The *traffic-signs.pipeline* file is a Data Science Pipeline generated with Elyra. **Elyra** provides a graphical interface that allows you to drag-and-drop Notebooks or Python scripts for each step and link them together to create workflows. You will be able to run this Pipeline in OpenShift AI via the GUI.  
   * The *labeling-extraction.ipynb* Notebook retrieves images annotated with Label Studio. It downloads both the images and the corresponding annotations with **bounding boxes**.  
