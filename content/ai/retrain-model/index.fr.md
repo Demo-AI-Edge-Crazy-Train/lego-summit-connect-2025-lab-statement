@@ -121,7 +121,7 @@ Cliquez sur *Add* sous la propriété *Kubernetes Tolerations* et remplissez les
 
 Il est maintenant temps de lancer le Pipeline sur OpenShift AI.  
 
-1. Cliquez sur le bouton *Run Pipeline* en forme de flèche ▷ dans la barre d'outils en haut :  
+1. Click the *Run Pipeline* button shaped like an arrow ▷ in the toolbar at the top:
 ![elyra-run](elyra-run.png)
 
 2. Si un popup apparaît vous avertissant que le Pipeline n'est pas sauvegardé, cliquez sur *Save and Submit*.
