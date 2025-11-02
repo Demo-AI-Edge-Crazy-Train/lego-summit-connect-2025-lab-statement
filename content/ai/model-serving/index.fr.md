@@ -8,9 +8,9 @@ weight= 6
 
 Dans cette section, vous allez déployer le modèle que vous venez de créer sur le serveur de modèles d'OpenShift AI.
 
-**Remarque** : si quelque chose s'est mal passé lors de l'entraînement du modèle dans la section précédente, vous pouvez toujours suivre cette section en commençant par la première partie intitulée **Fallback**.
+**Remarque** : si quelque chose s'est mal passé lors de l'entraînement du modèle dans la section précédente, vous pouvez toujours suivre cette section en commençant par la première partie intitulée **FALLBACK**.
 
-## Fallback – Vous pouvez passer cette section si vous avez entraîné votre modèle avec succès
+## FALLBACK – Vous pouvez passer cette section si vous avez entraîné votre modèle avec succès
 
 1. Dans le tableau de bord OpenShift AI, ouvrez le menu de gauche et cliquez sur *Data Science Projects*.
 
@@ -58,18 +58,19 @@ Le résultat devrait ressembler à ceci :
 
 ## Déployer le modèle
 
-Dans votre projet, sous **Models and model servers**, sélectionnez **Deploy model**.
-
-* Cliquez sur **Déployer le modèle**
+1. Sous *Models and model servers*, à droite du serveur de modèles que vous venez de créer, cliquez sur *Deploy model*.
 ![select-deploy-model.png](select-deploy-model.png)
+
+2. Saisissez les informations suivantes :
+- **Model deployment name** : ```{{< param newModelName >}}```
+- **Model server** : ```{{< param newModelServerName >}}``` qui devrait déjà être automatiquement sélectionné
+- **Model framework (name - version)** : sélectionnez *onnx-1*
+- **Existing data connection** - **Name** : sélectionnez *{{< param newModelDataConnection >}}* (ou *Model Registry* pour ceux qui ont fait le FALLBACK)
+- **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (ou ```default/model.onnx``` pour ceux qui ont fait le FALLBACK)
 
 * Voici les informations que vous devrez entrer. **Si vous avez suivi le fallback, veuillez remplacer la "Existing data connection - Name" par le nom de la "Data Connection" que vous avez créée (Model Registry)**:
 
-    - Model name: ```{{< param newModelName >}}```
-    - Model server: ```{{< param newModelServerName >}}```
-    - Model server - Model framework: ```onnx-1```
-    - Existing data connection - Name: ```{{< param newModelDataConnection >}}``` - **FOR FALLBACK track: use ```Model Registry```**
-    - Existing data connection - Path: ```{{< param newModelPath >}}```
+
 
 * Le résultat devrait ressembler à ceci
 ![deploy-a-model.png](deploy-a-model.png)
