@@ -51,6 +51,7 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 - **Model server size** : sélectionnez *{{< param newModelServerSize >}}*
 - **Model route** : décoché
 - **Token authentication** : décoché
+
 Le résultat devrait ressembler à ceci :
 ![add-model-server-config.png](add-model-server-config.png)
 
