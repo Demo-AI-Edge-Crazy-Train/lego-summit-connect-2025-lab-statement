@@ -11,7 +11,7 @@ weight: 4
 
 * **URL de l'API du cluster OCP :** `{{< param ocpApi >}}`
 
-Pour vous connecter à votre cluster OpenShift, rendez-vous sur l’URL de la console et saisissez votre nom d’utilisateur et votre mot de passe sous l’authentification `WorkshopUser`.  
+Pour vous connecter à votre cluster OpenShift, rendez-vous sur l’URL de la console et saisissez votre nom d’utilisateur et votre mot de passe sous l’authentification *WorkshopUser*.  
 Vous pouvez accéder au **Terminal Web** en cliquant sur l’icône **>_** dans le coin supérieur droit. Le Terminal Web vous donne accès au client *oc*.  
 Le nom d’utilisateur pour le **stockage objet MinIO** est le même (*userX*), et le mot de passe est `{{< param minioPass >}}`.
 
