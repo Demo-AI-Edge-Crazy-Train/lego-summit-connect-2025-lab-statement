@@ -65,19 +65,18 @@ Simply open the *comparison.ipynb* Notebook and review the code to understand it
 
 ## Running the Data Science Pipeline
 
-In this step, you will prepare the Data Science Pipeline to use a **GPU** to accelerate model training. On OpenShift, a few small shared GPUs have been deployed and will be used to run this Pipeline.
-
-1. Open the *traffic-signs.pipeline* Pipeline.  
-You will see the Elyra graphical interface, which allows creating and running Data Science Pipelines. Our Pipeline was built by drag-and-dropping the Notebooks from the file explorer on the left.
+In this step, you will prepare the Data Science Pipeline to run outside of the Jupyter development environment and to use a **GPU** to accelerate model training. In our cluster, a few small shared GPUs have already been deployed and will be used to run this Pipeline.
 
 ### Completing the Pipeline
 
-This Pipeline has 4 steps and 2 connections, but it is missing a connection between the third step (*transfer-learning*) and the fourth (*comparison*).  
+1. Open the Pipeline *traffic-signs.pipeline*.  
+You will see the Elyra graphical interface, which allows you to create and run Data Science Pipelines. Our Pipeline was built by dragging and dropping the Notebooks from the file explorer on the left.  
+This Pipeline currently has 4 steps and only 2 connections, so there is a missing link between the third step (*transfer-learning*) and the fourth (*comparison*).  
 
 To create this connection:  
-1. Click the black dot on the right of the third step (*transfer-learning*).  
-2. Hold and drag it to the black dot on the left of the fourth step (*comparison*).  
-You should get the completed Pipeline as shown:
+2. Click on the black dot on the right side of the third step (*transfer-learning*).  
+3. Hold and drag it to the black dot on the left side of the fourth step (*comparison*).  
+You should then have the complete Pipeline as shown below:  
 ![full-pipeline](full-pipeline.png)
 
 ### Examining Step Properties
