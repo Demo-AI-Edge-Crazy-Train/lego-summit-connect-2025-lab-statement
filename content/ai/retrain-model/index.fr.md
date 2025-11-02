@@ -168,7 +168,7 @@ Toutes les outputs du Pipeline sont sauvegardées dans le stockage objet **MinIO
 
 1. Cliquez sur ce lien vers la console MinIO : [{{< param minioConsole >}}]({{< param minioConsole >}}).  
 
-2. Connectez-vous avec le même nom d'utilisateur qui vous a été attribué au début de l'atelier. Le mot de passe est `{{< param minioPass >}}`.
+2. Connectez-vous avec le nom d'utilisateur qui vous a été attribué au début de l'atelier. Le mot de passe est `{{< param minioPass >}}`.
 
 3. Vous devriez voir plusieurs buckets. Cliquez sur celui qui correspond à votre nom d'utilisateur :  
    - Vous y trouverez un fichier *results.csv*, contenant les métriques liées à l'entraînement du modèle, que vous pouvez télécharger si vous le souhaitez.  
