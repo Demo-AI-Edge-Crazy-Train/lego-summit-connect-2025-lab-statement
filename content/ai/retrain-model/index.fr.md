@@ -155,7 +155,7 @@ Le **choix du nombre d'epochs** est essentiel pour obtenir de bonnes performance
 
 4. En cliquant sur une étape du Pipeline, un panneau latéral s'ouvre à droite et affiche plusieurs informations, dont les journaux (*logs*) dans l'onglet *Logs*.
 
-5. Sélectionnez *Main* dans le menu déroulant : vous verrez alors les logs associés à l'exécution du conteneur principal de cette étape.  
+5. Sélectionnez *main* dans le menu déroulant : vous verrez alors les logs associés à l'exécution du conteneur principal de cette étape.  
    ![pipeline-run-logs](pipeline-run-logs.png)
 
 6. Attendez que toutes les étapes du Pipeline soient terminées et s'affichent en vert.  
