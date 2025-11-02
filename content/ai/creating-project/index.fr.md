@@ -17,7 +17,7 @@ Il est important de comprendre les principaux concepts que nous allons utiliser 
 * Une **Data Connection** permet de relier la plateforme à une source de stockage (par exemple S3 ou Ceph) afin de sauvegarder et partager les artefacts produits dans un Workbench ou un Pipeline. 
 * Enfin, le **repository Git** contient le code source du projet, garantissant une bonne reproductibilité et favorisant la collaboration autour du même ensemble de scripts et de notebooks.
 
-Ces composants interagissent pour offrir une chaîne de traitement complète, du développement expérimental jusqu'à la mise en production des modèles.
+Ces composants travaillent ensemble pour fournir un processus complet de bout en bout, du développement expérimental jusqu'au déploiement des modèles.
 
 ## Connexion à un projet
 
