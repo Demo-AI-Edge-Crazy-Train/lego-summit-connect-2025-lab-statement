@@ -12,7 +12,6 @@ weight: 4
 * **OCP Cluster API URL :** `{{< param ocpApi >}}`
 
 To connect to your OpenShift cluster, go to the console URL and enter your username and password under the *WorkshopUser* authentication.  
-You can access the **Web Terminal** by clicking the **>_** icon in the top-right corner. The Web Terminal gives you access to the *oc* client.  
 The username for the **MinIO object storage** is the same (*userX*), and the password is `{{< param minioPass >}}`.
 
 ## Red Hat Edge Manager
