@@ -112,7 +112,7 @@ graph TD
     style H fill:#fff8e1
 {{< /mermaid >}}
 
-### Pipeline de traitement en temps réel
+### Workflow de traitement en temps réel
 1. **Capture d'image** : La caméra capture les images de panneaux
 2. **Inférence IA** : Le Jetson traite les images avec le modèle entraîné
 3. **Prise de décision** : L'IA détermine l'action appropriée (arrêt/marche)
