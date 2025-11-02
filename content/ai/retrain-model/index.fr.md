@@ -86,15 +86,15 @@ Vous devriez obtenir le Pipeline complet suivant :
 2. Dans le menu qui s'ouvre, cliquez sur *Open Properties*. Les propriétés s'affichent dans le panneau de droite.
 
 3. Faites défiler vers le bas pour observer les principales propriétés :  
-- **Runtime Image** : l'image du conteneur utilisée pour exécuter le code Python associé à cette étape.  
+- **Runtime Image** : l'image de conteneur utilisée pour exécuter le code Python associé à cette étape.  
 - **CPU request** : la quantité de CPU réservée pour cette étape.  
 - **RAM limit** : la quantité maximale de RAM autorisée pour cette étape.  
-- **Pipeline Parameters** : les paramètres de Pipeline déclarés globalement, que l'on peut activer pour les rendre disponibles pour cette étape.  
-- **File Dependencies** : les fichiers nécessaires à l'exécution dans le conteneur. Ici, tout le répertoire *utils/* est requis.  
-- **Output Files** : les fichiers générés pendant l'exécution, accessibles aux étapes suivantes.  
+- **Pipeline Parameters** : les paramètres déclarés globalement, que vous pouvez activer pour les rendre disponibles dans cette étape.  
+- **File Dependencies** : les fichiers nécessaires à l'exécution de cette étape. Ici, tout le répertoire *utils/* est requis.  
+- **Output Files** : les fichiers générés pendant l'exécution de cette étape, accessibles aux étapes suivantes.  
 - **Kubernetes Secrets** : les secrets montés dans le conteneur. Ici, les informations d'accès au stockage objet sont disponibles comme variables d'environnement pendant l'exécution.
 
-En haut du panneau des propriétés, vous trouverez trois onglets : *Pipeline Properties*, *Pipeline Parameters* et *Node Properties*. N'hésitez pas à naviguer entre eux pour explorer les différents paramètres disponibles.
+En haut du panneau des propriétés, vous trouverez deux autres onglets en plus de *Node Properties* : *Pipeline Properties* et *Pipeline Parameters*. N'hésitez pas à les explorer pour découvrir les différents paramètres disponibles.
 
 ### Demander un GPU pour l'étape *transfer-learning*
 
