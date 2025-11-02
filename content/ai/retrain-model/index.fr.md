@@ -21,13 +21,13 @@ En cas d'erreur, votre pod serait automatiquement supprimé puis recréé. Rien 
 Vous avez précédemment cloné un repository Git. Dans le navigateur de fichiers à gauche, vous devriez voir un dossier portant le même nom que le projet Git : *{{< param gitRepoName >}}*.
 
 1. Cliquez sur *{{< param gitRepoName >}}* pour ouvrir le dossier. À l'intérieur, vous trouverez plusieurs éléments :
-  * Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle.  
-  * Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l'utiliserons plus tard.  
-  * Le fichier *traffic-signs.pipeline* est un Pipeline généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline dans OpenShift AI via l'interface graphique.  
-  * Le Notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les annotations correspondantes avec des **bounding boxes**.  
-  * Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.  
-  * Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle lui-même.  
-  * Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) avec celui que vous allez entraîner (qui, espérons-le, les reconnaît). L'objectif est de s'assurer qu'aucune régression n'est introduite lors du réentraînement du modèle.
+- Le Notebook *labeling-extraction.ipynb* récupère les données annotées avec Label Studio, en téléchargeant à la fois les images et leurs annotations correspondantes avec des **bounding boxes**.
+- Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.
+- Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle.
+- Le Notebook *comparison.ipynb* compare le modèle de base (qui ne reconnaît pas les panneaux de signalisation LEGO) au modèle réentraîné (qui, espérons-le, les reconnaît).
+- Le fichier *traffic-signs.pipeline* est un Pipeline généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline dans OpenShift AI directement via l'interface graphique dans Jupyter.
+- Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement.
+- Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle.
 
 ### Extraire les images et leurs annotations
 
