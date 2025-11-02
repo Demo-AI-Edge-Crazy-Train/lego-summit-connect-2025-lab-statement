@@ -6,82 +6,98 @@ weight= 6
   src = '**.png'
 +++
 
-At this point, you will deploy the model the just created into RHOAI model serving. If something went wrong with the model traning you can still do this section. Just follow the first "Fallback" section.
+In this section, you will deploy the model you just created to the OpenShift AI Model Server.
 
-Once again, in the following objects that you will create, **please change "userX"** with your real user ID.
+**Note**: If something went wrong during model training in the previous section, you can still follow this section starting with the first part titled **FALLBACK**.
 
-## Fallback - You can skip if you have a tranined model
+## FALLBACK – You can skip this section if you successfully trained your model
 
-* In your Data Science project, create a data connection that refers to the global model registry where we stored a pre tranined model. To do so, go to your data science project, scroll down and click "Data Connections" or click directly to the "Data Connections" tab on the top menu. Please refer to [this section](/ai/creating-project/#create-a-data-connection-for-the-pipeline-server) if you have difficulties to create a data connection.
-* Here is the info you need to enter:
-    - Name: ```Model Registry```
-    - Access Key: ```userX``` - **Change with your USER ID**
-    - Secret Key: ```{{< param minioPass >}}```
-    - Endpoint: ```{{< param minioEndpoint >}}```
-    - Region: ```none```
-    - Bucket: ```{{< param baseModelBucket >}}```
+1. In the OpenShift AI dashboard, open the left menu and click on *Data Science Projects*.
+
+2. Click on the project corresponding to your username.
+
+3. Select the *Data connections* tab.
+
+4. Click *Add data connection* and enter the following information:
+- **Name** :  
+```Model Registry```
+- **Access key** :  
+```userX```  **⏪ REPLACE WITH YOUR USER ID**
+- **Secret key** :  
+```{{< param minioPass >}}```
+- **Endpoint** :  
+```{{< param minioEndpoint >}}```
+- **Region** :  
+```none```
+- **Bucket** :  
+```{{< param baseModelBucket >}}```
 
 ## Create a Model Server
 
-In your project create a model server. You can click here to go to see all your deployed models:
+1. In the OpenShift AI dashboard, open the left menu and click on *Data Science Projects*.
+
+2. Click on the project corresponding to your username.
+
+3. Select the *Models* tab.
 ![go-to-models](go-to-models.png)
 
-* Click **Add model server**
+4. Click on *Add model server*
 ![add-model-server.png](add-model-server.png)
 
-* Here is the info you need to enter:
+5. Enter the following information:
+- **Model server name** : ```{{< param newModelServerName >}}```
+- **Serving runtime** : select *OpenVINO Model Server*
+- **Number of model server replicas to deploy** : ```1```
+- **Model server size** : select *{{< param newModelServerSize >}}*
+- **Model route** : unchecked
+- **Token authentication** : unchecked
 
-- Model server name: ```{{< param newModelServerName >}}```
-- Serving runtime: ```OpenVINO Model Server```
-- Number of model server replicas to deploy: ```1```
-- Model server size ```{{< param newModelServerSize >}}```
-- Model route ```unchecked```
-- Token authorization ```unchecked```
-
-
-* The result should look like:
+The result should look like this:
 ![add-model-server-config.png](add-model-server-config.png)
 
-* You can click on **Add** to create the model server.
+6. Click *Add* to create the model server.
 
 ## Deploy the Model
 
-In your project, under **Models and model servers** select **Deploy model**.
-
-* Click **Deploy model**
+1. Under *Models and model servers*, to the right of the model server you just created, click *Deploy model*.
 ![select-deploy-model.png](select-deploy-model.png)
 
-* Here is the information you will need to enter. **If are on the fallback track, please change the "Existing data connection - Name" with the name of the data connection you created (Model Registry)**:
+2. Enter the following information:
+- **Model deployment name** : ```{{< param newModelName >}}```
+- **Model server** : ```{{< param newModelServerName >}}``` (should already be automatically selected)
+- **Model framework (name - version)** : select *onnx - 1*
+- **Existing data connection** - **Name** : select *{{< param newModelDataConnection >}}* (or *Model Registry* for those who followed the FALLBACK)
+- **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (or ```default/model.onnx``` for those who followed the FALLBACK)
 
-    - Model name: ```{{< param newModelName >}}```
-    - Model server: ```{{< param newModelServerName >}}```
-    - Model server - Model framework: ```onnx-1```
-    - Existing data connection - Name: ```{{< param newModelDataConnection >}}``` - **FOR FALLBACK track: use ```Model Registry```**
-    - Existing data connection - Path: ```{{< param newModelPath >}}```
-
-* The result should look like:
+The result should look like this:
 ![deploy-a-model.png](deploy-a-model.png)
 
-* Click on **Deploy**.
-* If the model is successfully deployed you will see its status as green after few seconds.
+3. Click *Deploy* to start the model deployment.
+
+4. Wait a few moments. If the model is successfully deployed, its status will turn green after a few seconds.
 ![model-deployed-success.png](model-deployed-success.png)
 
-We will now confirm that the model is indeed working by querying it!
+Now we will verify that the model is working correctly by querying it!
 
-## Querying the served Model
+## Querying the Deployed Model
 
-Once the model is served, we can use it as an endpoint that can be queried. We'll send a request to it, and get a result. This applies to anyone working within our cluster. This could either be colleagues, or applications.
+Once the model is served, we can use it as an endpoint that can receive requests. We send a REST (or gRPC) request to the model and receive a response. This endpoint can be used by applications or other services.
 
-* First, we need to get the URL of the model server.
-* To do this, click on the **Internal Service** link under the **Inference endpoint** column.
-* In the popup, you will see a few URLs for our model server.
+1. First, obtain the endpoint URL. To do this, click on the *Internal endpoint details* link in the *Inference endpoint* column.
+
+2. In the popup that appears, you will see several URLs associated with our model server.
 ![inference-url.png](inference-url.png)
 
-* Note or copy the **RestUrl**, which should be something like `http://modelmesh-serving.{user}:8008`
+3. Copy the **restUrl**, which should look like `http://modelmesh-serving.{userX}:8008`. We will now use this URL to query the model.
 
-We will now use this URL to query the model. Go back to the your running workbench i.e the jupyter notebooks environment.
+4. Return to your Workbench, i.e., the Jupyter environment via the *Workbenches* tab.
 
-- In your running workbench, navigate to the notebook `inference/inference.ipynb`. **Update the variable** "RestUrl" with the endpoint your previously copied.
-- Execute the cells of the notebook, and ensure you understand what is happening.
+5. Open the Notebook *inference/inference.ipynb*.
 
-The first section queries the base model that has been deployed globally for everyone. The second section takes your RestUrl endpoint and queries the model that you have tranined and deploy. You should see that with the base model, only the speed limit traffic signs are recognized. After your model re-training you now have a model that can better detect lego traffic signs. Congratulations!
+6. **Update the variable** *RestUrl* with the URL you copied previously to your clipboard.
+
+7. Run all cells in the notebook using the double-arrow ▶▶ icon, and take a moment to observe the code execution.  
+The *Base model detection* section queries the base model, deployed globally for all participants.  
+The *New model detection* section uses the *RestUrl* endpoint to query the model you trained and deployed.  
+You should notice that with the base model, only standard traffic signs are detected.  
+After retraining, your model can now better recognize LEGO traffic signs. Congratulations!
