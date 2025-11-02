@@ -168,7 +168,7 @@ All Pipeline outputs are saved in **MinIO** object storage.
 
 1. Click this link to the MinIO console: [{{< param minioConsole >}}]({{< param minioConsole >}}).  
 
-2. Log in with the same username assigned at the start of the workshop. The password is `{{< param minioPass >}}`.
+2. Log in using the username that was assigned to you at the start of the workshop. The password is `{{< param minioPass >}}`.
 
 3. You should see several buckets. Click the one matching your username:  
    - You will find a *results.csv* file containing metrics from model training, which you can download.  
