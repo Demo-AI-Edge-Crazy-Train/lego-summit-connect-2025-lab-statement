@@ -44,11 +44,12 @@ Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images*
 ### Générer des données synthétiques
 
 1. Ouvrez le Notebook *synthetic-data.ipynb*.  
-Ce Notebook génère des **données synthétiques** de manière aléatoire, c'est-à-dire des données artificielles qui viendront compléter l'ensemble d'entraînement du modèle.  
+Ce Notebook génère des **données synthétiques**, c'est-à-dire des données artificielles destinées à enrichir l'ensemble d'entraînement du modèle.  
+Pour cela, nous prenons des photos des rails depuis le point de vue du train et y superposons aléatoirement des panneaux détourés, afin de simuler les différentes conditions réelles que le train pourrait rencontrer.
 
-2. Exécutez l'intégralité du Notebook comme expliqué précédemment. Prenez le temps de parcourir le code et d'observer les exemples affichés dans les sections de visualisation.
+3. Exécutez l'intégralité du Notebook comme expliqué précédemment. Prenez le temps de parcourir le code et d'observer les exemples affichés dans les sections de visualisation.
 
-3. Vous pouvez relancer l'étape de visualisation pour afficher d'autres exemples de données synthétiques.
+4. Vous pouvez relancer l'étape de visualisation pour afficher d'autres exemples de données synthétiques.
 
 ### Examiner l'étape d'apprentissage du modèle
 
