@@ -4,10 +4,15 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bf353b9e-7ba7-40e6-9127-308c80c35b74/deploy-status)](https://app.netlify.com/projects/lego-workshop-summit-connect-2025/deploys)
 
-> **🎬 CLASSIFIED TRANSMISSION**  
-> *"The train is running mad at full speed and has no driver! Your mission, should you choose to accept it, is to train and deploy an AI model at the edge to stop the train before it crashes..."*
+**🎬 CLASSIFIED TRANSMISSION**
 
-🌐 **Live Workshop**: [Red Hat Summit Connect 2025 - Workshop Lego](https://lego-workshop-summit-connect-2025.netlify.app/)
+Message to Agent Red Hat:
+
+> The LEGO train is running without a driver!
+> Your mission: develop and deploy an AI on board the train to stop it before it derails.
+> This message will self-destruct in five seconds. Four… Three… Two… One…
+
+**Live Workshop**: [Red Hat Summit Connect 2025 - Workshop Lego](https://lego-workshop-summit-connect-2025.netlify.app/)
 
 ---
 
