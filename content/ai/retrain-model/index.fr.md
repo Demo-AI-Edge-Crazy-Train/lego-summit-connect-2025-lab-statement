@@ -125,6 +125,7 @@ Il est maintenant temps de lancer le Pipeline sur OpenShift AI.
 ![elyra-run](elyra-run.png)
 
 2. Si un popup apparaît pour vous avertir que le Pipeline n'a pas été sauvegardé, cliquez sur *Save and Submit*.
+![elyra-unsaved](elyra-unsaved.png)
 
 3. Dans la configuration du Pipeline, renseignez la valeur `10` pour le paramètre *epochs*.
 ![elyra-run-config](elyra-run-config.png)
