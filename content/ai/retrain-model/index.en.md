@@ -151,7 +151,7 @@ Choosing the **number of epochs** is crucial for good performance:
    If you kept the default name, it is called *traffic-signs* and appears first.  
    ![experiments-and-runs](experiments-and-runs.png)
 
-3. Click the current run to view the execution status. It usually appears first in the list, with the same name as the Pipeline plus a number.
+3. Click the current run to view the execution status. It usually appears first in the list, with the same name as the Pipeline followed by a number.
 
 4. Clicking a Pipeline step opens a side panel on the right showing details, including *logs* in the *Logs* tab.
 
