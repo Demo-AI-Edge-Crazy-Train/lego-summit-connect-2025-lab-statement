@@ -81,8 +81,10 @@ You should then have the complete Pipeline as shown below:
 
 ### Examining Step Properties
 
-1. Right-click the second step of the Pipeline (*synthetic-data.ipynb*).  
-2. In the menu, click *Open Properties*. Properties appear in the right panel.  
+1. Right-click the second step of the Pipeline (*synthetic-data.ipynb*).
+
+2. In the menu, click *Open Properties*. Properties appear in the right panel.
+
 3. Scroll down to see the main properties:  
 - **Runtime Image**: container image used to execute the Python code for this step.  
 - **CPU request**: amount of CPU reserved for this step.  
