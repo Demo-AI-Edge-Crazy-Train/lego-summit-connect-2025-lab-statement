@@ -1,4 +1,5 @@
-# 🚂 Mission: Impossible - Crazy Train Lab
+# 🚂 Mission AIpossible 🚂
+
 ## Red Hat Summit Connect 2025 - Edge AI Workshop
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bf353b9e-7ba7-40e6-9127-308c80c35b74/deploy-status)](https://app.netlify.com/projects/lego-workshop-summit-connect-2025/deploys)
