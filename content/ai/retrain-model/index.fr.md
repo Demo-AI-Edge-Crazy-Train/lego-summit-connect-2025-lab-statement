@@ -39,12 +39,12 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 Vous avez peut-être remarqué que ces scripts ont créé un répertoire *dataset*. Ce répertoire contient deux sous-dossiers : *images* et *labels*, qui regroupent respectivement les images et les annotations correspondantes.
 
 3. Dans le même Notebook, descendez à la section *Select a random image and display its bounding boxes*. Ensuite, réexécutez la première cellule juste en dessous en cliquant dessus, puis en cliquant sur l'icône de flèche ▶ dans la barre d'outils en haut.  
-Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les **bounding boxes** correspondantes dans *dataset/labels*, i.e. des rectangles indiquant les coordonnées des objets détectés dans l'image.
+Cette cellule sélectionne une image aléatoire dans le dossier *dataset/images* et superpose les **bounding boxes** correspondantes dans *dataset/labels*, c'est-à-dire des rectangles indiquant les coordonnées des objets détectés dans l'image.
 
 ### Générer des données synthétiques
 
 1. Ouvrez le Notebook *synthetic-data.ipynb*.  
-Ce Notebook génère des **données synthétiques**, c'est-à-dire des données artificielles destinées à enrichir l'ensemble d'entraînement du modèle.  
+Ce Notebook génère des **données synthétiques**, c'est-à-dire des données artificielles utilisées pour enrichir l'ensemble d'entraînement du modèle.  
 Pour cela, nous prenons des photos des rails depuis le point de vue du train et y superposons aléatoirement des panneaux détourés, afin de simuler les différentes conditions réelles que le train pourrait rencontrer.
 
 3. Exécutez l'intégralité du Notebook comme expliqué précédemment. Prenez le temps de parcourir le code et d'observer les exemples affichés dans les sections de visualisation.
