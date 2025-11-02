@@ -19,18 +19,12 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 3. Sélectionnez l'onglet *Data connections*.
 
 4. Cliquez sur *Add data connection* et saisissez les informations suivantes :
-- **Name** :  
-```Model Registry```
-- **Access key** :  
-```userX```  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
-- **Secret key** :  
-```{{< param minioPass >}}```
-- **Endpoint** :  
-```{{< param minioEndpoint >}}```
-- **Region** :  
-```none```
-- **Bucket** :  
-```{{< param baseModelBucket >}}```
+- **Name** : `Model Registry`
+- **Access key** : `userX`  **⫷ REMPLACEZ PAR VOTRE IDENTIFIANT**
+- **Secret key** : `{{< param minioPass >}}`
+- **Endpoint** : `{{< param minioEndpoint >}}`
+- **Region** : `none`
+- **Bucket** : `{{< param baseModelBucket >}}`
 
 ## Créer un serveur de modèles
 
@@ -45,9 +39,9 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 ![add-model-server.png](add-model-server.png)
 
 5. Saisissez les informations suivantes :
-- **Model server name** : ```{{< param newModelServerName >}}```
+- **Model server name** : `{{< param newModelServerName >}}`
 - **Serving runtime** : sélectionnez *OpenVINO Model Server*
-- **Number of model server replicas to deploy** : ```1```
+- **Number of model server replicas to deploy** : `1`
 - **Model server size** : sélectionnez *{{< param newModelServerSize >}}*
 - **Model route** : décoché
 - **Token authentication** : décoché
@@ -63,11 +57,11 @@ Le résultat devrait ressembler à ceci :
 ![select-deploy-model.png](select-deploy-model.png)
 
 2. Saisissez les informations suivantes :
-- **Model deployment name** : ```{{< param newModelName >}}```
-- **Model server** : ```{{< param newModelServerName >}}```, qui devrait déjà être automatiquement sélectionné
+- **Model deployment name** : `{{< param newModelName >}}`
+- **Model server** : `{{< param newModelServerName >}}`, qui devrait déjà être automatiquement sélectionné
 - **Model framework (name - version)** : sélectionnez *onnx - 1*
 - **Existing data connection** - **Name** : sélectionnez *{{< param newModelDataConnection >}}* (ou *Model Registry* si vous avez suivi la section FALLBACK)
-- **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (ou ```default/model.onnx``` si vous avez suivi la section FALLBACK)
+- **Existing data connection** - **Path** : `{{< param newModelPath >}}` (ou `default/model.onnx` si vous avez suivi la section FALLBACK)
 
 Le résultat devrait ressembler à ceci :
 ![deploy-a-model.png](deploy-a-model.png)
@@ -95,9 +89,12 @@ Une fois que le modèle est servi, nous pouvons l'utiliser comme un endpoint pou
 5. Ouvrez le Notebook *inference/inference.ipynb*.
 
 6. **Mettez à jour la variable** *RestUrl* avec l'URL que vous avez copiée précédemment dans votre presse-papiers.
+![notebook-replace.png](notebook-replace.png)
 
 7. Exécutez toutes les cellules du notebook en utilisant l'icône à double flèche ▶▶, et prenez le temps d'observer le fonctionnement du code.  
 La section *Base model detection* interroge le modèle de base, déployé globalement pour tous les participants.  
-La section *New model detection* utilise l'endpoint *RestUrl* pour interroger le modèle que vous avez entraîné et déployé.  
+La section *New model detection* utilise l'endpoint *RestUrl* pour interroger le modèle que vous avez entraîné et déployé.
+![result-before.png](result-before.png)
+![result-after.png](result-after.png)
 Vous devriez constater qu'avec le modèle de base, seuls les panneaux de signalisation standard sont détectés.  
 Après le réentraînement, votre modèle est désormais capable de mieux reconnaître les panneaux de signalisation LEGO. Félicitations !
