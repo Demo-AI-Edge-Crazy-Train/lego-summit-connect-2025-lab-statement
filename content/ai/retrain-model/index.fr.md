@@ -73,8 +73,10 @@ Dans cette étape, vous allez préparer le Pipeline de Data Science pour qu’il
 Vous verrez l'interface graphique d'Elyra, qui permet de créer et d'exécuter des Pipelines de Data Science. Notre Pipeline a été construit en glissant-déposant les Notebooks depuis l'explorateur de fichiers situé à gauche.  
 Ce Pipeline comporte 4 étapes et 2 liaisons seulement, donc il manque une connexion entre la troisième étape (*transfer-learning*) et la quatrième (*comparison*).  
 
-Pour créer cette liaison :  
-2. Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).  
+Pour créer cette liaison :
+
+2. Cliquez sur le point noir à droite de la troisième étape (*transfer-learning*).
+
 3. Maintenez le clic et faites glisser jusqu'au point noir à gauche de la quatrième étape (*comparison*).  
 Vous devriez obtenir le Pipeline complet suivant :
 ![full-pipeline](full-pipeline.png)
