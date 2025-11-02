@@ -15,7 +15,7 @@
 
 This interactive workshop combines **Edge AI**, **Computer Vision**, and **LEGO robotics** to create an engaging learning experience around Red Hat's Edge Computing and AI/ML technologies. Participants will train and deploy AI models to control an autonomous LEGO train system.
 
-### 🎪 Mission Scenario
+### Mission Scenario
 - **Setting**: Mission Impossible-themed adventure
 - **Challenge**: Stop a runaway LEGO train using Edge AI
 - **Technologies**: OpenShift AI, Jetson Orin, Red Hat Device Edge
@@ -54,7 +54,7 @@ Our **hybrid cloud-edge architecture** demonstrates enterprise-grade AI capabili
 
 ---
 
-## 🤖 Technology Stack
+## 💻 Technology Stack
 
 ### **Edge Computing**
 - **NVIDIA Jetson Orin**: ARM64 SoC with GPU acceleration
@@ -84,19 +84,19 @@ Our **hybrid cloud-edge architecture** demonstrates enterprise-grade AI capabili
 
 ## 📚 Workshop Modules
 
-### 🎨 **1. Presentation (15min)**
+### **1. Presentation (15min)**
 - Mission briefing and scenario introduction
 - Architecture overview and technology stack
 - Learning objectives and success criteria
 
-### 🤖 **2. Artificial Intelligence (1h)**
+### **2. Artificial Intelligence (1h)**
 - **Getting Connected**: Access OpenShift AI platform
 - **Creating Project**: Set up ML development environment  
 - **Creating Workbench**: Jupyter notebook workspace
 - **Model Training**: Train traffic sign detection model
 - **Model Serving**: Deploy AI model for inference
 
-### ⚙️ **3. DevOps (30min)**
+### **3. DevOps (30min)**
 - **CI/CD Pipelines**: Multi-architecture container builds
 - **GitOps Deployment**: Automated application delivery
 - **Edge Integration**: Deploy to Jetson Orin device
@@ -164,11 +164,11 @@ This workshop supports both **French** and **English**:
 
 By completing this workshop, participants will have:
 
-- ✅ **Trained an AI model** capable of detecting LEGO traffic signs
-- ✅ **Deployed the model** on edge computing platform
-- ✅ **Built CI/CD pipelines** for multi-architecture deployments
-- ✅ **Implemented GitOps** for automated application delivery
-- ✅ **Controlled a real LEGO train** using Edge AI! 🎉
+- **Trained an AI model** capable of detecting LEGO traffic signs
+- **Deployed the model** on edge computing platform
+- **Built CI/CD pipelines** for multi-architecture deployments
+- **Implemented GitOps** for automated application delivery
+- **Controlled a real LEGO train** using Edge AI! 🎉
 
 ---
 
