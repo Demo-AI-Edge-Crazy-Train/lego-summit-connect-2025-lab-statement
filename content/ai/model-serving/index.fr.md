@@ -12,14 +12,25 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 
 ## Fallback – Vous pouvez passer cette section si vous avez entraîné votre modèle avec succès
 
-* Dans votre projet Data Science, créez une "Data Connection" qui se réfère à la registry de modèles globale où nous avons stocké un modèle par défaut. Pour ce faire, allez dans votre projet de science des données, faites défiler vers le bas et cliquez sur "Data Connection" ou cliquez directement sur l'onglet "Data Connection" dans le menu supérieur. Veuillez vous référer à [cette section](/ai/creating-project/#create-a-data-connection-for-the-pipeline-server) si vous avez des difficultés à créer une "Data Connection".
-* Voici les informations que vous devez saisir :
-    - Name: ```Model Registry```
-    - Access Key: ```userX``` - **Change with your USER ID**
-    - Secret Key: ```{{< param minioPass >}}```
-    - Endpoint: ```{{< param minioEndpoint >}}```
-    - Region: ```none```
-    - Bucket: ```{{< param baseModelBucket >}}```
+1. Dans le tableau de bord OpenShift AI, ouvrez le menu de gauche et cliquez sur *Data Science Projects*.
+
+2. Cliquez sur le projet correspondant à votre nom d'utilisateur.
+
+3. Sélectionnez l'onglet *Data Connection*.
+
+4. Cliquez sur *Add data connection* et saisissez les informations suivantes :
+- **Name** :  
+```Model Registry```
+- **Access key** :  
+```userX```  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
+- **Secret key** :  
+```{{< param minioPass >}}```
+- **Endpoint** :  
+```{{< param minioEndpoint >}}```
+- **Region** :  
+```none```
+- **Bucket** :  
+```{{< param baseModelBucket >}}```
 
 ## Créer un serveur de modèle
 
