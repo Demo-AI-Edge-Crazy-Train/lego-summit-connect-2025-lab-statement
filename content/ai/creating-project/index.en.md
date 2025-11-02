@@ -31,7 +31,7 @@ These components work together to provide a complete end-to-end process, from ex
 
 We have deployed a MinIO instance to handle object storage in the cluster. You will need to **add a Data Connection** pointing to this storage.
 
-1. Scroll to the bottom of the project page and click on *Data Connections*:  
+1. Scroll to the bottom of the project page and click on *Data connections*:  
 ![02-02-add-dc.png](02-02-add-dc.png)  
 The page will be empty for now.
 
