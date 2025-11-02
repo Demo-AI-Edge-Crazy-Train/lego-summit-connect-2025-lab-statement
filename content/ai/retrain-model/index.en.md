@@ -53,13 +53,13 @@ To do this, we take photos of the tracks from the train's point of view and rand
 
 ### Examining the Model Training Step
 
-⚠️ **Do NOT run this Notebook!** Executing it could crash your environment, as the RAM available per participant is limited.  
+⚠️ **Do not run this Notebook!** Executing it would crash your environment, as the RAM available for each participant is limited.
 
 Simply open the *transfer-learning.ipynb* Notebook and review the code to understand its functionality.
 
 ### Examining the Comparison Step
 
-⚠️ **Do NOT run this Notebook!** Executing it could crash your environment, as the RAM available per participant is limited.  
+⚠️ **Do not run this Notebook!** Executing it would crash your environment, as the RAM available for each participant is limited.
 
 Simply open the *comparison.ipynb* Notebook and review the code to understand its functionality.
 
