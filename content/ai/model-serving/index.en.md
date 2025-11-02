@@ -66,8 +66,8 @@ The result should look like this:
 - **Model deployment name** : ```{{< param newModelName >}}```
 - **Model server** : ```{{< param newModelServerName >}}``` (should already be automatically selected)
 - **Model framework (name - version)** : select *onnx - 1*
-- **Existing data connection** - **Name** : select *{{< param newModelDataConnection >}}* (or *Model Registry* for those who followed the FALLBACK section)
-- **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (or ```default/model.onnx``` for those who followed the FALLBACK section)
+- **Existing data connection** - **Name** : select *{{< param newModelDataConnection >}}* (or *Model Registry* if you followed the FALLBACK section)
+- **Existing data connection** - **Path** : ```{{< param newModelPath >}}``` (or ```default/model.onnx``` if you followed the FALLBACK section)
 
 The result should look like this:
 ![deploy-a-model.png](deploy-a-model.png)
