@@ -81,8 +81,10 @@ Vous devriez obtenir le Pipeline complet suivant :
 
 ### Examiner les propriétés d'une étape
 
-1. Cliquez avec le bouton droit sur la deuxième étape du Pipeline (*synthetic-data.ipynb*).  
-2. Dans le menu qui s'ouvre, cliquez sur *Open Properties*. Les propriétés s'affichent dans le panneau de droite.  
+1. Cliquez avec le bouton droit sur la deuxième étape du Pipeline (*synthetic-data.ipynb*).
+
+2. Dans le menu qui s'ouvre, cliquez sur *Open Properties*. Les propriétés s'affichent dans le panneau de droite.
+
 3. Faites défiler vers le bas pour observer les principales propriétés :  
 - **Runtime Image** : l'image du conteneur utilisée pour exécuter le code Python associé à cette étape.  
 - **CPU request** : la quantité de CPU réservée pour cette étape.  
