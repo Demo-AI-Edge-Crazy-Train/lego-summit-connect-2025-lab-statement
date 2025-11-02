@@ -71,10 +71,9 @@ In this step, you will prepare the Data Science Pipeline to run outside of the J
 
 1. Open the Pipeline *traffic-signs.pipeline*.  
 You will see the Elyra graphical interface, which allows you to create and run Data Science Pipelines. Our Pipeline was built by dragging and dropping the Notebooks from the file explorer on the left.  
-This Pipeline currently has 4 steps and only 2 connections, so there is a missing link between the third step (*transfer-learning*) and the fourth (*comparison*).  
-To create this connection:
+This Pipeline currently has 4 steps and only 2 connections, so there is a missing link between the third step (*transfer-learning*) and the fourth (*comparison*).
 
-2. Click on the black dot on the right side of the third step (*transfer-learning*).
+2. To create this connection, click on the black dot on the right side of the third step (*transfer-learning*).
 
 3. Hold and drag it to the black dot on the left side of the fourth step (*comparison*).  
 You should then have the complete Pipeline as shown below:  
