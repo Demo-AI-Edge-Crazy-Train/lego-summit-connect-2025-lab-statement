@@ -49,7 +49,7 @@ Dans cette section, vous allez déployer le modèle que vous venez de créer sur
 - **Model server name** : ```{{< param newModelServerName >}}```
 - **Serving runtime** : sélectionnez *OpenVINO Model Server*
 - **Number of model server replicas to deploy** : ```1```
-- **Model server size** : ```{{< param newModelServerSize >}}```  
+- **Model server size** : sélectionnez *{{< param newModelServerSize >}}*
 - **Model route** : non-coché
 - **Token authentication** : non-coché
 
