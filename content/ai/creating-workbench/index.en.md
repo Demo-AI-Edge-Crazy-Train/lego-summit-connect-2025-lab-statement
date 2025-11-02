@@ -15,8 +15,8 @@ Once the Data Connection and the Pipeline Server have been fully created, you ca
 
 2. Fill in the following settings in the form:  
 - **Name**: choose a name, for example `My Workbench`  
-- **Image selection**: *CUSTOM Crazy train lab*  
-- **Container size**: *Small*  
+- **Image selection**: select *CUSTOM Crazy train lab*  
+- **Container size**: select *Small*  
 - **Use a data connection**: check this option, then select *Use existing data connection*. From the dropdown, choose the *pipelines* Data Connection you created earlier.  
 
 The result should look like this:  
