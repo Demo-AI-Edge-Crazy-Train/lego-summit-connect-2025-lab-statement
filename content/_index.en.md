@@ -2,7 +2,8 @@
 title: "Welcome"
 ---
 
-# Red Hat Summit Connect Paris 2025 - Mission AIpossible
+# [Red Hat Summit Connect Paris 2025](#)
+# **Mission AIpossible**
 
 Welcome to this workshop, where you will explore part of Red Hat’s offerings in Edge Computing and AI.
 
