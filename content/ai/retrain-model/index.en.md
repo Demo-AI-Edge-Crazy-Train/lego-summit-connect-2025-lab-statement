@@ -177,6 +177,7 @@ All Pipeline outputs are saved in **MinIO** object storage.
 4. Open this folder. You will find HTML files, Notebooks (*.ipynb*), and archives.
 
 5. Click the *comparison.html* file. A menu will appear on the right. Click *Download* and open the file locally in your browser.  
-Compare the base model results with the new model. In this example, we lost some accuracy on classical traffic signs in the original dataset, but the new model can now detect LEGO signs that were previously unrecognized.
 ![output-base-model](output-base-model.png)  
 ![output-new-model](output-new-model.png)
+
+6. Compare the base model results with the new model. In this example, we lost some accuracy on classical traffic signs in the original dataset, but the new model can now detect LEGO signs that were previously unrecognized.
