@@ -17,7 +17,7 @@ It is important to understand the key concepts we will be using in this AI works
 * A **Data Connection** allows the platform to connect to a storage source (e.g., S3 or Ceph) to save and share artifacts produced in a Workbench or a Pipeline.  
 * Finally, the **Git repository** contains the project's source code, ensuring reproducibility and fostering collaboration around the same set of scripts and notebooks.
 
-These components work together to provide a complete workflow, from experimental development to production deployment of models.
+These components work together to provide a complete end-to-end process, from experimental development to model deployment.
 
 ## Connecting to a Project
 
