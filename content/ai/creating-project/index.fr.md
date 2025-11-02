@@ -37,11 +37,11 @@ Pour l'instant, la page est vide.
 
 2. Cliquez sur *Add data connection* et saisissez les informations suivantes :
 - **Name** : `pipelines`
-- **Access key** : `userX`  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
+- **Access key** : `userX`  **⫷ REMPLACEZ PAR VOTRE IDENTIFIANT**
 - **Secret key** : `{{< param minioPass >}}`
 - **Endpoint** : `{{< param minioEndpoint >}}`
 - **Region** : `none`
-- **Bucket** : `userX`  **⏪ REMPLACEZ PAR VOTRE IDENTIFIANT**
+- **Bucket** : `userX`  **⫷ REMPLACEZ PAR VOTRE IDENTIFIANT**
 
 Le résultat devrait ressembler à ceci :  
 ![data-connection.png](data-connection.png)
