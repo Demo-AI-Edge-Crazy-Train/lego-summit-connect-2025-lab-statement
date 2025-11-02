@@ -14,7 +14,7 @@ In this section, you will explore the Python code used to retrain the model. You
 
 You have previously cloned a Git repository. In the file browser on the left, you should see a folder named after the Git project: *{{< param gitRepoName >}}*.
 
-1. Click to open the folder.  
+1. Click on *{{< param gitRepoName >}}* to open the folder.  
 Inside, you will find several items:
   * The *utils/* folder contains utility functions and dependencies for model training, such as Python functions or mappers.  
   * The *inference/* folder contains resources for querying models after deployment. We will use it later.  
