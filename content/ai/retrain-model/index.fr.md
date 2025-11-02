@@ -8,13 +8,13 @@ weight= 4
 
 Dans cette section, vous allez :
 - Explorer le code Python utilisé pour réentraîner le modèle.
-- Automatiser l’exécution des différentes étapes à l’aide d’un Pipeline.
+- Automatiser l'exécution des différentes étapes à l'aide d'un Pipeline.
 - Visualiser le Pipeline et ses résultats dans le tableau de bord OpenShift AI.
 
 ⚠️ **ATTENTION** :  
-Vous n’exécuterez que les premières étapes de l'entraînement du modèle dans l'environnement de développement Jupyter.  
-L’entraînement complet sera effectué à l’extérieur de Jupyter via un Pipeline, afin d’éviter une erreur **OOM Killed** (mémoire insuffisante).  
-En cas d’erreur, votre pod serait automatiquement supprimé puis recréé. Rien de grave, mais votre environnement de développement serait temporairement indisponible pendant quelques minutes.
+Vous n'exécuterez que les premières étapes de l'entraînement du modèle dans l'environnement de développement Jupyter.  
+L'entraînement complet sera effectué à l'extérieur de Jupyter via un Pipeline, afin d'éviter une erreur **OOM Killed** (mémoire insuffisante).  
+En cas d'erreur, votre pod serait automatiquement supprimé puis recréé. Rien de grave, mais votre environnement de développement serait temporairement indisponible pendant quelques minutes.
 
 ## Naviguer dans le code d'entraînement du modèle
 
@@ -23,7 +23,7 @@ Vous avez précédemment cloné un repository Git. Dans le navigateur de fichier
 1. Cliquez sur *{{< param gitRepoName >}}* pour ouvrir le dossier. À l'intérieur, vous trouverez plusieurs éléments :
   * Le dossier *utils/* contient des fonctions utilitaires et des dépendances pour l'entraînement du modèle.  
   * Le dossier *inference/* contient du matériel pour interroger les modèles après leur déploiement. Nous l'utiliserons plus tard.  
-  * Le fichier *traffic-signs.pipeline* est un Pipeline généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline sur OpenShift via l'interface graphique.  
+  * Le fichier *traffic-signs.pipeline* est un Pipeline généré avec Elyra. **Elyra** fournit une interface graphique qui permet de glisser-déposer des Notebooks ou des scripts Python pour chaque étape et de les relier entre elles pour créer des workflows. Vous pourrez exécuter ce Pipeline dans OpenShift AI via l'interface graphique.  
   * Le Notebook *labeling-extraction.ipynb* récupère les images annotées avec Label Studio. Il télécharge à la fois les images et les annotations correspondantes avec des **bounding boxes**.  
   * Le Notebook *synthetic-data.ipynb* génère des données synthétiques aléatoires pour enrichir l'ensemble de données d'entraînement.  
   * Le Notebook *transfer-learning.ipynb* contient le code d'entraînement du modèle lui-même.  
