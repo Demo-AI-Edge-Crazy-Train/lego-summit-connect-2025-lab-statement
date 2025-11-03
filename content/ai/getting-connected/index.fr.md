@@ -1,5 +1,5 @@
 +++
-title = "Connexion"
+title = "Se connecter"
 draft= false
 weight= 1
 [[resources]]
