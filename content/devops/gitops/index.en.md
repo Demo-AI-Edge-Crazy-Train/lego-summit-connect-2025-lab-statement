@@ -1,6 +1,7 @@
 +++
 title = "GitOps"
-draft = false
+draft = true
+hidden = true
 weight = 2
 [[resources]]
   src = '**.png'

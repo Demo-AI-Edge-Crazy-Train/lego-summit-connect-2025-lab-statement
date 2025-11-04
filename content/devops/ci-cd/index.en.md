@@ -11,7 +11,7 @@ weight = 1
 In this step, you will deploy the CI pipelines that will build the container images of the five main components of the train:
 
 - **capture-app**
-- **intelligent-train**
+- **intelligent-train** (contains the AI model)
 - **monitoring-app**
 - **train-ceq-app**
 - **train-controller**

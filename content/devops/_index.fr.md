@@ -1,5 +1,5 @@
 +++
-title = "DevOps (30min)"
+title = "IA à l'Edge (30min)"
 weight = 3
 chapter = true
 pre = "<b>3. </b>"
@@ -7,31 +7,27 @@ pre = "<b>3. </b>"
 
 ### Partie 3
 
-# DevOps
+# Intelligence Artificielle à l'Edge
 
-Dans cette section finale DevOps, vous implémenterez les pratiques modernes de CI/CD et GitOps pour des déploiements multi-architecture.
+Dans cette section finale, vous implémenterez les pratiques modernes de CI/CD et GitOps pour des déploiements de modèles d'IA à l'Edge.
 
 Cette section comprend :
 - **Pipelines CI** : Construire des images de conteneurs multi-architecture avec les pipelines Tekton
   - Déployer des pipelines pour les architectures x86_64 et ARM64
-  - Comprendre comment construire pour les dispositifs Edge (Nvidia Jetson Orin)
-  - Travailler avec les registres de conteneurs et les manifestes multi-arch
-- **Déploiement GitOps** : Déployer des applications en utilisant les méthodologies GitOps
-  - Utiliser les charts Helm pour l'empaquetage d'applications
-  - Déployer l'écosystème complet du train sur OpenShift
-  - Tester la solution intégrée de bout en bout
+  - Comprendre comment construire des images pour les dispositifs Edge (Nvidia Jetson Orin)
+  - Travailler avec les registres de conteneurs et les manifestes multi-architecture
 - **Pipelines CD pour le Edge** : Construire des images de conteneurs bootc avec les pipelines Tekton
   - Construire des images bootc pour la carte Jetson Orin
   - Déployer l'image bootc sur la carte Jetson Orin
   - Gérer les dispositifs Edge à travers une solution de gestion de flotte
 
-Vous vivrez le cycle de vie DevOps complet du code au déploiement en production, comprenant comment les applications Edge AI modernes sont construites, testées et déployées à travers différentes architectures.
+Vous vivrez le cycle de vie complet du modèle d'IA au déploiement en production, comprenant comment les applications Edge AI modernes sont construites, testées et déployées à travers différentes architectures.
 
 ## Votre espace de travail
 
 Vous allez utiliser OpenShift Dev Spaces. OpenShift Dev Spaces utilise Kubernetes et les conteneurs pour fournir un environnement de développement cohérent, sécurisé et sans configuration, accessible depuis une fenêtre de navigateur.
 
-Utilisez le lien suivant pour générer votre environnement OpenShift Dev Spaces : 
+Utilisez le lien suivant pour générer votre environnement OpenShift Dev Spaces :
 
 [![Contribute](https://www.eclipse.org/che/contribute.svg)](https://devspaces.apps.{{< param openshift_domain >}}/f?url={{< param gitAppRepoUrl >}})
 

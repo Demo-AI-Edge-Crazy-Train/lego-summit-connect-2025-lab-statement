@@ -11,7 +11,7 @@ weight = 3
 Dans cette étape, vous devrez déployer le pipeline CD qui construira l'image du Système d'Exploitation du Jetson, comprenant Microshift ainsi que les cinq composants clés du train :
 
 - **capture-app**
-- **intelligent-train**
+- **intelligent-train** (qui contient le modèle d'IA)
 - **monitoring-app**
 - **train-ceq-app**
 - **train-controller**
@@ -20,7 +20,7 @@ Ce pipeline déclenchera également une mise à jour de la flotte correspondant 
 Chaque participant dispose d'une machine virtuelle "at the Edge", connectée à Red Hat Edge Manager, le système de gestion de flotte de devices Edge.
 
 Pour vous aider, un Chart Helm est présent dans le mono repo de l'application (dossier `tekton-pipelines`).
-Ce chart Helm contient un pipeline Tekton permettant de construire l'image du Système d'Exploitation du Jetson.
+Ce chart Helm contient un pipeline Tekton permettant de construire l'image du Système d'Exploitation du Jetson et déclencher la mise à jour de votre device Edge.
 
 Vous déploierez le pipeline tekton depuis votre environnement OpenShift DevSpaces (ce sera plus simple).
 
@@ -55,11 +55,15 @@ kafkaBroker.password=R3dH4t1!
 kafkaBroker.bootstrapNode.hostname={{< param kafkaBootstrapNode >}}
 ```
 
-**TODO**: Screen capture
+Votre configuration devrait ressembler à celle-ci :
+
+![](fleet-config.png)
 
 Cliquez sur **Next** > **Next** et **Save**.
 
 Sur votre flotte, cliquez sur le **X/Y** sous **Up-to-date/devices** pour accéder à votre liste de devices Edge.
+
+![](fleet-device-shortcut.png)
 
 Cliquer sur votre unique device Edge.
 
@@ -117,12 +121,11 @@ helm template pipelines /projects/summitconnect2025-app/tekton-pipelines --set n
 Le message d'avertissement *"WARNING: Kubernetes configuration file is group-readable. This is insecure."* peut être ignoré.
 {{% /notice %}}
 
-Normalement, le pipeline doivent démarrer immédiatement.
-
 Ouvrez la [console OpenShift]({{< param ocpConsole >}}) et naviguez dans **Administrator** > **Pipelines** > **Pipelines** > **PipelineRuns**.
 
-![](pipelinerun-bootc.png)
+Normalement, le pipeline doit démarrer immédiatement.
 
+![](pipelinerun-bootc.png)
 
 ## Surveiller le déploiement à l'Edge
 
@@ -133,14 +136,36 @@ Une fois le pipeline terminé, vous devriez constater que la flotte dans Red Hat
 
 Sur votre flotte, cliquez sur le **X/Y** sous **Up-to-date/devices** pour accéder à votre liste de devices Edge.
 
-Cliquer sur votre unique device Edge.
+![](fleet-device-shortcut.png)
 
-![](device-out-of-date.png)
+Cliquer sur votre unique device Edge.
 
 Vous devriez voir que votre device Edge est en état "out-of-date".
 
+![](device-out-of-date.png)
+
 Patientez quelques minutes, pendant qu'il télécharge sa mise à jour, l'applique et redémarre.
 
-## Vérifications post mise à jour
+## Vérifications
 
-TODO
+Naviguez dans **Fleets** > _votre flotte_
+
+Sur votre flotte, cliquez sur le **X/Y** sous **Up-to-date/devices** pour accéder à votre liste de devices Edge.
+
+![](fleet-device-shortcut.png)
+
+Cliquer sur votre unique device Edge.
+
+Cliquez sur **Terminal**.
+Patientez que le Device Edge contacte le serveur Edge Manager (ça peut prendre jusqu'à une minute !).
+
+Une fois le terminal connecté, exécutez la commande suivante :
+
+```sh
+export KUBECONFIG=/var/lib/microshift/resources/kubeadmin/kubeconfig
+oc -n train get pods -w
+```
+
+Vous devriez voir les conteneurs constituant le pilote automatique du train, dont le **intelligent-train** qui contient le modèle d'IA.
+
+Bravo, vous venez de déployer un modèle d'IA à l'Edge ! 🎉

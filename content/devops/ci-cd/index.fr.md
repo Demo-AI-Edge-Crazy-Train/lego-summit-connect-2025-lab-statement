@@ -11,7 +11,7 @@ weight = 1
 Dans cette étape, vous devrez déployer les pipelines CI qui construiront les images de conteneur des cinq composants clés du train :
 
 - **capture-app**
-- **intelligent-train**
+- **intelligent-train** (qui contient le modèle d'IA)
 - **monitoring-app**
 - **train-ceq-app**
 - **train-controller**
